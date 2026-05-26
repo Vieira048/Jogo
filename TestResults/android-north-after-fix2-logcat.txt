@@ -1,0 +1,442 @@
+--------- beginning of main
+05-26 11:28:10.138 10035 13929 D InputDispatcher: Inject motion (5859/2000): action=0x0, time=48180419000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+05-26 11:28:10.139 10035 10335 I InputDispatcher: Delivering touch to (10534): action: 0x4, f=0x0, d=0, 'be116e7', t=1 
+05-26 11:28:10.139 10035 10335 I InputDispatcher: Delivering touch to (5494): action: 0x0, f=0x0, d=0, '4ea2a5b', t=1 +(2400,0)
+--------- beginning of system
+05-26 11:28:10.139 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48180419
+05-26 11:28:10.140 10035 10335 D PowerManagerService: UserActivityStateListenerState: 1
+05-26 11:28:10.141  5494  5494 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 0
+05-26 11:28:10.141 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -513883959 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+05-26 11:28:10.142 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -513883959 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+05-26 11:28:10.142 10035 10064 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: -584543893
+05-26 11:28:10.142 10035 10064 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: -584543893
+05-26 11:28:10.245 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:28:10.246 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:28:10.246 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:28:10.246 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.904114 msecs
+05-26 11:28:10.248 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.546407 msecs
+05-26 11:28:10.249 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.226198 msecs
+05-26 11:28:10.509 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2351, isSameBssidAndFreq true
+05-26 11:28:10.511 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:10.512 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:28:10.514 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:28:10.541 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:10.543   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:10.543   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:10.543   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:10.543   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:10.627   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:10.627   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:10.637 10035 10064 I GestureDetector: handleMessage LONG_PRESS
+05-26 11:28:10.637 10035 10035 I GestureDetector: handleMessage LONG_PRESS
+05-26 11:28:10.734 12146 12146 I SDHMS:LOAD: type: LoadsFreqs, value: 0:29:5:844800:844800:844800:1206911:2150400:710400:305:305:305
+05-26 11:28:10.751 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:28:10.751 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:28:10.751 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:28:10.751 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.954271 msecs
+05-26 11:28:10.752 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.944428 msecs
+05-26 11:28:10.754 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.18 msecs
+05-26 11:28:10.778   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:11.004   694   694 D io_stats: !@   8,0 r 17586848 334582688 w 3925426 46614152 d 1977555 38097664 f 0 0 iot 3404032 0 th 0 0 0 pt 0 inp 0 0 48181.286
+05-26 11:28:11.048 11645  5704 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-26 11:28:11.049 11645  5704 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbyConnections.TxAdvertisement}
+05-26 11:28:11.143 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48181424
+05-26 11:28:11.255 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 11:28:11.255 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 11:28:11.255 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 11:28:11.255 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.807031 msecs
+05-26 11:28:11.257 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.664219 msecs
+05-26 11:28:11.258 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.258334 msecs
+05-26 11:28:11.543 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:11.745  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][758246] accel_sample [-0.089, -0.251,  9.928] 229083910804113
+05-26 11:28:11.833  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 184(184),m:1,a:2388,b:180592,c:42496,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:12.237 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48182518
+05-26 11:28:12.239 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 11:28:12.240 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 11:28:12.240 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 11:28:12.240 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.893229 msecs
+05-26 11:28:12.243 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 2.809896 msecs
+05-26 11:28:12.244 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.369739 msecs
+05-26 11:28:12.545 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:12.745 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:28:12.746 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:28:12.746 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:28:12.746 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.806198 msecs
+05-26 11:28:12.748 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.592813 msecs
+05-26 11:28:12.749 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.222395 msecs
+05-26 11:28:12.992 11645  5160 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+05-26 11:28:13.007 11645  5688 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+05-26 11:28:13.042  9815 16685 I sensors-hal: handle_sns_client_event:252, auto_rotation_debug_2 mode,255, type,1,0 acc,-0.081,-0.232,9.928, ar,0, ver,10
+05-26 11:28:13.249 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:28:13.250 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:28:13.250 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:28:13.250 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.870989 msecs
+05-26 11:28:13.252 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.585208 msecs
+05-26 11:28:13.253 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.047396 msecs
+05-26 11:28:13.347 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48183627
+05-26 11:28:13.531 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2352, isSameBssidAndFreq true
+05-26 11:28:13.534 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:13.535 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:28:13.536 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:28:13.547 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:13.745  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][758453] accel_sample [-0.074, -0.247,  9.926] 229085913590289
+05-26 11:28:13.754 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:28:13.754 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:28:13.754 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:28:13.754 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.912344 msecs
+05-26 11:28:13.756 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.714114 msecs
+05-26 11:28:13.758 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.372343 msecs
+05-26 11:28:13.816 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 12530000 / mChargingTime : 12530000
+05-26 11:28:13.816 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 11:28:14.260 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 11:28:14.260 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 11:28:14.261 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 11:28:14.261 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.119844 msecs
+05-26 11:28:14.262 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.45802 msecs
+05-26 11:28:14.264 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.329843 msecs
+05-26 11:28:14.357 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48184638
+05-26 11:28:14.408  5494  5533 I Unity   : [Portal] PortalScene: activating scene 'Dungeon_1' from collider 'Player'.
+05-26 11:28:14.408  5494  5533 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+05-26 11:28:14.408  5494  5533 I Unity   : UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+05-26 11:28:14.408  5494  5533 I Unity   : UnityEngine.Logger:Log(LogType, Object)
+05-26 11:28:14.408  5494  5533 I Unity   : UnityEngine.Debug:Log(Object)
+05-26 11:28:14.408  5494  5533 I Unity   : Portal:LogDebug(String) (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Scene\Portal.cs:132)
+05-26 11:28:14.408  5494  5533 I Unity   : Portal:TryActivate(Collider2D) (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Scene\Portal.cs:55)
+05-26 11:28:14.408  5494  5533 I Unity   : Portal:ScanForPlayer() (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Scene\Portal.cs:43)
+05-26 11:28:14.408  5494  5533 I Unity   : Portal:Update() (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Scene\Portal.cs:24)
+05-26 11:28:14.408  5494  5533 I Unity   : 
+05-26 11:28:14.411  5494  5533 E Unity   : DirectoryNotFoundException: Could not find a part of the path "/data/app/~~lVgUBs99Iv0SHE6AR2gsIA==/com.southbegonia.topdungeon-jLAgt-tp6w5VxqYTtYEv_g==/base.apk/SaveData.json".
+05-26 11:28:14.411  5494  5533 E Unity   :   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00000] in <00000000000000000000000000000000>:0 
+05-26 11:28:14.411  5494  5533 E Unity   :   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <00000000000000000000000000000000>:0 
+05-26 11:28:14.411  5494  5533 E Unity   :   at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00000] in <00000000000000000000000000000000>:0 
+05-26 11:28:14.411  5494  5533 E Unity   :   at System.IO.StreamWriter..ctor (System.String path) [0x00000] in <00000000000000000000000000000000>:0 
+05-26 11:28:14.411  5494  5533 E Unity   :   at SaveManager.SaveGame () [0x0006a] in C:\U
+05-26 11:28:14.549 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:14.833  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 185(185),m:1,a:2392,b:182587,c:42730,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:15.005   694   694 D io_stats: !@   8,0 r 17586854 334582756 w 3925448 46614848 d 1977555 38097664 f 0 0 iot 3404044 0 th 0 0 0 pt 0 inp 0 0 48185.287
+05-26 11:28:15.148  2447  2447 I wpa_supplicant: Heartbeat 10868
+05-26 11:28:15.245 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 11:28:15.245 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 11:28:15.245 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 11:28:15.245 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.793594 msecs
+05-26 11:28:15.247 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.459427 msecs
+05-26 11:28:15.248 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.174427 msecs
+05-26 11:28:15.466 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48185747
+05-26 11:28:15.551 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:15.744  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][758660] accel_sample [-0.072, -0.247,  9.916] 229087916375549
+05-26 11:28:15.751 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:28:15.751 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:28:15.751 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:28:15.751 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.868646 msecs
+05-26 11:28:15.754 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 2.472396 msecs
+05-26 11:28:15.755 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.219115 msecs
+05-26 11:28:16.256 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.58059436]
+05-26 11:28:16.257 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.18208046]
+05-26 11:28:16.257 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.30251187]
+05-26 11:28:16.257 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.710312 msecs
+05-26 11:28:16.259 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.83026 msecs
+05-26 11:28:16.260 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.141354 msecs
+05-26 11:28:16.553 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:16.560 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2353, isSameBssidAndFreq true
+05-26 11:28:16.564 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:28:16.564 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:16.565 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:28:16.575 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48186857
+05-26 11:28:16.760 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.4373296]
+05-26 11:28:16.761 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.23237857]
+05-26 11:28:16.761 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.42974883]
+05-26 11:28:16.761 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.734739 msecs
+05-26 11:28:16.763 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.730052 msecs
+05-26 11:28:16.764 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.203698 msecs
+05-26 11:28:17.265 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7577253]
+05-26 11:28:17.265 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.14870757]
+05-26 11:28:17.266 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.66094846]
+05-26 11:28:17.266 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.802865 msecs
+05-26 11:28:17.267 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.550469 msecs
+05-26 11:28:17.269 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.574323 msecs
+05-26 11:28:17.554 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:17.625 10035 11080 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 11:28:17.627 10035 11080 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 11:28:17.627 10035 11080 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 11:28:17.669 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 48187950
+05-26 11:28:17.745  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][758867] accel_sample [-0.067, -0.249,  9.912] 229089919160185
+05-26 11:28:17.833  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 186(186),m:1,a:2465,b:160329,c:40041,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:18.149 10035 13929 D InputDispatcher: Inject motion (5859/2000): action=0x1, time=48188430000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+05-26 11:28:18.149 10035 10335 I InputDispatcher: Delivering touch to (5494): action: 0x1, f=0x0, d=0, '4ea2a5b', t=1 +(2400,0)
+05-26 11:28:18.150  5494  5494 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 1
+05-26 11:28:18.250 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.51275223]
+05-26 11:28:18.250 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.22521144]
+05-26 11:28:18.251 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4826146]
+05-26 11:28:18.251 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.810156 msecs
+05-26 11:28:18.252 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.39625 msecs
+05-26 11:28:18.254 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.200104 msecs
+05-26 11:28:18.308 10035 10071 E Watchdog: !@Sync: 286 heap: 129 / 149 FD: 1137 [2026-05-26 11:28:18.308]
+05-26 11:28:18.341   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:18.341   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:18.342   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:18.342   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:18.432   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:18.432   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:18.556 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:18.582   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:18.755 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.39896265]
+05-26 11:28:18.755 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.26259923]
+05-26 11:28:18.755 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.35322875]
+05-26 11:28:18.755 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.821615 msecs
+05-26 11:28:18.757 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.681771 msecs
+05-26 11:28:18.759 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.503125 msecs
+05-26 11:28:18.847   997   997 I android.hardware.health@2.1-service-samsung: updateLrpSysfs: write: 305
+05-26 11:28:18.848 10035 24927 D BatteryService: Sending ACTION_BATTERY_CHANGED: level:57, status:2, health:2, ac:false, usb:true, wireless:false, pogo:false, misc:0x10000, charge_type:1, charger_type:0, voltage:3920, temperature:279, online:4, current_avg:292, ps:false, hvc:false, capacity:280000, current_event:0x0, current_now:285, mcc:0, mcv:0, cc:2353583, present:true, scale:100, technology:Li-ion
+05-26 11:28:18.851 10035 10468 I DeviceBatteryInfoService: action: android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.851 10035 10468 I DeviceBatteryInfoService: phone battery level: 57
+05-26 11:28:18.851 10035 10468 I DeviceBatteryInfoService: phone battery status: 2
+05-26 11:28:18.852 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:28:18.853 10035 10319 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+05-26 11:28:18.853 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.853 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.853 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:28:18.854 10035 10035 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=57, status=2
+05-26 11:28:18.854 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:28:18.854 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:28:18.854 10035 10035 D AdaptiveBrightnessLongtermModelBuilder: Received android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.854 10534 10534 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+05-26 11:28:18.854 10035 10035 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.854 10534 10534 I PowerUI : BATTERY_HEALTH_CHECK extraHealth=2 mBatteryMiscEvent=65536
+05-26 11:28:18.855 10534 10534 W PowerUI : Plug reason
+05-26 11:28:18.855 10534 10534 W PowerUI : Skip charging animation - by plug status
+05-26 11:28:18.855 10534 10534 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+05-26 11:28:18.855 10534 10534 W PowerUI : Plug reason
+05-26 11:28:18.855 10534 10534 W PowerUI : Skip charging sound - by plug status
+05-26 11:28:18.855 10534 10534 I PowerUI : oldMisalign : false, curMisalign : false
+05-26 11:28:18.855 10534 20875 D SecPowerUI.Notification: dismissing low battery warning: level=57
+05-26 11:28:18.855 10534 20875 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+05-26 11:28:18.855 10534 20875 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=57, currentBatteryMode=1, chargingTime=12530000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+05-26 11:28:18.856 10534 20875 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+05-26 11:28:18.856 10534 20875 E SecPowerUI.Notification: no saved value, so we do nothing !!
+05-26 11:28:18.857  3470  3470 I [SCPMV2][SystemMonitorReceiver]: onReceive: android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.857 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 12530000 / mChargingTime : 12530000
+05-26 11:28:18.857 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 11:28:18.857 10534 10534 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+05-26 11:28:18.857 10534 10534 I PowerUI : mBatteryMiscEvent = 65536
+05-26 11:28:18.858 10534 10534 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+05-26 11:28:18.858 10534 10534 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+05-26 11:28:18.859 10534 10534 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=57, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=12530000, mBatteryChargingType=1, mBatteryChargerType=NORMAL, mBatteryOnline=USB, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+05-26 11:28:18.859 10534 10534 D KeyguardUpdateMonitor: handleBatteryUpdate
+05-26 11:28:19.006   694   694 D io_stats: !@   8,0 r 17586854 334582756 w 3925468 46615752 d 1977555 38097664 f 0 0 iot 3404056 0 th 0 0 0 pt 0 inp 0 0 48189.288
+05-26 11:28:19.252   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:19.253   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:19.253   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:19.253   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:19.256 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=201831_1, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-94, periodicAdvInt=0x0
+05-26 11:28:19.260 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:28:19.260 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:28:19.260 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:28:19.260 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.695052 msecs
+05-26 11:28:19.262 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.482344 msecs
+05-26 11:28:19.263 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.207812 msecs
+05-26 11:28:19.334   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:19.334   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:19.484   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:19.559 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:19.572 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2354, isSameBssidAndFreq true
+05-26 11:28:19.575 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:19.575 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:28:19.576 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:28:19.752  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][759074] accel_sample [-0.098, -0.249,  9.916] 229091921944247
+05-26 11:28:19.764 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:28:19.764 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:28:19.764 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:28:19.764 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.803229 msecs
+05-26 11:28:19.766 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.705053 msecs
+05-26 11:28:19.768 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.501823 msecs
+05-26 11:28:20.269 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:28:20.269 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:28:20.269 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:28:20.269 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.907344 msecs
+05-26 11:28:20.271 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.474635 msecs
+05-26 11:28:20.273 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 2.108281 msecs
+05-26 11:28:20.561 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:20.825 12146 12146 I SDHMS:LOAD: type: LoadsFreqs, value: 0:36:5:844800:844800:844800:1350912:2150400:710400:305:305:305
+05-26 11:28:20.833  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 187(187),m:1,a:2508,b:137723,c:37111,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:21.079   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:21.079   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:21.079   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:21.079   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:21.088 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=2D86A8_1, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-90, periodicAdvInt=0x0
+05-26 11:28:21.117 10035 10124 D PowerManagerService: UserActivityStateListenerState: 0
+05-26 11:28:21.168   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:21.168   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:21.253 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 11:28:21.253 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 11:28:21.253 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 11:28:21.253 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.768855 msecs
+05-26 11:28:21.255 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.741666 msecs
+05-26 11:28:21.257 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.498385 msecs
+05-26 11:28:21.318   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:21.563 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:21.752  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][759281] accel_sample [-0.055, -0.227,  9.924] 229093924727841
+05-26 11:28:21.757 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 11:28:21.758 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 11:28:21.758 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 11:28:21.758 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.007188 msecs
+05-26 11:28:21.760 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.39375 msecs
+05-26 11:28:21.761 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.23401 msecs
+05-26 11:28:22.116   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:22.116   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:22.116   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:22.116   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:22.122 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=2D86A8_1, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-89, periodicAdvInt=0x0
+05-26 11:28:22.200   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:22.200   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:22.262 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:28:22.263 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:28:22.263 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:28:22.263 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.936771 msecs
+05-26 11:28:22.265 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.893177 msecs
+05-26 11:28:22.267 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.712291 msecs
+05-26 11:28:22.350   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:22.565 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:22.586 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2355, isSameBssidAndFreq true
+05-26 11:28:22.588 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:22.589 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:28:22.590 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:28:22.717  9815 16685 I sensors-hal: handle_sns_client_event:252, auto_rotation_debug_2 mode,255, type,1,0 acc,-0.081,-0.254,9.921, ar,0, ver,10
+05-26 11:28:22.768 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:28:22.769 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:28:22.769 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:28:22.769 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.909062 msecs
+05-26 11:28:22.771 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.696094 msecs
+05-26 11:28:22.772 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.283489 msecs
+05-26 11:28:23.062   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:28:23.062   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:28:23.063   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:28:23.063   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:28:23.070 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=201831_1, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-94, periodicAdvInt=0x0
+05-26 11:28:23.079 10534 10601 D MobileStatusTracker(1/4): onSignalStrengthsChanged level=4, vendorLevel=3
+05-26 11:28:23.081 10534 10601 D MobileSignalController(1/4): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+05-26 11:28:23.082 10534 10601 D NetworkController: SignalStrength from intent slotId=1
+05-26 11:28:23.145   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:28:23.146   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:28:23.273 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:28:23.274 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:28:23.274 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:28:23.274 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.998698 msecs
+05-26 11:28:23.276 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.580365 msecs
+05-26 11:28:23.277 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.430417 msecs
+05-26 11:28:23.296   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:28:23.567 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:23.713 10534 10601 D MobileStatusTracker(1/4): onSignalStrengthsChanged level=4, vendorLevel=3
+05-26 11:28:23.715 10534 10601 D MobileSignalController(1/4): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+05-26 11:28:23.716 10534 10601 D NetworkController: SignalStrength from intent slotId=1
+05-26 11:28:23.753  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][759488] accel_sample [-0.093, -0.280,  9.926] 229095927510914
+05-26 11:28:23.833  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 183(183),m:1,a:2477,b:122375,c:34982,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:23.858 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 12530000 / mChargingTime : 12530000
+05-26 11:28:23.859 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 11:28:24.257 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 11:28:24.257 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 11:28:24.258 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 11:28:24.258 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.866094 msecs
+05-26 11:28:24.259 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.644011 msecs
+05-26 11:28:24.261 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.249063 msecs
+05-26 11:28:24.570 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:24.762 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 11:28:24.763 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 11:28:24.763 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 11:28:24.763 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.357968 msecs
+05-26 11:28:24.764 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.437032 msecs
+05-26 11:28:24.766 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.507864 msecs
+05-26 11:28:25.008   694   694 D io_stats: !@   8,0 r 17586855 334582760 w 3925476 46616396 d 1977555 38097664 f 0 0 iot 3404068 0 th 0 0 0 pt 0 inp 0 0 48195.290
+05-26 11:28:25.158  2447  2447 I wpa_supplicant: Heartbeat 10869
+05-26 11:28:25.267 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:28:25.268 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:28:25.268 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:28:25.269 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.983125 msecs
+05-26 11:28:25.271 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.58677 msecs
+05-26 11:28:25.272 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.280782 msecs
+05-26 11:28:25.572 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:25.601 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2356, isSameBssidAndFreq true
+05-26 11:28:25.604 10035 10437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+05-26 11:28:25.765  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][759695] accel_sample [-0.060, -0.239,  9.909] 229097930293414
+05-26 11:28:25.773 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:28:25.774 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:28:25.774 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:28:25.774 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.926614 msecs
+05-26 11:28:25.776 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.704635 msecs
+05-26 11:28:25.777 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.376511 msecs
+05-26 11:28:26.051 11645  5704 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-26 11:28:26.052 11645  5704 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbyConnections.TxAdvertisement}
+05-26 11:28:26.278 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:28:26.278 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:28:26.278 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:28:26.279 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.647032 msecs
+05-26 11:28:26.280 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.012656 msecs
+05-26 11:28:26.281 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.881614 msecs
+05-26 11:28:26.350 10035 11080 I EDMNativeHelperService: isScreenCaptureEnabled
+05-26 11:28:26.351 10035 11080 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+05-26 11:28:26.363 12277 12555 W MediaProvider: isAppCloneUserPair for user 0: false
+05-26 11:28:26.377  5865  5865 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+05-26 11:28:26.379 10035 11080 D SyncManager: userId - 0 auto - true
+05-26 11:28:26.413   628  1324 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+05-26 11:28:26.422 14068 14456 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+05-26 11:28:26.422 14068 14456 W ExifInterface: java.io.IOException: Encountered corrupt PNG file.
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.media.ExifInterface.getPngAttributes(ExifInterface.java:3461)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2026)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1641)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1592)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.getDateTimeOriginal(MediaParser.java:390)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.computeDateMetadata(MediaParser.java:367)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.createOperation(MediaSync.java:429)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.loadInternal(MediaSync.java:389)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.load(MediaSync.java:325)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.-$$Nest$mload(Unknown Source:0)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync$SyncTask.run(MediaSync.java:475)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.os.Handler.handleCallback(Handler.java:942)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.os.Looper.loopOnce(Looper.java:226)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.os.Looper.loop(Looper.java:313)
+05-26 11:28:26.422 14068 14456 W ExifInterface: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+05-26 11:28:26.454 14068 14456 D MediaSync: loaded: 75ms, 1
+05-26 11:28:26.575 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipPoorLinkCondition - result:1
+05-26 11:28:26.677 12277 12277 I MediaServiceV2: Creating work for intent Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 11:28:26.679 12277 12277 I MediaServiceV2: Work enqueued for intent: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 11:28:26.707 12277 12478 D WM-SystemJobScheduler: Scheduling work ID 5431c294-738c-45c7-a561-5dd239efede5Job ID 14451
+05-26 11:28:26.717 12277 12277 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=5431c294-738c-45c7-a561-5dd239efede5, generation=0)
+05-26 11:28:26.718 12277 12478 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:28:26.718 12277 12478 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:28:26.719 12277 12478 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:28:26.719 12277 12478 D WM-GreedyScheduler: Starting work for 5431c294-738c-45c7-a561-5dd239efede5
+05-26 11:28:26.723 12277 12478 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=5431c294-738c-45c7-a561-5dd239efede5, generation=0)
+05-26 11:28:26.724 12277 12478 D WM-Processor: Work WorkGenerationalId(workSpecId=5431c294-738c-45c7-a561-5dd239efede5, generation=0) is already enqueued for processing
+05-26 11:28:26.731 12277 12277 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+05-26 11:28:26.732 12277  5874 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 11:28:26.755 10035 13943 D SyncManager: userId - 0 auto - true
+05-26 11:28:26.759 12277  5874 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 11:28:26.763 12277 12576 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=5431c294-738c-45c7-a561-5dd239efede5, tags={ com.android.providers.media.MediaServiceV2 } ]
+05-26 11:28:26.768 12277 12277 D WM-Processor: Processor 5431c294-738c-45c7-a561-5dd239efede5 executed; reschedule = false
+05-26 11:28:26.768 12277 12277 D WM-SystemJobService: 5431c294-738c-45c7-a561-5dd239efede5 executed on JobScheduler
+05-26 11:28:26.782 12277 12576 D WM-SystemJobScheduler: Scheduling work ID d837a115-a1c6-4c08-9453-96c65e2347a8Job ID 14452
+05-26 11:28:26.784 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:28:26.784 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:28:26.784 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:28:26.786 12277 12576 D WM-GreedyScheduler: Cancelling work ID 5431c294-738c-45c7-a561-5dd239efede5
+05-26 11:28:26.787 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:28:26.787 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:28:26.787 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:28:26.806 12277 14831 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+05-26 11:28:26.807 10035 13929 D SyncManager: userId - 0 auto - true
+05-26 11:28:26.808 11645 19359 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+05-26 11:28:26.809 14068 14456 E _qlseek : errno : 2
+05-26 11:28:26.809 14068 14456 E Qdio::ParseQdio: File Search Error
+05-26 11:28:26.811 14068 14456 E MediaParser: Failed to parse datetime from exif
+05-26 11:28:26.832 14068 14456 D MediaSync: loaded: 76ms, 1
+05-26 11:28:26.832  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 176(176),m:1,a:2417,b:115307,c:33956,d:50000,ag:9,dg:256,it:384,br:127
+05-26 11:28:26.833 15151 15429 I BaseThreadPoolExecutor: [#CMH#] Task o.e@ef93fa7 is submitted
+05-26 11:28:26.841 10035 12431 D SyncManager: userId - 0 auto - true
+05-26 11:28:26.857 14068  5881 D LocationService: Begin: com.samsung.intent.action.UPDATE_LOCATION
+05-26 11:28:26.867 10035 13943 D SyncManager: userId - 0 auto - true
+05-26 11:28:26.869 11687 13049 I ContactsProvider_EventLog: cp_s: [CONTACT con(415) dat(3465) acc({phone(1)=139, sim2(4)=1, google(3)=275, com.whatsapp(94)=340}) calls([logtype:100 cnt:264, logtype:300 cnt:500, logtype:1000 cnt:559]) Iso(BR) uId(0) ]
+05-26 11:28:26.869 11687 13049 I ContactsProvider_EventLog: cp_s: [ agr({[3 ,94 ,94]=1, [3 ,3 ,94]=1, [3]=54, [4]=1, [1]=21, [3 ,94]=218, [1 ,94]=118, [94]=1}) ]
+05-26 11:28:26.869 11687 13049 I ContactsProvider_EventLog: cp_s: [ cnt({acore(11687)=1}) ]
+05-26 11:28:26.869 11687 13049 I ContactsProvider_EventLog: cp_s: [PROFILE ] [SAPROFILE con(1) dat(1) acc({phone(1)=1}) ]
+05-26 11:28:26.869 11687 13049 I ContactsProvider_EventLog: cp_s: [STATE R(F) ]
+05-26 11:28:26.875 14068  5881 D LocationManager: delete null addr: 0

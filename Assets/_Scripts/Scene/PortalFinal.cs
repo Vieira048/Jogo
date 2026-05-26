@@ -3,32 +3,66 @@ using UnityEngine.SceneManagement;
 
 public class PortalFinal : MonoBehaviour
 {
-    [Header("------Configuração do Portal------")]
+    [Header("------Configuracao do Portal------")]
     public string SceneName = "Creditos";
+
+    private BoxCollider2D portalCollider;
+    private ContactFilter2D contactFilter;
+    private readonly Collider2D[] overlapHits = new Collider2D[8];
+    private bool changingScene;
+
+    private void Awake()
+    {
+        portalCollider = GetComponent<BoxCollider2D>();
+        contactFilter.NoFilter();
+
+        if (portalCollider != null)
+            portalCollider.isTrigger = true;
+    }
+
+    private void Update()
+    {
+        ScanForPlayer();
+    }
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        // Verifica se quem encostou foi o jogador
-        if (coll.name == "Player")
+        TryActivate(coll);
+    }
+
+    private void ScanForPlayer()
+    {
+        if (changingScene || portalCollider == null || !portalCollider.enabled)
+            return;
+
+        Physics2D.SyncTransforms();
+
+        int hitCount = portalCollider.Overlap(contactFilter, overlapHits);
+        for (int i = 0; i < hitCount; i++)
         {
-            // Salva o jogo uma última vez, se o GameManager existir
-            if (GameManager.instance != null)
-            {
-                GameManager.instance.SaveState();
-            }
+            Collider2D hit = overlapHits[i];
+            overlapHits[i] = null;
 
-            // Se o destino for os Créditos, "apagamos" o jogador.
-            // Isso impede que a câmera e os sistemas do jogo travem na tela de loading.
-            if (SceneName == "Creditos")
-            {
-                coll.gameObject.SetActive(false);
-            }
-
-            // Garante que o jogo não está pausado
-            Time.timeScale = 1f;
-
-            // Carrega a próxima cena
-            SceneManager.LoadScene(SceneName);
+            if (TryActivate(hit))
+                break;
         }
+    }
+
+    public bool TryActivate(Collider2D coll)
+    {
+        if (changingScene || !PortalPlayerDetector.TryGetPlayer(coll, out Player player))
+            return false;
+
+        changingScene = true;
+
+        if (GameManager.instance != null)
+            GameManager.instance.SaveState();
+
+        if (SceneName == "Creditos")
+            player.gameObject.SetActive(false);
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneName);
+        return true;
     }
 }

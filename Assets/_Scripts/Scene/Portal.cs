@@ -1,49 +1,144 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-//场景切换脚本:
-//
-//产生问题：切换场景后bgm感觉音量变小，声调有所变化
-//尝试解决1:把AudioListener挪到Player上
-//结果1：还行，bgm播放较正常
 public class Portal : Colliderable
 {
-    public string sceneName;                //所加载的场景
-    private SceneTranslate SceneTranslate;  //场景切换脚本
+    public string sceneName;
+    public Vector2 minimumTriggerSize = new Vector2(2.2f, 1f);
+
+    private SceneTranslate sceneTranslate;
+    private BoxCollider2D portalCollider;
+    private ContactFilter2D contactFilter;
+    private readonly Collider2D[] overlapHits = new Collider2D[8];
+    private bool changingScene;
 
     protected override void Start()
     {
         base.Start();
-        if (SceneTranslate == null)
-            SceneTranslate = GetComponentInChildren<SceneTranslate>();
 
-        GetComponent<BoxCollider2D>().enabled = true;
+        sceneTranslate = GetComponentInChildren<SceneTranslate>(true);
+        ConfigureRuntimeCollider();
     }
 
-    protected override void OnCollide(Collider2D coll)
+    protected override void Update()
     {
-        if (coll.name == "Player")
-        {
-            //储存各类信息
-            GameManager.instance.SaveState();
+        ScanForPlayer();
+    }
 
-            //新场景切换：异步加载
-            GetComponent<BoxCollider2D>().enabled = false;
-            ChangeSceneTo(sceneName);         
+    private void ScanForPlayer()
+    {
+        if (portalCollider == null)
+            ConfigureRuntimeCollider();
+
+        if (changingScene || portalCollider == null || !portalCollider.enabled)
+            return;
+
+        Physics2D.SyncTransforms();
+
+        int hitCount = portalCollider.Overlap(contactFilter, overlapHits);
+        for (int i = 0; i < hitCount; i++)
+        {
+            Collider2D hit = overlapHits[i];
+            overlapHits[i] = null;
+
+            if (TryActivate(hit))
+                break;
         }
+    }
+
+    public bool TryActivate(Collider2D coll)
+    {
+        if (changingScene || !PortalPlayerDetector.TryGetPlayer(coll, out _))
+            return false;
+
+        changingScene = true;
+
+        LogDebug($"activating scene '{sceneName}' from collider '{coll.name}'.");
+
+        if (GameManager.instance != null)
+        {
+            try
+            {
+                GameManager.instance.SaveState();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning($"Portal '{name}' could not save before scene transition and will continue loading '{sceneName}'. {ex.Message}");
+            }
+        }
+
+        if (portalCollider != null)
+            portalCollider.enabled = false;
+
+        ChangeSceneTo(sceneName);
+        return true;
     }
 
     public void ChangeSceneTo(string sceneName)
     {
-        SceneTranslate.ChangeToScene(sceneName);
+        if (sceneTranslate == null)
+            sceneTranslate = GetComponentInChildren<SceneTranslate>(true);
+
+        if (sceneTranslate == null)
+        {
+            Debug.LogError($"Portal '{name}' cannot change scene because SceneTranslate is missing.");
+            RestorePortal();
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(sceneName))
+        {
+            Debug.LogError($"Portal '{name}' cannot change scene because sceneName is empty.");
+            RestorePortal();
+            return;
+        }
+
+        sceneTranslate.ChangeToScene(sceneName);
+    }
+
+    public void ConfigureRuntimeCollider()
+    {
+        portalCollider = GetComponent<BoxCollider2D>();
+        contactFilter.NoFilter();
+
+        if (portalCollider == null)
+            return;
+
+        portalCollider.enabled = true;
+        portalCollider.isTrigger = true;
+
+        Vector2 size = portalCollider.size;
+        size.x = Mathf.Max(size.x, minimumTriggerSize.x);
+        size.y = Mathf.Max(size.y, minimumTriggerSize.y);
+        portalCollider.size = size;
+    }
+
+    private void RestorePortal()
+    {
+        changingScene = false;
+
+        if (portalCollider != null)
+            portalCollider.enabled = true;
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-}
 
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        TryActivate(coll);
+    }
+
+    private void OnTriggerStay2D(Collider2D coll)
+    {
+        TryActivate(coll);
+    }
+
+    private void LogDebug(string message)
+    {
+        if (Debug.isDebugBuild)
+            Debug.Log($"[Portal] {name}: {message}");
+    }
+}

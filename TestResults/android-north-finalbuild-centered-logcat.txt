@@ -1,0 +1,1423 @@
+--------- beginning of main
+05-26 11:38:10.277 11623 11648 I CameraLightSensor_Service: isNotRunning : true
+05-26 11:38:10.277 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_CAMERA_LOOP
+05-26 11:38:10.277   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:10.277   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:38:10.278   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:38:10.278   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:10.279 11623 11648 I CameraLightSensor_Service: startBackgroundThread : mBackgroundHandler is set
+05-26 11:38:10.279 11623 11648 I CameraLightSensor_Service: Camera ID 3 is available
+05-26 11:38:10.280  9807 10558 I CameraService: this package can access to hidden camera ids.
+05-26 11:38:10.280 11623 11648 I CameraManager: registerAvailabilityCallback: Is device callback = false
+05-26 11:38:10.281 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 0 status STATUS_PRESENT
+05-26 11:38:10.281 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 1 status STATUS_PRESENT
+05-26 11:38:10.281 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 2 status STATUS_PRESENT
+05-26 11:38:10.281 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 3 status STATUS_PRESENT
+05-26 11:38:10.281 11623  6693 I CameraLightSensor_Service: Camera 3 is available
+05-26 11:38:10.281 11623  6693 I CameraLightSensor_Service: Camera open callback start
+05-26 11:38:10.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 20 status STATUS_PRESENT
+05-26 11:38:10.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 21 status STATUS_PRESENT
+05-26 11:38:10.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 23 status STATUS_PRESENT
+05-26 11:38:10.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 40 status STATUS_PRESENT
+05-26 11:38:10.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 41 status STATUS_PRESENT
+05-26 11:38:10.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 52 status STATUS_PRESENT
+05-26 11:38:10.284 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=2BCC55_3, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-97, periodicAdvInt=0x0
+05-26 11:38:10.285  9807 10558 I CameraService: CameraService::connect call (PID -1 "com.samsung.adaptivebrightnessgo", camera ID 3) and Camera API version 2
+05-26 11:38:10.285  9807 10558 I CameraService: isUidActiveLocked E: uid 5021, callingPackage com.samsung.adaptivebrightnessgo, isRegistered true
+05-26 11:38:10.285  9807 10558 I CameraService: isUidActiveLocked X: return true.
+05-26 11:38:10.285  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.287  9807 10558 D CameraService: vr service found
+05-26 11:38:10.287 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x1b, addressType=1, address=4471B6_5, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-83, periodicAdvInt=0x0
+05-26 11:38:10.287  9807 10558 I CameraService: isCameraBlockedByHMT: usbpd_ids: 0000:0000, is camera blocking device: false
+05-26 11:38:10.287  9807 10558 I CameraService: CameraService::validateClientPermissionsLocked is ok : calling pid 11623, calling uid 5021, client com.samsung.adaptivebrightnessgo , cameraservice pid=9807, device user 0, currently allowed device users: 0
+05-26 11:38:10.287  9807 10558 I CameraService: CameraService::handleEvictionsLocked
+05-26 11:38:10.288  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.288  9807 10558 I CameraService: wouldEvictLocked: [incoming client] owner = 11623, priority-score=999, cost=100, returnIncompatibleClients=false
+05-26 11:38:10.288  9807 10558 I CameraService: wouldEvictLocked: [cost info] current cost=0, adding cost=100, total cost=100, max cost=100
+05-26 11:38:10.288  9807 10558 I CameraService: wouldEvictLocked: [highestPriority] owner=11623, score=999
+05-26 11:38:10.288  9807 10558 I CameraFlashlight: prepareDeviceOpen: prepare for device open(cameraId=3)
+05-26 11:38:10.288  9807 10558 I Camera2ClientBase: Camera 3: Opened. Client: com.samsung.adaptivebrightnessgo (PID 11623, UID 5021)
+05-26 11:38:10.288  9807 10558 I CameraDeviceClient: CameraDeviceClient 3: Opened
+05-26 11:38:10.288  9807 10558 I CameraService: isNoSALoggingPackage: com.samsung.adaptivebrightnessgo is a Samsung app so doesn't need SA logging.
+05-26 11:38:10.289  9807 10558 I CameraService: service.camera.client set to com.samsung.adaptivebrightnessgo
+05-26 11:38:10.289  9807 10558 I CameraService: startCameraOps: Start camera ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:10.289  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.290 11645 13707 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+--------- beginning of system
+05-26 11:38:10.292 10035 12236 E AppOps  : evalMode() Foreground mode : uid - 5021, op - 26, capability - 0
+05-26 11:38:10.292  9807 10558 I CameraService: Drop checking dpm for package com.samsung.adaptivebrightnessgo(pid 11623) from startCameraOps()
+05-26 11:38:10.292  9807 10558 I CameraService: Drop updateStatus callbak for package com.samsung.adaptivebrightnessgo(pid 11623)
+05-26 11:38:10.292  9807 10558 D Camera3-RequestInjector: RequestInjector[3] Mapper created
+05-26 11:38:10.292  9807 10558 D HidlCamera3-Device: CameraPerf: initialize E
+05-26 11:38:10.293  9807 10558 D HidlCamera3-Device: initialize: mInterfaceLock.lock()
+05-26 11:38:10.293  9807 10558 I CameraProviderManager: openHidlSession, using trampoline for v5.0
+05-26 11:38:10.293  9807 10558 D CameraProviderManager: CameraPerf: openHidlSession E
+05-26 11:38:10.293  9816 10248 I SehCamDev@5.0-impl: [CAMKPI] camera3->open : E
+05-26 11:38:10.293  9816 10248 I Unihal  : UniDebugLog.cpp: __unihal_log_status_update: 57: UpdateLogStatus 0000000d ERR 1 PERF 0 WARN 4 INFO 8 DEBUG 0 DUMP 0 STRACE 0 META 0
+05-26 11:38:10.293  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 628: E cameraName: 3
+05-26 11:38:10.293  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 630: UNIHAL_VERSION = "2.1"
+05-26 11:38:10.293  9816 10248 I Unihal  : CameraDevice.cpp: OpenCameraHardware_v3: 401: name : 3 camera id : 3
+05-26 11:38:10.294  9807 10558 I CameraProviderManager: Camera device device@3.5/legacy/3 torch status is now NOT_AVAILABLE
+05-26 11:38:10.294  9807 10558 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=3, newStatus=0
+05-26 11:38:10.294  9807 10558 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 3: No such file or directory (-2)
+05-26 11:38:10.294 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=1C9E80_0, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-74, periodicAdvInt=0x0
+05-26 11:38:10.297   629   629 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.9::IDisplayConfig/default in either framework or device VINTF manifest.
+05-26 11:38:10.297  9816 10248 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.9
+05-26 11:38:10.299  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 1
+05-26 11:38:10.299  9816 10248 I Unihal  : ParameterManager.cpp: SetCameraCharacteristics: 116: Registered camera characteristics successfully. : cameraId=3, characteristics=0xb40000740854b000
+05-26 11:38:10.299  9816 10248 I Unihal  : UniUtils.cpp: GetProductName: 169: Succeeded to get product name property. : productName=r8qxx
+05-26 11:38:10.299  9816 10248 I Unihal  : UniUtils.cpp: GetChipName: 191: Succeeded to get chip name property. : chipName=SM8250
+05-26 11:38:10.299  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 656: X (0)
+05-26 11:38:10.299  9816 10248 I SehCamDev@5.0-impl: [CAMKPI] camera3->open : X
+05-26 11:38:10.299  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 2
+05-26 11:38:10.299  9816 10248 E FMQ     : grantorIdx must be less than 3
+05-26 11:38:10.299  9816 10248 E FMQ     : grantorIdx must be less than 3
+05-26 11:38:10.300  9807 10558 D CameraProviderManager: CameraPerf: openHidlSession X (6ms)
+05-26 11:38:10.301  9807 10558 D HidlCamera3-Device: CameraPerf: initialize X (8ms)
+05-26 11:38:10.301  9807 10558 D Camera3-Device: CameraPerf: initializeCommonLocked: E
+05-26 11:38:10.302  9807 10558 I Camera3-Status: addComponent: Adding new component 0 - InflightRequests
+05-26 11:38:10.302  9807 10558 I Camera3-Status: addComponent: Adding new component 1 - RequestThread
+05-26 11:38:10.302  9807 10558 D Camera3-Device: initializeCommonLocked mTimestampOffset = 180901902158541ns.
+05-26 11:38:10.302  9807 10558 D Camera3-Device: CameraPerf: initializeCommonLocked: X (0ms)
+05-26 11:38:10.302  9807 10558 E Camera2-FrameProcessorBase: FrameProcessorBase: created
+05-26 11:38:10.302  9807 10558 E Camera2-FrameProcessorBase: registerListener: Registering listener for frame id range 0 - 2147483647
+05-26 11:38:10.303 10035 12236 E CameraService_proxy: Recent tasks don't include camera client package name: com.samsung.adaptivebrightnessgo
+05-26 11:38:10.303  9807 10558 I CameraService: connectHelper: overrideCameraMuteMode = false, isCameraPrivacyEnabled = false
+05-26 11:38:10.303  9807 10558 I Camera3-Device: setCameraMute, enabled = false, supported = true
+05-26 11:38:10.303  9807 10558 I CameraService: CameraService::finishConnectLocked E
+05-26 11:38:10.303  9807 10558 I CameraService: wouldEvictLocked: [incoming client] owner = 11623, priority-score=999, cost=100, returnIncompatibleClients=false
+05-26 11:38:10.303  9807 10558 I CameraService: wouldEvictLocked: [cost info] current cost=0, adding cost=100, total cost=100, max cost=100
+05-26 11:38:10.303  9807 10558 I CameraService: wouldEvictLocked: [highestPriority] owner=11623, score=999
+05-26 11:38:10.303  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.303  9807 10558 I CameraService: addAndEvict: push the client(owner 11623, priorityScore 999, state 6) to mClients
+05-26 11:38:10.303  9807 10558 I CameraService: CameraService::finishConnectLocked X
+05-26 11:38:10.303  9807 10558 I CameraDeviceClient: notifyAppPackageName
+05-26 11:38:10.303  9807 10558 D HidlCamera3-Device: CameraPerf: setParameters E
+05-26 11:38:10.303  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_set_parameters: 506: set_parameters : pkgName=com.samsung.adaptivebrightnessgo;
+05-26 11:38:10.304  9807 10558 D HidlCamera3-Device: CameraPerf: setParameters X (0ms)
+05-26 11:38:10.304  9807 10558 I CameraService: Notified package name to HAL.
+05-26 11:38:10.304  9807 10558 I CameraService: connectHelper: Skip Request Injector ExtraRequests to new client(com.samsung.adaptivebrightnessgo)
+05-26 11:38:10.304  9807 10558 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 0, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:10.304 10035 12236 I AudioManager: setParameters keyValuePairs = cameraFacing=front
+05-26 11:38:10.304 10035 10984 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 11623 27031 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 10035 10984 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.304  9807 10558 I CameraService: isNoSALoggingPackage: com.samsung.adaptivebrightnessgo is a Samsung app so doesn't need SA logging.
+05-26 11:38:10.304  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 10534 11580 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 11623  6693 I CameraLightSensor_Service: Camera open callback finish
+05-26 11:38:10.304 11623  6693 I CameraLightSensor_Service: Camera acquired, time = 229682489
+05-26 11:38:10.304 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.304 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.305 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.305 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.305  9807 10558 D HidlCamera3-Device: CameraPerf: constructDefaultRequestSettings templateId: 1 E
+05-26 11:38:10.305 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.305 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:10.305  9807 10558 D HidlCamera3-Device: CameraPerf: constructDefaultRequestSettings X (0ms)
+05-26 11:38:10.305  9807 10558 D HidlCamera3-Device: CameraPerf: setParameters E
+05-26 11:38:10.305 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_OPEN, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:10.305  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_set_parameters: 506: set_parameters : shootingmode=30
+05-26 11:38:10.305  9804 14866 D audio_hw_primary: adev_set_parameters: enter: cameraFacing=front
+05-26 11:38:10.305  9807 10558 D HidlCamera3-Device: CameraPerf: setParameters X (0ms)
+05-26 11:38:10.305  9804 14866 D audio_hw_hfp: hfp_set_parameters: enter
+05-26 11:38:10.305  9804 14866 V audio_hw_sec: sec_set_parameters: enter
+05-26 11:38:10.305  9804 14866 D audio_hw_extn: audio_extn_fm_set_parameters: Enter
+05-26 11:38:10.305  9804 14866 D audio_hw_primary: adev_set_parameters: exit with code(0)
+05-26 11:38:10.305  9807 10558 D Camera3-Device: waitUntilDrained: mInterfaceLock.unlock()
+05-26 11:38:10.305  9804 14866 I Audio_a2dpsink_hw: adev_set_parameters: kevpairs=[cameraFacing=front]
+05-26 11:38:10.306  9807 10558 D CameraDeviceClient: createStream E
+05-26 11:38:10.306  9807 10558 D SessionConfigUtils: createSurfaceFromGbp E: logicalCameraId=3, isStreamInfoValid=0, useCase=0, option=0x0, mirrorMode=0
+05-26 11:38:10.306  9807 10558 W SessionConfigUtils: createSurfaceFromGbp: Camera 3 with consumer usage flag: 256: Forcing asynchronous mode forstream
+05-26 11:38:10.306  9807 10558 D SessionConfigUtils: createSurfaceFromGbp: consumer usage flag: 256, useAsync: 1
+05-26 11:38:10.306  9807 10558 D SessionConfigUtils: createSurfaceFromGbp: width=1, height=1, format=1, dataSpace=0
+05-26 11:38:10.306  9807 10558 W SessionConfigUtils: createSurfaceFromGbp: Camera 3: Overriding format 0x1 to IMPLEMENTATION_DEFINED
+05-26 11:38:10.306  9807 10558 D SessionConfigUtils: roundBufferDimensionNearest  inWidth=1 inHeight=1, outWidth=176 outHeight=144 X
+05-26 11:38:10.306  9807 10558 D SessionConfigUtils: createSurfaceFromGbp X
+05-26 11:38:10.306  9807 10558 D Camera3-Device: createStream: mInterfaceLock.lock()
+05-26 11:38:10.306  9807 10558 D Camera3-Device: createStream: Camera 3: Creating new stream 0: 176 x 144, format 0x22(IMPL_DEF), dataspace 0 rotation 0 consumer usage 0, isShared 0, physicalCameraId , isMultiResolution 0 dynamicRangeProfile 0x1, streamUseCase 0, option 0x0, timestampBase 0, mirrorMode 0
+05-26 11:38:10.307  9807 10558 D Camera3-Device: createStream: mInterfaceLock.unlock()
+05-26 11:38:10.307  9807 10558 D CameraDeviceClient: createStream: Camera 3: Successfully created a new stream ID 0 for output surface (176 x 144) with format 0x22.
+05-26 11:38:10.307  9807 10558 D Camera3-Device: setStreamTransform: mInterfaceLock.lock()
+05-26 11:38:10.307  9807 10558 D CameraDeviceClient: createStream X
+05-26 11:38:10.307  9807 10558 D Camera3-Device: filterParamsAndConfigureLocked : operatingMode=0
+05-26 11:38:10.307  9807 10558 D Camera3-Device: CameraPerf: configureStreamsLocked: Camera 3: Stream configuration E
+05-26 11:38:10.307  9807 10558 I HidlCamera3-Device: configureStreams Before configuration Stream[0] : [176 x 144], usage: 0x100
+05-26 11:38:10.307  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->configure_streams : E
+05-26 11:38:10.307  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_configure_streams: 273: operation_mode: 0, num_streams: 1, session_param: 0x74c1f111e0
+05-26 11:38:10.307  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_configure_streams: 278: stream[0]: stream(0xb4000073f05632e8) : streamdId(0x0), scenarioType(PREVIEW), format(0x22), grallocUsage(0x100), size(176x144), streamType(0), option(0x0), maxBuffers(0), priv(0x0), dataspace(0), rotation(0), stream_timestamp(0), fps(0, 0), physCamId(), reserved Ptr(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+05-26 11:38:10.307  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 3
+05-26 11:38:10.307  9816 10248 I Unihal  : CameraHalUnit.cpp: ConfigureStreams: 232: cameraId=3, GetIsAlreadyCreated=0
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartyApp: 1415: SAMSUNG_ANDROID_CONTROL_UNIHAL_ENABLE_MODE doesn't exist.
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartyVideoHdr: 1177: SAMSUNG_ANDROID_UNIHAL_VIDEO_MODE doesn't exist.
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartySdkVdis: 1240: SAMSUNG_ANDROID_UNIHAL_VIDEO_MODE doesn't exist.
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: IsAllowed3rdParty: 2054: 3rd-party bypass is applied to this application.
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: FindScenarioInfo: 2132: Current shootingMode=0x0001000d(UNI_SHOOTING_MODE_3RD_PARTY_BYPASS), cameraId=3(UNI_FWK_CAMERA_ID_FRONT_FULL)
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: FindScenarioInfo: 2140: No Scenario is found for shootingMode(UNI_SHOOTING_MODE_3RD_PARTY_BYPASS)
+05-26 11:38:10.307  9816 10248 I Unihal  : ScenarioManager.cpp: CheckEnableCondition: 2256: Unihal is disabled. : isSamsungCamera=false, isFactoryTest=false, isGalaxyRaw = false, isAllowed3rdParty=true, foundScenario=false, isValidStreamConfiguration=false, isSamsungVdisEnabled=false, shootingMode=UNI_SHOOTING_MODE_3RD_PARTY_BYPASS
+05-26 11:38:10.307  9816 10248 I Unihal  : FwkCaptureManager.cpp: Release: 166: Already released.
+05-26 11:38:10.307  9816 10248 I Unihal  : CameraHalUnit.cpp: ConfigureStreams: 260: Unihal is bypass mode in current scenario.
+05-26 11:38:10.307  9816 10248 I CHI     : [SS_INFO]: [SS_LOG_LEVEL]: 1, [DEVELOPER_LOG_LEVEL]: 0
+05-26 11:38:10.307  9816 10248 I CHIUSECASE: [CONFIG ] chxusecaseutils.cpp:961 GetMatchingUsecase() [UC_DBG] Default usecase selected
+05-26 11:38:10.307  9816 10248 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:3121 InitializeOverrideSession() Session_parameters FPS range 0:0, previewFPS 0, videoFPS 0 BatchSize: 1 HALOutputBufferCombined 0 FPS: 30 SkipPattern: 1, cameraId = 1 selected use case = 1
+05-26 11:38:10.309  9816 10248 I CHIUSECASE: [CONFIG ] chxpipeline.cpp:299 CreateDescriptor() Pipeline[Preview] pipeline pointer 0xb4000074089b3000 numInputs=0, numOutputs=1 stream w x h: 176 x 144
+05-26 11:38:10.311  9816 10248 I CHIUSECASE: [CONFIG ] chxsensorselectmode.cpp:810 FindBestSensorMode() Selected Usecase: 0, SelectedMode W=1632, H=1224, FPS:120, NumBatchedFrames:1, modeIndex:3
+05-26 11:38:10.311  9816 10248 I CHIUSECASE: [CONFIG ] chxpipeline.cpp:438 CreateDescriptor() Pipeline[Preview] Pipeline pointer 0xb4000074089b3000 Selected sensor Mode W=1632, H=1224
+05-26 11:38:10.312  9816 10248 W CHIUSECASE: [WARN   ] chxpipeline.cpp:185 GetNumberOfIFEsUsed() Pipeline[Preview] numIFEsUsed tag not found! numOfIFEsUsed will not be updated
+05-26 11:38:10.312  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 55(55),m:1,a:629,b:9600,c:9797,d:50000,ag:11,dg:1024,it:384,br:122
+05-26 11:38:10.321  9816 10248 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:3262 InitializeOverrideSession() Logical cam Id = 1 usecase addr = 0xb4000073e2a16500
+05-26 11:38:10.321  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:10.321  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->configure_streams : X
+05-26 11:38:10.321  9807 10558 D HidlCamera3-Device: configureStreams : stream[0] : format = 0x22(IMPL_DEF), data_space = 0, usage flag = 0x20100 max_buffers = 8, physical_camera_id = 
+05-26 11:38:10.321  9807 10558 D Camera3-Device: CameraPerf: Connect Streams E
+05-26 11:38:10.321  9807 10558 I Camera3-Status: addComponent: Adding new component 2 - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:10.322  9807 10558 D Camera3-OutputStream: configureConsumerQueueLocked: Consumer wants 2 buffers, HAL wants 8
+05-26 11:38:10.322  9807 10558 D Camera3-Device: CameraPerf: Connect Streams X (1ms)
+05-26 11:38:10.325  9807 10558 D Camera3-Device: Set real time priority for request queue thread (tid 6698)
+05-26 11:38:10.325  9807 10558 D Camera3-Device: CameraPerf: configureStreamsLocked: Camera 3: Stream configuration X (17ms)
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {d2997c8}
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: capture session start
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {d2997c8}
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: capture session finish
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: capture session finish - spot metering
+05-26 11:38:10.325 11623  6693 I CameraLightSensor_Service: open preview start
+05-26 11:38:10.326  9807 10558 D Camera3-Device: setStreamingRequestList: Enter: calling submitRequestsHelper: repeating = true
+05-26 11:38:10.326  9807 10558 D Camera3-Device: submitRequestsHelper: mInterfaceLock.lock()
+05-26 11:38:10.326  9807 10558 I Camera3-Device: Submit request type: 0x1, repeating(true), burst(false)
+05-26 11:38:10.326  9807 10558 D Camera3-Device: setRepeatingRequests: lastFrameNumber 0.
+05-26 11:38:10.326  9807 10558 I Camera3-Status: markComponent: Component 1 is now active - RequestThread
+05-26 11:38:10.326  9807  6697 I CameraService: startCameraStreamingOps: Start camera streaming ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:10.326  9807  6697 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.326  9807 10558 D Camera3-Device: submitRequestsHelper: mInterfaceLock.unlock()
+05-26 11:38:10.326  9807  6698 D Camera3-Device: CameraPerf: PrepareHALRequests E
+05-26 11:38:10.326 11623  6693 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {d2997c8}
+05-26 11:38:10.326 10035 12236 E AppOps  : evalMode() Foreground mode : uid - 5021, op - 26, capability - 0
+05-26 11:38:10.327  9807  6697 I CameraService: Drop checking dpm for package com.samsung.adaptivebrightnessgo(pid 11623) from startCameraStreamingOps()
+05-26 11:38:10.327  9807  6697 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 1, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:10.327 10035 10984 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327  9816  6703 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:4145 RequestThreadProcessing() Entering Recovery thread of logical cameraId: 1
+05-26 11:38:10.327 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327  9807  6705 D CameraDeviceClient: vr service found
+05-26 11:38:10.327 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327 10035 10984 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.327  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:10.327 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327  9807  6705 I CameraDeviceClient: isCameraBlockedByHMT: usbpd_ids: 0000:0000, is camera blocking device: false
+05-26 11:38:10.327 10035 11608 D AutoRotationHandler: inject auto rotation priority = 1.0
+05-26 11:38:10.327 11623 11640 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_ACTIVE, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:10.327 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.327 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.327 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.328  9815  9815 I sensors-hal: inject_sensor_data:316, auto_rotation ar_mode:1
+05-26 11:38:10.328 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.328  9815  9815 I sensors-hal: write_auto_rotation_mode:303, write_auto_rotation_mode ar_mode:1
+05-26 11:38:10.328  9807  6698 I Camera3-Status: markComponent: Component 2 is now active - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:10.328  9807  6698 I Camera3-Status: markComponent: Component 0 is now active - InflightRequests
+05-26 11:38:10.328  1095  1095 I SSC_DAEMON: physical_sensor_test_req_msg Sensor type :14, Msg type:15
+05-26 11:38:10.328  9807  6698 D Camera3-Device: CameraPerf: PrepareHALRequests X (1ms)
+05-26 11:38:10.328  1095  1095 I SSC_DAEMON: 0.algo_id:3, num:1
+05-26 11:38:10.328  9807  6698 D Camera3-Device: CameraPerf: sendRequestsBatch E
+05-26 11:38:10.328  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_request : E
+05-26 11:38:10.330  1095  1994 I SSC_DAEMON: AR od: 8, 1, 0
+05-26 11:38:10.331  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 735: AEC vendorTagBase 0x806a0000
+05-26 11:38:10.331  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 745: AWB vendorTagBase 0x80690000
+05-26 11:38:10.331  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 755: AF vendorTagBase 0x806d0000
+05-26 11:38:10.331  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 457: StaticAEC algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 468: AEC_VendorTag:: Lens Facing = 0 chiSessionHandle = 0xb4000073dbb17818
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 541: StaticAEC algo create: camera open mask 2 
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 451: aec_camera_info 0 1
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 559: CreateAECAlgorithm (refcnt:0 cameraId 1 OverrideCameraOpen 1 lensFacing 0 pAECSingletonWrapper->pAECSingleton 0x0
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: TsAecFront_load_lib: 194: TsAec_ptr 0xd3123f806d4c81d9
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: LoadAlgorithmAndSymbols: 386: [AEC] Custom Algo handle 0xb4000073db689580 
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 610: CreateAECAlgorithm 0xb4000073fe607f00 libName K32QS_libTsAeFront.so sensorName IMX616
+05-26 11:38:10.332  9816 10248 E SS_3A   : ERROR: AEC: TsAecGetCalibData: 734: offset value is NULL (0x0, 0x0)
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 676: AWBAlgoSetNodeInterface
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 704: AWB vendorTagBase 0x80690000
+05-26 11:38:10.332  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 713: AEC vendorTagBase 0x806a0000
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 722:  AF vendorTagBase 0x806d0000
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 506: statsStreamInitConfig operationMode 0
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 430: StaticAWB algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 439: Lens Facing = 0
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 487: StaticAWB algo create: overrideCameraOpen is 2
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 497: cameraInfo algoRole 0, cameraId 1
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 524: CreateAWBAlgorithm (refcnt:0 cameraId 1 OverrideCameraOpen 1 lensFacing 0 pAWBSingletonWrapper->pAWB 0x0
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 554: Create AWBAlgorithm, pAWB 0xb4000073fe607dc0
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: LoadAlgorithmAndSymbols: 373: Loaded AWB algorithm and Symbols : K32QS_libTsAwbFront.so!
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: LoadAlgorithmAndSymbols: 396: pInstance->hAWBAlgorithm 0xb4000073db6fdd80
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 114: ADDR_AWB 0x238, LensType 0
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 136: module[0] 375 685 686 309
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 138: module[0] RG 0.547046 , BG 0.450766
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 172: [eLensType 0] Preset_gain = 1.725892, 1.804415
+05-26 11:38:10.333  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 176: [eLensType 0] Adjust_gain = 0.999750, 1.006771
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 376: E
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 405: StaticAF algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 414: Lens Facing(currentCam) = 0
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 434: driverSensorId = 1
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 456: TsAf->FactoryCamera : 0
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 477: StaticAF algo create: overrideCameraOpen is 2
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 399: af_camera_info 1
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 493: newly mapped af_camera_info(sensorId) 1
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 497: CreateAFAlgorithm (pre_CameraId 1 refcnt:0 cameraId 1 overrideCameraOpen 1 lensFacing 0 pAFSingletonWrapper->pAFSingleton 0x0
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 520: pAF before 0x0
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 531: SS_AF_LIB loading cam[0]
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 287: E
+05-26 11:38:10.334  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 296: libPathName : K32QS_libTsAfFront.so!
+05-26 11:38:10.335  9816 10248 I SS_3A   :  INFO:  AF: TsAf_init_front: 2337: libptr: 0x5108cc1ced6232e7 E
+05-26 11:38:10.335  9816 10248 E SS_3A   : ERROR:  AF: TsAf_get_cal_data_front: 1845: Front camera PDAF CAL Version -1 i_MultiUse 0
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 102) : Front Version = 0xf827 Chip Type = 1 (0:LSI, 1:QC) 
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 278) : af cal data far: 140118234, middle: 87295496, near: 61342792, add_80: 151324888, add_50: 114231202, plus_offset: 1485, minus_offset: 1724
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 310) : paf_cal_data_info = -1 paf_cal_errcheck 0xffffffff
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [CMG_EFL] FrontAfLib_BootingInit (line 316)  QCHWPD enabled: paf_cal_data_info = -1 
+05-26 11:38:10.335  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 365: X
+05-26 11:38:10.335  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 548: pAF first time 0xb4000073fe607f50
+05-26 11:38:10.335  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 574: X
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_AlgorithmInit (line 467) focus mode = 0 paf_stats_valid : 0 
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [CMG_AF_FUNC] Front_FactoryAfInit (line 2064)
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] Front_UpdateAfStatus (line 304) : AF status 0x2 0x0
+05-26 11:38:10.335  9816 10248 E FRONT_AF_DEBUG: [CMG_AF][CMG_AF_LIB] FACTORY AF CAL Start !!!!!
+05-26 11:38:10.338  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/platform/android/cvpSession.cpp Line: 173 Function: cvpGetDebugEnable() Msg:  CVP Debug Logs Disabled 
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 620 Function: cvpEstimatePowerDme() Msg: DME Voting
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 1540 Function: cvpAggreatePower() Msg: After aggregation
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 62767350, SysCache 0
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 62767350, SysCache 0
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPvtUtils.cpp Line: 163 Function: cvpSetPower() Msg: Update power to KMD
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 62767350, SysCache 0
+05-26 11:38:10.342  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 62767350, SysCache 0
+05-26 11:38:10.344  9816 10163 I vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:741: Successfully opened file /vendor/lib/rfsa/adsp/libcamera_nn_skel.so
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:815: Error 0x80000406: remote_handle_open_domain: dynamic loading failed for file:///libcamera_nn_skel.so?camera_nn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3 (dlerror signature verify start failed for libcamera_nn_skel.so)
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:849: Error 0x80000406: remote_handle64_open failed for file:///libcamera_nn_skel.so?camera_nn_skel_handle_invoke&_modver=1.0&_dom=cdsp
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:379: Error 0x1d: verify_local_handle failed. handle 0x0
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:394: Error 0x1d: get_domain_from_handle failed. handle 0x0
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:766: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 18 on domain 3 (sc 0x12000000)
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:379: Error 0x1d: verify_local_handle failed. handle 0x0
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:394: Error 0x1d: get_domain_from_handle failed. handle 0x0
+05-26 11:38:10.346  9816 10229 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:766: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 21 on domain 3 (sc 0x15010000)
+05-26 11:38:10.346  9816 10229 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:3552 FDELibWrapperCameraNNSetup() Set DSP power TURBO failed! nnResult = 29
+05-26 11:38:10.346  9816 10229 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:1100 FDELibWrapperCreateDLHandle() Failure in FDELibWrapperCameraNNSetup()
+05-26 11:38:10.346  9816 10229 W CamX    : [ WARN][FD     ] camxfdengine.cpp:325 FDEngineCreate() Create DL handle failure, use standard solution, engineType 4, result = 1
+05-26 11:38:10.372   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:10.372   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:38:10.408  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_request : X
+05-26 11:38:10.408  9807  6698 D Camera3-Device: CameraPerf: sendRequestsBatch X (80ms)
+05-26 11:38:10.408  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 172: [eLensType 0] Preset_gain = 1.725892, 1.804415
+05-26 11:38:10.408  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 176: [eLensType 0] Adjust_gain = 0.999750, 1.006771
+05-26 11:38:10.408  9816 10230 I SS_3A   :  INFO: AEC: TSAecFront_set_param: 821: OpMode 1 StartMode 0
+05-26 11:38:10.408  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:10.408  9816 10230 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:2570 PopulatePropPoolFrameControl() Invalid exposure parameters: gain: 0.000000, exposureTime: 0
+05-26 11:38:10.408  9816 10230 I SS_3A   :  INFO: AEC: TSAecFront_set_param: 1058: AEL 0
+05-26 11:38:10.408  9816 10230 I SS_3A   :  INFO: AEC: TsAecGetVendorTagInfo: 3021: pCaptureIntent=1 recordinghint 0
+05-26 11:38:10.409  9816 10230 I SS_3A   :  INFO: AEC: TsAecFront_Set_Exp_Table: 424: [Exp_Table::Front] Shooting=30, ExpDiagram=55|9, m_video=0, m_fdae=1, rec=0, hfr=0, lightcon=1
+05-26 11:38:10.409  9816 10230 I SS_3A   :  INFO: AEC: TsAecGetVendorTagInfo: 3230: aeMode 1
+05-26 11:38:10.409  9816 10230 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][1] algo_out Av=2.273 g=8.653 e_t=0.01999 LLS=0x0 Ev=6.500 Bv=1.500 PEv=6.500 Cvgd=0 lux=281, lls=0x0, drc=1.000 wide=0
+05-26 11:38:10.411  9816 10229 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:10.412  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:10.450  9816 10232 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 0.000000
+05-26 11:38:10.451  9816 10232 I SS_3A   :  INFO: AWB: TsAwb_process_preview: 2242: [start_dbg] HighFPS case, Increase pipeline delay
+05-26 11:38:10.451  9816 10232 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:10.451  9816 10229 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][4] algo_out Av=2.273 g=20.919 e_t=0.01667 LLS=0x0 Ev=5.488 Bv=-0.859 PEv=4.141 Cvgd=0 lux=337, lls=0x0, drc=1.000 wide=0
+05-26 11:38:10.454 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 11:38:10.455  9816 10231 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_result : E
+05-26 11:38:10.455  9816 10231 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_result : X
+05-26 11:38:10.456 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.459  9807 11090 D Camera3-OutputStream: returnBufferCheckedLocked: First frame for stream 0, width 176, height 144, format 34
+05-26 11:38:10.473  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 45(45),m:1,a:501,b:3873,c:6223,d:50000,ag:12,dg:2048,it:384,br:122
+05-26 11:38:10.484  9816 10234 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.484  9816 10231 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][5] algo_out Av=2.273 g=18.320 e_t=0.03335 LLS=0x0 Ev=4.680 Bv=-1.168 PEv=3.832 Cvgd=0 lux=344, lls=0x0, drc=1.340 wide=0
+05-26 11:38:10.488 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.517  9816 10234 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.518  9816 10231 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][6] algo_out Av=2.273 g=24.609 e_t=0.03335 LLS=0x0 Ev=4.254 Bv=-1.168 PEv=3.832 Cvgd=0 lux=344, lls=0x0, drc=1.501 wide=0
+05-26 11:38:10.521 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.522 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.522   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:38:10.544 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:38:10.544 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:38:10.544 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:38:10.544 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.191614 msecs
+05-26 11:38:10.545 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.246042 msecs
+05-26 11:38:10.545 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.231979 msecs
+05-26 11:38:10.550  9816 10231 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.551  9816 10233 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][7] algo_out Av=2.273 g=30.150 e_t=0.03335 LLS=0x0 Ev=3.961 Bv=-0.965 PEv=4.035 Cvgd=0 lux=339, lls=0x0, drc=1.682 wide=0
+05-26 11:38:10.555 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.555 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.570  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][820139] accel_sample [-0.108, -0.242,  9.928] 229682744218884
+05-26 11:38:10.584  9816 10229 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.585  9816 10230 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][8] algo_out Av=2.273 g=29.583 e_t=0.03335 LLS=0x0 Ev=3.988 Bv=-0.938 PEv=4.062 Cvgd=0 lux=338, lls=0x0, drc=1.747 wide=0
+05-26 11:38:10.589 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.589 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.618  9816 10233 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.618  9816 10234 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][9] algo_out Av=2.273 g=29.028 e_t=0.03335 LLS=0x0 Ev=4.016 Bv=-0.957 PEv=4.043 Cvgd=0 lux=339, lls=0x0, drc=1.719 wide=0
+05-26 11:38:10.622 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.622 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.633  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 30(30),m:1,a:409,b:86,c:46,d:44,ag:12,dg:2048,it:384,br:122
+05-26 11:38:10.651  9816 10234 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.652  9816 10233 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][10] algo_out Av=2.273 g=28.638 e_t=0.03335 LLS=0x0 Ev=4.035 Bv=-0.977 PEv=4.023 Cvgd=1 lux=339, lls=0x0, drc=1.673 wide=0
+05-26 11:38:10.655 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.655 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.685  9816 10232 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.690 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.690 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.718  9816 10232 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.723 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.723 11623  6693 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:10.752  9816 10232 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:10.757 11623  6693 I CameraLightSensor_Service: open preview end
+05-26 11:38:10.757 11623  6693 I CameraLightSensor_Service: converged or locked aEState value =2
+05-26 11:38:10.757 11623  6693 I CameraLightSensor_Service: exposure time=3.3333332E7 EV= 30 BV= -250.0 aEState=2 testPatternMode : 0
+05-26 11:38:10.757 11623 11648 I CameraLightSensor_Service: stopTask called, isCameraStopPending : false
+05-26 11:38:10.757  9807 10558 D Camera3-Device: flush: mInterfaceLock.lock()
+05-26 11:38:10.757  9807 10558 I Camera3-Device: Creating CameraServiceWatchDog with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:10.757 10035 11616 D CameraLightSensor_Manager:  Exposure= 30.0 Brightness= -250.0 Total listeners= 1
+05-26 11:38:10.757 10035 11616 D MotionRecognitionService: Ev-lux map, exposure= 30.0 brightness= -250.0
+05-26 11:38:10.757  9807 10558 I Camera3-Device: CameraServiceWatchDog::watchThread for mRequestThread->flush() with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:10.757  9807 10558 D HidlCamera3-Device: CameraPerf: flush E
+05-26 11:38:10.757 10035 11616 D Debug_Camera_Listener: com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79 lux= 50.0 exposure= 30.0 bv= -250.0
+05-26 11:38:10.757 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:10.758  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 479: E
+05-26 11:38:10.758  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:10.758  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 5
+05-26 11:38:10.758  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 545: HAL flush - Start
+05-26 11:38:10.758 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:10.758 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:10.758 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:10.758  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=12
+05-26 11:38:10.758  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=10
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=11
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=13
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=14
+05-26 11:38:10.759  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.761 10035 10098 D BatteryExternalStatsWorker: update stats : procstate-change (10)
+05-26 11:38:10.765 10035 10098 D BatteryExternalStatsWorker: Fetch WiFi data
+05-26 11:38:10.765 10035 10098 D BatteryExternalStatsWorker: Update Rail Energy data
+05-26 11:38:10.765 10035 10098 D BatteryExternalStatsWorker: Fetch Bluetooth data
+05-26 11:38:10.766   991   991 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:38:10.766   991   991 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:38:10.766   991   991 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Writing IBS_WAKE_IND
+05-26 11:38:10.772   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_ACK: 0xFC
+05-26 11:38:10.772   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Signal wack_cond_
+05-26 11:38:10.772   991   991 D vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Unblocked from waiting for FC, pthread_cond_timedwait ret = 0
+05-26 11:38:10.772  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=9
+05-26 11:38:10.772  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.772   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:10.772   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:10.772  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 9 , due to buffer error.
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=10
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.773  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 10 , due to buffer error.
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=11
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.773  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 11 , due to buffer error.
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=12
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.773  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 12 , due to buffer error.
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=13
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.773  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 13 , due to buffer error.
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=14
+05-26 11:38:10.773  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.774  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 14 , due to buffer error.
+05-26 11:38:10.774  9807  6698 E CameraDeviceClient: notifyError: pid=11623, errorCode=3, errorStreamId=0, frameNumber=15
+05-26 11:38:10.774  9807  6698 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:10.774  9807  6698 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 15 , due to buffer error.
+05-26 11:38:10.774  9807  6698 I Camera3-Status: markComponent: Component 2 is now idle - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:10.774  9807  6698 I Camera3-IOStreamBase: FpsStats: stream 0, requested=16, received=16, valid=9, invalid=7
+05-26 11:38:10.774  9807  6698 I Camera3-Status: markComponent: Component 0 is now idle - InflightRequests
+05-26 11:38:10.775  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 549: HAL flush - End
+05-26 11:38:10.775  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:10.775  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 489: X (0)
+05-26 11:38:10.775  9807  6698 I Camera3-Status: markComponent: Component 1 is now idle - RequestThread
+05-26 11:38:10.775  9807 10558 D HidlCamera3-Device: CameraPerf: flush X (17ms)
+05-26 11:38:10.775  9807  6697 I CameraService: finishCameraStreamingOps: finish camera streaming ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:10.775  9807 14947 E CameraDeviceClient: Disconnect from CameraDeviceClient
+05-26 11:38:10.775 10035 10909 E AppOps  : Operation not started: uid=5021 pkg=com.samsung.adaptivebrightnessgo(null) op=CAMERA
+05-26 11:38:10.775  9807 14947 D CameraDeviceClient: disconnect:stop IT Policy checking thread
+05-26 11:38:10.775  9807 14947 D Camera2ClientBase: Camera 3: start to disconnect
+05-26 11:38:10.775  9807  6697 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 2, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:10.775  9807 14947 D Camera2ClientBase: Camera 3: serializationLock acquired
+05-26 11:38:10.775  9807 14947 D Camera2ClientBase: Camera 3: Shutting down
+05-26 11:38:10.775  9807 14947 D Camera2ClientBase: Camera 3: start to cacheDump
+05-26 11:38:10.775 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 11623 20207 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 10035 10984 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.775 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.775 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.775 10035 10984 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.776 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.776 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.776 10035 11608 D AutoRotationHandler: inject auto rotation priority = 0.0
+05-26 11:38:10.776 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_IDLE, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:10.776 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:10.776  9815  9815 I sensors-hal: inject_sensor_data:316, auto_rotation ar_mode:0
+05-26 11:38:10.776  9815  9815 I sensors-hal: write_auto_rotation_mode:303, write_auto_rotation_mode ar_mode:0
+05-26 11:38:10.776  1095  1095 I SSC_DAEMON: physical_sensor_test_req_msg Sensor type :14, Msg type:15
+05-26 11:38:10.776  1095  1095 I SSC_DAEMON: 0.algo_id:3, num:1
+05-26 11:38:10.777 10035 10098 D BatteryExternalStatsWorker: Update bluetooth state
+05-26 11:38:10.777 10035 10098 D BatteryExternalStatsWorker: mStats lock released
+05-26 11:38:10.778  1095  1994 I SSC_DAEMON: AR od: 8, 0, 0
+05-26 11:38:10.780 10035 10098 D BatteryExternalStatsWorker: Update wifi state
+05-26 11:38:10.780 10035 10098 D BatteryExternalStatsWorker: done updateExternalStatsLocked
+05-26 11:38:10.792  9815 16690 I sensors-hal: handle_sns_std_sensor_event:206, Phy Lux 20 Cam Lux 50, br 122
+05-26 11:38:10.792  9815 16690 I sensors-hal: handle_sns_std_sensor_event:213, [SSC_LIGHT] P: 20(20),m:1,a:394,b:81,c:45,d:41,ag:12,dg:2048,it:384,br:122
+05-26 11:38:10.825  9807 14947 E Camera2-FrameProcessorBase: removeListener: 
+05-26 11:38:10.827  9807 14947 D Camera3-Device: flush: mInterfaceLock.lock()
+05-26 11:38:10.827  9807 14947 I Camera3-Device: Creating CameraServiceWatchDog with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:10.827  9807 14947 I Camera3-Device: CameraServiceWatchDog::watchThread for mRequestThread->flush() with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:10.827  9807 14947 D HidlCamera3-Device: CameraPerf: flush E
+05-26 11:38:10.827  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 479: E
+05-26 11:38:10.827  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:10.827  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 5
+05-26 11:38:10.827  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 545: HAL flush - Start
+05-26 11:38:10.828  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 549: HAL flush - End
+05-26 11:38:10.828  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:10.828  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 489: X (0)
+05-26 11:38:10.828  9807 14947 D HidlCamera3-Device: CameraPerf: flush X (0ms)
+05-26 11:38:10.828  9807 14947 D Camera3-Device: waitUntilDrainedLocked: Camera 3: Waiting until idle (5000000000ns)
+05-26 11:38:10.828  9807 14947 D Camera3-Device: waitUntilDrained: mInterfaceLock.unlock()
+05-26 11:38:10.828  9807 14947 I Camera3-Device: disconnectImpl: E
+05-26 11:38:10.828  9807 14947 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (16) samples:
+05-26 11:38:10.828  9807 14947 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+05-26 11:38:10.828  9807 14947 I CameraLatencyHistogram:      81.25   12.50   6.25   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:10.828  9807 14947 I Camera3-Device: CameraServiceWatchDog::watchThread for interface->close() with cycles = 100, cycleLength = 100 ms and Timer = 10000 ms 
+05-26 11:38:10.828  9807 14947 D HidlCamera3-Device: CameraPerf: close E
+05-26 11:38:10.828  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 557: E
+05-26 11:38:10.828  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 7
+05-26 11:38:10.828  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 275: HAL close - Start
+05-26 11:38:10.829   629   629 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.9::IDisplayConfig/default in either framework or device VINTF manifest.
+05-26 11:38:10.829  9816 10248 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.9
+05-26 11:38:10.840  9816 10248 E CamX    : [ERROR][FD     ] camxfdhwnode.cpp:108 ReleaseResources() Recycling the buffers modeBitMask: 1
+05-26 11:38:10.842  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0x700200 refCount=1 SubdeviceType=1 subDevHandle=0xf10105
+05-26 11:38:10.848  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0x700200 refCount=0 SubdeviceType=0 subDevHandle=0x950101
+05-26 11:38:10.848  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 269: overrideCameraClose in AECDestroy Camera close mask 2 
+05-26 11:38:10.848  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 275: pCameraInfo->cameraid in AECDestroy 1
+05-26 11:38:10.848  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 297: TsAECDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing: 0 pAECAlgorithm 0xb4000073fe607f00 pAECSingletonWrapper->pAECSingleton 0xb4000073fe607f00
+05-26 11:38:10.848  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 306: [0]pAECSingleton destroy is 0xb4000073fe607f00 0xb4000073fe607f00
+05-26 11:38:10.848  9816 10248 W RefBase : CallStack::getCurrentInternal not linked, returning null
+05-26 11:38:10.848  9816 10248 W RefBase : CallStack::logStackInternal not linked
+05-26 11:38:10.848  9816 10248 I SS_3A   :  INFO: AEC: TsAecFront_unload_lib: 160: TsAec_libptr=0xd3123f806d4c81d9
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 278: overrideCameraClose in AWBDestroy 2
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 284: cameraId in AWBDestroy 1
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 306: TsAwbDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAWBSingletonWrapper->pAWB 0xb4000073fe607dc0
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 314: Destroy AWBAlgorithm, pAWB 0xb4000073fe607dc0
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO:  AF: TsAFDestroy: 250: Destroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAFAlgorithm 0xb4000073fe607f50 pAFSingletonWrapper->pAFSingleton 0xb4000073fe607f50 TeleCameraInit 0
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2396: TsAf_wrap: 0xb4000073de0c4480, E
+05-26 11:38:10.849  9816 10248 I SS_3A   : 
+05-26 11:38:10.849  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2414:  X
+05-26 11:38:10.849  9816 10248 I SS_3A   : 
+05-26 11:38:10.856   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:10.858  9816 10248 I CamX    : [ INFO][CORE   ] camxchitintlessinterface.cpp:71 TintlessAlgoDestory() Tintless Algo Destroy
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPvtUtils.cpp Line: 163 Function: cvpSetPower() Msg: Update power to KMD
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 1602 Function: cvpDeaggreatePower() Msg: After deaggregation
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 11:38:10.867  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 11:38:10.874  9816  6703 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:4194 RequestThreadProcessing() Terminating recovery thread for logical cameraId: 1
+05-26 11:38:10.874  9807 14947 I CameraProviderManager: Camera device device@3.5/legacy/3 torch status is now AVAILABLE_OFF
+05-26 11:38:10.874  9807 14947 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=3, newStatus=1
+05-26 11:38:10.874  9807 14947 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 3: No such file or directory (-2)
+05-26 11:38:10.874  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 279: HAL close - End
+05-26 11:38:10.874  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:10.874  9816 10248 I Unihal  : FwkCaptureManager.cpp: Release: 166: Already released.
+05-26 11:38:10.874  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 571: X (0)
+05-26 11:38:10.874  9807 14947 D HidlCamera3-Device: CameraPerf: close X (46ms)
+05-26 11:38:10.874  9807 14947 D Camera3-OutputStream: disconnectLocked: disconnecting stream 0 from native window
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (16) samples:
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram: Stream 0 enqueueBuffer latency histogram (9) samples:
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 11:38:10.876  9807 14947 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:10.876  9807 14947 I Camera3-Device: disconnectImpl: X
+05-26 11:38:10.876  9807 14947 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 3, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:10.876  9807 14947 I Camera3-Device: setDeviceInjector
+05-26 11:38:10.876  9807 14947 D CameraService: BasicClient::disconnect E
+05-26 11:38:10.876  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.877  9807 14947 I CameraService: finishCameraOps: Finish camera ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:10.877  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:10.877  9807 14947 I CameraService: Drop updateStatus callbak for package com.samsung.adaptivebrightnessgo(pid 11623)
+05-26 11:38:10.877 10035 10909 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 10035 10909 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.877 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.877  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:10.877 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 11623 20207 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877  9807 14947 I CameraFlashlight: deviceClosed: device 3 is closed
+05-26 11:38:10.877  9807 14947 I CameraService: disconnect: Disconnected client for camera 3 for PID 11623
+05-26 11:38:10.877  9807 14947 D CameraService: BasicClient::disconnect X
+05-26 11:38:10.877 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:10.877 11623 11648 I CameraLightSensor_Service: Camera released, time taken= 573 cameraLock= true
+05-26 11:38:10.877 11623 11648 I CameraLightSensor_Service: stopBackgroundThread : mBackgroundHandler is set to null
+05-26 11:38:10.878 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:10.878 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_CLOSED, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:10.959 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:10.959 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:10.959 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:10.959 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:11.045 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:38:11.045 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:38:11.045 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:38:11.045 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.165625 msecs
+05-26 11:38:11.046 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.254427 msecs
+05-26 11:38:11.046 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.276927 msecs
+05-26 11:38:11.159 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:11.159 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:11.159 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:11.160 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:11.301 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2550, isSameBssidAndFreq true
+05-26 11:38:11.302 10035 10437 I SemWifiLinkQualityMonitor: Link Qos Query: 0,214 ms / 37,438 Mbps (206 / 0,007 / 4,667)
+05-26 11:38:11.330   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:11.330   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:11.331 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x10, addressType=1, address=1C9E80_0, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-80, periodicAdvInt=0x0
+05-26 11:38:11.359 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:11.359 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:11.359 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:11.359 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:11.413   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:11.460 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 11:38:11.547 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:38:11.547 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:38:11.547 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:38:11.547 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.242708 msecs
+05-26 11:38:11.547 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.346146 msecs
+05-26 11:38:11.548 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.344062 msecs
+05-26 11:38:11.553  9815 16690 I sensors-hal: handle_sns_std_sensor_event:206, Phy Lux 16 Cam Lux 50, br 122
+05-26 11:38:11.553  9815 16690 I sensors-hal: handle_sns_std_sensor_event:213, [SSC_LIGHT] P: 16(16),m:1,a:356,b:86,c:41,d:38,ag:12,dg:2048,it:384,br:122
+05-26 11:38:11.560 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:11.560 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:11.560 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:11.560 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:11.760 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:11.760 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:11.760 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:11.760 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:11.772   991 11413 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceSleep: TX Awake, Sending SLEEP_IND
+05-26 11:38:11.772   991 11413 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:38:11.932   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:38:11.960 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:11.961 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:11.961 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:11.961 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:12.049 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 11:38:12.049 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 11:38:12.050 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 11:38:12.050 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.73224 msecs
+05-26 11:38:12.051 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.137708 msecs
+05-26 11:38:12.052 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.080469 msecs
+05-26 11:38:12.162 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:12.162 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:12.162 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:12.162 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:12.275   997   997 I android.hardware.health@2.1-service-samsung: updateLrpSysfs: write: 310
+05-26 11:38:12.277 10035 10345 D BatteryService: Sending ACTION_BATTERY_CHANGED: level:58, status:2, health:2, ac:false, usb:true, wireless:false, pogo:false, misc:0x10000, charge_type:1, charger_type:0, voltage:3918, temperature:282, online:4, current_avg:225, ps:false, hvc:false, capacity:280000, current_event:0x0, current_now:326, mcc:0, mcv:0, cc:2402531, present:true, scale:100, technology:Li-ion
+05-26 11:38:12.280 10035 10319 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+05-26 11:38:12.280 10035 10035 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=58, status=2
+05-26 11:38:12.281 10035 10468 I DeviceBatteryInfoService: action: android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.281 10035 10468 I DeviceBatteryInfoService: phone battery level: 58
+05-26 11:38:12.281 10035 10468 I DeviceBatteryInfoService: phone battery status: 2
+05-26 11:38:12.281 10035 10035 D AdaptiveBrightnessLongtermModelBuilder: Received android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.282 10035 10035 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.283 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.283 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.286 10534 10534 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+05-26 11:38:12.288 10534 10534 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=58, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=12174000, mBatteryChargingType=1, mBatteryChargerType=NORMAL, mBatteryOnline=USB, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+05-26 11:38:12.289 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:38:12.289 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:38:12.289 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:38:12.290 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 11:38:12.291 10534 10534 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+05-26 11:38:12.291 10534 10534 I PowerUI : BATTERY_HEALTH_CHECK extraHealth=2 mBatteryMiscEvent=65536
+05-26 11:38:12.291 10534 10534 W PowerUI : Plug reason
+05-26 11:38:12.291 10534 10534 W PowerUI : Skip charging animation - by plug status
+05-26 11:38:12.291 10534 10534 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+05-26 11:38:12.291 10534 10534 W PowerUI : Plug reason
+05-26 11:38:12.291 10534 10534 W PowerUI : Skip charging sound - by plug status
+05-26 11:38:12.291 10534 15014 D SecPowerUI.Notification: dismissing low battery warning: level=58
+05-26 11:38:12.292 10534 15014 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+05-26 11:38:12.292 10534 15014 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=58, currentBatteryMode=1, chargingTime=12174000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+05-26 11:38:12.293 10534 15014 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+05-26 11:38:12.293 10534 15014 E SecPowerUI.Notification: no saved value, so we do nothing !!
+05-26 11:38:12.293 10534 10534 I PowerUI : oldMisalign : false, curMisalign : false
+05-26 11:38:12.294 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 12174000 / mChargingTime : 12174000
+05-26 11:38:12.294 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 11:38:12.294 10534 10534 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+05-26 11:38:12.294 10534 10534 I PowerUI : mBatteryMiscEvent = 65536
+05-26 11:38:12.295 10534 10534 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+05-26 11:38:12.295 10534 10534 D KeyguardUpdateMonitor: handleBatteryUpdate
+05-26 11:38:12.305   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:12.305   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:38:12.306   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:38:12.306   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:12.313  9815 16690 I sensors-hal: handle_sns_std_sensor_event:206, Phy Lux 22 Cam Lux 50, br 122
+05-26 11:38:12.313  9815 16690 I sensors-hal: handle_sns_std_sensor_event:213, [SSC_LIGHT] P: 22(22),m:1,a:1531,b:132692,c:36426,d:50000,ag:10,dg:512,it:384,br:122
+05-26 11:38:12.329 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x1b, addressType=1, address=4471B6_5, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-87, periodicAdvInt=0x0
+05-26 11:38:12.333 11645 13707 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+05-26 11:38:12.362 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:12.362 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:12.362 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:12.363 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:12.407   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:12.407   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:38:12.475 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 11:38:12.559   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:38:12.562 10035 11616 D MotionRecognitionService: values = 50.0
+05-26 11:38:12.562 10035 11616 D MotionRecognitionService: onReceive lux: 50.0  action: 
+05-26 11:38:12.563 10035 11616 D MotionRecognitionService: Inject brightness form Cam 50.0
+05-26 11:38:12.563 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:12.578  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][820346] accel_sample [-0.084, -0.211,  9.933] 229684747025944
+05-26 11:38:12.673  9815 16690 I sensors-hal: handle_sns_std_sensor_event:203, Disable Cam Lux 176
+05-26 11:38:12.673  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 176(176),m:1,a:2408,b:108590,c:32952,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:12.674 10035 10261 D SensorService: [PHYSICALLIGHT] Data is incorrect -2.000000
+05-26 11:38:12.674 10035 10261 D SensorService: [CALIBRATEDLUX] Event happens -2.000000
+05-26 11:38:12.674 10035 10317 D MotionRecognitionService: CalibratedLux event happens = -2.0
+05-26 11:38:12.674 10035 10317 D MotionRecognitionService: Brightness Mode(Value): 1
+05-26 11:38:12.677 10035 10317 D MotionRecognitionService: is faceUnlock : :false phone is locked : false
+05-26 11:38:12.677 10035 10317 D MotionRecognitionService: stopService adaptivebrightnessgo
+05-26 11:38:12.677 10035 10317 D Debug_Camera_Manager: Entering2 unRegisterCameraLightSensorcom.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:12.677 10035 10317 D Debug_Camera_Manager: Exit2 unRegisterCameraLightSensorcom.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:12.677 10035 10317 I SensorManager: [CameraLight] unregisteListener : com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:12.677 10035 11616 D CameraLightSensor_Manager: IPC_SERVICE_UNREGISTER_CONNECTION -> MSG_SERVICE_STOP_CAMERA
+05-26 11:38:12.678 10035 10317 D SensorService: Calling activate off 1935762019
+05-26 11:38:12.678 10035 10317 I SensorService: [CameraLightSensor] activate 0
+05-26 11:38:12.678 10035 10317 D SensorManager: unregisterListener :: 1935762019, Camera Light Sensor, com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:12.679 11623 11648 I CameraLightSensor_Service: stopTask called, isCameraStopPending : false
+05-26 11:38:12.679 11623 11648 I CameraLightSensor_Service: stopBackgroundThread : mBackgroundHandler is already set to null
+05-26 11:38:12.679 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_STOP_CAMERA, totalConnections= 0
+05-26 11:38:12.713  9815 16690 I sensors-hal: handle_sns_std_sensor_event:227, Phy Lux 114 lux 178 last_camlux 50
+05-26 11:38:12.713  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 178(178),m:1,a:2337,b:132043,c:36337,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:12.753  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 176(176),m:1,a:2238,b:133965,c:36601,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:12.764 10035 11616 D CameraLightSensor_Manager: MSG_MANAGER_LISTENER_LOOP array is 0
+05-26 11:38:12.911  9815 16685 I sensors-hal: handle_sns_client_event:252, auto_rotation_debug_2 mode,255, type,1,0 acc,-0.098,-0.239,9.928, ar,0, ver,10
+05-26 11:38:13.042 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 11:38:13.042 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 11:38:13.043 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 11:38:13.043 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.91849 msecs
+05-26 11:38:13.044 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.679166 msecs
+05-26 11:38:13.046 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.608178 msecs
+05-26 11:38:13.153 10534 10601 D MobileStatusTracker(1/4): onSignalStrengthsChanged level=4, vendorLevel=3
+05-26 11:38:13.159 10534 10601 D MobileSignalController(1/4): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+05-26 11:38:13.159 10534 10601 D NetworkController: SignalStrength from intent slotId=1
+05-26 11:38:13.193  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 121(121),m:1,a:985,b:17464,c:13215,d:50000,ag:10,dg:512,it:384,br:122
+05-26 11:38:13.273  9815 16690 I sensors-hal: handle_sns_std_sensor_event:197, Enable Cam Lux 91 br 122
+05-26 11:38:13.273  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 91(91),m:1,a:911,b:11431,c:10691,d:50000,ag:11,dg:1024,it:384,br:122
+05-26 11:38:13.273 10035 10261 D SensorService: [PHYSICALLIGHT] Data is incorrect -1.000000
+05-26 11:38:13.273 10035 10261 D SensorService: [CALIBRATEDLUX] Event happens -1.000000
+05-26 11:38:13.274 10035 10317 D MotionRecognitionService: CalibratedLux event happens = -1.0
+05-26 11:38:13.274 10035 10317 D MotionRecognitionService: Brightness Mode(Value): 1
+05-26 11:38:13.276 10035 10317 D MotionRecognitionService: is faceUnlock : :false phone is locked : false
+05-26 11:38:13.276 10035 10317 D MotionRecognitionService: startService adaptivebrightnessgo 
+05-26 11:38:13.276 10035 10317 D SensorManager: [CameraLightSensor] Use handler looper= Looper (AdaptiveBrightnessController, tid 405) {d2df9d4} mainLooper= Looper (main, tid 2) {caa277d}
+05-26 11:38:13.276 10035 10317 D MotionRecognitionService: Ev-lux map, exposure= 100.0 brightness= 100.0
+05-26 11:38:13.276 10035 10317 D Debug_Camera_Manager: Entering1 registerCameraLightSensor com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.276 10035 10317 D Debug_Camera_Manager: Exit1 registerCameraLightSensorcom.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.277 10035 10317 D CameraLightSensor_Manager: com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79 registered
+05-26 11:38:13.277 10035 10317 I SensorManager: [CameraLight] registerListener : com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.277 10035 11616 D CameraLightSensor_Manager: IPC_SERVICE_START_CAMERA -> MSG_SERVICE_START_CAMERA
+05-26 11:38:13.278 10035 10317 I SensorService: [CameraLightSensor] activate 1
+05-26 11:38:13.278 10035 10317 D SensorManager: registerListener :: 1935762019, Camera Light Sensor, 0, 0, com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.278 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_START_CAMERA totalConnections= 1 cameraOpenPass= true alRegi= 0
+05-26 11:38:13.279 11623 11648 I CameraLightSensor_Service: isNotRunning : true
+05-26 11:38:13.279 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_CAMERA_LOOP
+05-26 11:38:13.281 11623 11648 I CameraLightSensor_Service: startBackgroundThread : mBackgroundHandler is set
+05-26 11:38:13.281 11623 11648 I CameraLightSensor_Service: Camera ID 3 is available
+05-26 11:38:13.281  9807 14947 I CameraService: this package can access to hidden camera ids.
+05-26 11:38:13.281 11623 11648 I CameraManager: registerAvailabilityCallback: Is device callback = false
+05-26 11:38:13.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 0 status STATUS_PRESENT
+05-26 11:38:13.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 1 status STATUS_PRESENT
+05-26 11:38:13.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 2 status STATUS_PRESENT
+05-26 11:38:13.282 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 3 status STATUS_PRESENT
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 20 status STATUS_PRESENT
+05-26 11:38:13.283 11623  6723 I CameraLightSensor_Service: Camera 3 is available
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 21 status STATUS_PRESENT
+05-26 11:38:13.283 11623  6723 I CameraLightSensor_Service: Camera open callback start
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 23 status STATUS_PRESENT
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 40 status STATUS_PRESENT
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 41 status STATUS_PRESENT
+05-26 11:38:13.283 11623 11648 I CameraManagerGlobal: postSingleUpdate device: camera id 52 status STATUS_PRESENT
+05-26 11:38:13.286  9807 14947 I CameraService: CameraService::connect call (PID -1 "com.samsung.adaptivebrightnessgo", camera ID 3) and Camera API version 2
+05-26 11:38:13.286  9807 14947 I CameraService: isUidActiveLocked E: uid 5021, callingPackage com.samsung.adaptivebrightnessgo, isRegistered true
+05-26 11:38:13.286  9807 14947 I CameraService: isUidActiveLocked X: return true.
+05-26 11:38:13.286  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.287  9807 14947 D CameraService: vr service found
+05-26 11:38:13.287  9807 14947 I CameraService: isCameraBlockedByHMT: usbpd_ids: 0000:0000, is camera blocking device: false
+05-26 11:38:13.287  9807 14947 I CameraService: CameraService::validateClientPermissionsLocked is ok : calling pid 11623, calling uid 5021, client com.samsung.adaptivebrightnessgo , cameraservice pid=9807, device user 0, currently allowed device users: 0
+05-26 11:38:13.287  9807 14947 I CameraService: CameraService::handleEvictionsLocked
+05-26 11:38:13.288  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.288  9807 14947 I CameraService: wouldEvictLocked: [incoming client] owner = 11623, priority-score=999, cost=100, returnIncompatibleClients=false
+05-26 11:38:13.288  9807 14947 I CameraService: wouldEvictLocked: [cost info] current cost=0, adding cost=100, total cost=100, max cost=100
+05-26 11:38:13.288  9807 14947 I CameraService: wouldEvictLocked: [highestPriority] owner=11623, score=999
+05-26 11:38:13.288  9807 14947 I CameraFlashlight: prepareDeviceOpen: prepare for device open(cameraId=3)
+05-26 11:38:13.288  9807 14947 I Camera2ClientBase: Camera 3: Opened. Client: com.samsung.adaptivebrightnessgo (PID 11623, UID 5021)
+05-26 11:38:13.288  9807 14947 I CameraDeviceClient: CameraDeviceClient 3: Opened
+05-26 11:38:13.288  9807 14947 I CameraService: isNoSALoggingPackage: com.samsung.adaptivebrightnessgo is a Samsung app so doesn't need SA logging.
+05-26 11:38:13.289  9807 14947 I CameraService: service.camera.client set to com.samsung.adaptivebrightnessgo
+05-26 11:38:13.289  9807 14947 I CameraService: startCameraOps: Start camera ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:13.289  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.291 10035 12236 E AppOps  : evalMode() Foreground mode : uid - 5021, op - 26, capability - 0
+05-26 11:38:13.291  9807 14947 I CameraService: Drop checking dpm for package com.samsung.adaptivebrightnessgo(pid 11623) from startCameraOps()
+05-26 11:38:13.291  9807 14947 I CameraService: Drop updateStatus callbak for package com.samsung.adaptivebrightnessgo(pid 11623)
+05-26 11:38:13.291  9807 14947 D Camera3-RequestInjector: RequestInjector[3] Mapper created
+05-26 11:38:13.291  9807 14947 D HidlCamera3-Device: CameraPerf: initialize E
+05-26 11:38:13.291  9807 14947 D HidlCamera3-Device: initialize: mInterfaceLock.lock()
+05-26 11:38:13.292  9807 14947 I CameraProviderManager: openHidlSession, using trampoline for v5.0
+05-26 11:38:13.292  9807 14947 D CameraProviderManager: CameraPerf: openHidlSession E
+05-26 11:38:13.292  9816 10249 I SehCamDev@5.0-impl: [CAMKPI] camera3->open : E
+05-26 11:38:13.292  9816 10249 I Unihal  : UniDebugLog.cpp: __unihal_log_status_update: 57: UpdateLogStatus 0000000d ERR 1 PERF 0 WARN 4 INFO 8 DEBUG 0 DUMP 0 STRACE 0 META 0
+05-26 11:38:13.292  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 628: E cameraName: 3
+05-26 11:38:13.292  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 630: UNIHAL_VERSION = "2.1"
+05-26 11:38:13.292  9816 10249 I Unihal  : CameraDevice.cpp: OpenCameraHardware_v3: 401: name : 3 camera id : 3
+05-26 11:38:13.293  9807 14947 I CameraProviderManager: Camera device device@3.5/legacy/3 torch status is now NOT_AVAILABLE
+05-26 11:38:13.293  9807 14947 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=3, newStatus=0
+05-26 11:38:13.293  9807 14947 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 3: No such file or directory (-2)
+05-26 11:38:13.297   629   629 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.9::IDisplayConfig/default in either framework or device VINTF manifest.
+05-26 11:38:13.297  9816 10249 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.9
+05-26 11:38:13.297  9816 10249 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 1
+05-26 11:38:13.298  9816 10249 I Unihal  : ParameterManager.cpp: SetCameraCharacteristics: 116: Registered camera characteristics successfully. : cameraId=3, characteristics=0xb40000740854b000
+05-26 11:38:13.298  9816 10249 I Unihal  : UniUtils.cpp: GetProductName: 169: Succeeded to get product name property. : productName=r8qxx
+05-26 11:38:13.298  9816 10249 I Unihal  : UniUtils.cpp: GetChipName: 191: Succeeded to get chip name property. : chipName=SM8250
+05-26 11:38:13.298  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_open_camera_hardware: 656: X (0)
+05-26 11:38:13.298  9816 10249 I SehCamDev@5.0-impl: [CAMKPI] camera3->open : X
+05-26 11:38:13.298  9816 10249 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 2
+05-26 11:38:13.298  9816 10249 E FMQ     : grantorIdx must be less than 3
+05-26 11:38:13.298  9816 10249 E FMQ     : grantorIdx must be less than 3
+05-26 11:38:13.299  9807 14947 D CameraProviderManager: CameraPerf: openHidlSession X (7ms)
+05-26 11:38:13.300  9807 14947 D HidlCamera3-Device: CameraPerf: initialize X (8ms)
+05-26 11:38:13.300  9807 14947 D Camera3-Device: CameraPerf: initializeCommonLocked: E
+05-26 11:38:13.300  9807 14947 I Camera3-Status: addComponent: Adding new component 0 - InflightRequests
+05-26 11:38:13.300  9807 14947 I Camera3-Status: addComponent: Adding new component 1 - RequestThread
+05-26 11:38:13.301  9807 14947 D Camera3-Device: initializeCommonLocked mTimestampOffset = 180901902158566ns.
+05-26 11:38:13.301  9807 14947 D Camera3-Device: CameraPerf: initializeCommonLocked: X (0ms)
+05-26 11:38:13.301  9807 14947 E Camera2-FrameProcessorBase: FrameProcessorBase: created
+05-26 11:38:13.301  9807 14947 E Camera2-FrameProcessorBase: registerListener: Registering listener for frame id range 0 - 2147483647
+05-26 11:38:13.301 10035 12236 E CameraService_proxy: Recent tasks don't include camera client package name: com.samsung.adaptivebrightnessgo
+05-26 11:38:13.302  9807 14947 I CameraService: connectHelper: overrideCameraMuteMode = false, isCameraPrivacyEnabled = false
+05-26 11:38:13.302  9807 14947 I Camera3-Device: setCameraMute, enabled = false, supported = true
+05-26 11:38:13.302  9807 14947 I CameraService: CameraService::finishConnectLocked E
+05-26 11:38:13.302  9807 14947 I CameraService: wouldEvictLocked: [incoming client] owner = 11623, priority-score=999, cost=100, returnIncompatibleClients=false
+05-26 11:38:13.302  9807 14947 I CameraService: wouldEvictLocked: [cost info] current cost=0, adding cost=100, total cost=100, max cost=100
+05-26 11:38:13.302  9807 14947 I CameraService: wouldEvictLocked: [highestPriority] owner=11623, score=999
+05-26 11:38:13.302  9807 14947 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.302  9807 14947 I CameraService: addAndEvict: push the client(owner 11623, priorityScore 999, state 6) to mClients
+05-26 11:38:13.302  9807 14947 I CameraService: CameraService::finishConnectLocked X
+05-26 11:38:13.302  9807 14947 I CameraDeviceClient: notifyAppPackageName
+05-26 11:38:13.302  9807 14947 D HidlCamera3-Device: CameraPerf: setParameters E
+05-26 11:38:13.302  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_set_parameters: 506: set_parameters : pkgName=com.samsung.adaptivebrightnessgo;
+05-26 11:38:13.302  9807 14947 D HidlCamera3-Device: CameraPerf: setParameters X (0ms)
+05-26 11:38:13.302  9807 14947 I CameraService: Notified package name to HAL.
+05-26 11:38:13.302  9807 14947 I CameraService: connectHelper: Skip Request Injector ExtraRequests to new client(com.samsung.adaptivebrightnessgo)
+05-26 11:38:13.302  9807 14947 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 0, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:13.303 10035 12236 I AudioManager: setParameters keyValuePairs = cameraFacing=front
+05-26 11:38:13.303 10035 10984 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303  9807 14947 I CameraService: isNoSALoggingPackage: com.samsung.adaptivebrightnessgo is a Samsung app so doesn't need SA logging.
+05-26 11:38:13.303 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 10035 10984 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.303  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.303 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.303 11623 27670 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:13.303 11623  6723 I CameraLightSensor_Service: Camera open callback finish
+05-26 11:38:13.303 11623  6723 I CameraLightSensor_Service: Camera acquired, time = 229685487
+05-26 11:38:13.303 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.303 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_OPEN, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:13.303  9807 14947 D HidlCamera3-Device: CameraPerf: constructDefaultRequestSettings templateId: 1 E
+05-26 11:38:13.304  9807 14947 D HidlCamera3-Device: CameraPerf: constructDefaultRequestSettings X (0ms)
+05-26 11:38:13.304  9804 14866 D audio_hw_primary: adev_set_parameters: enter: cameraFacing=front
+05-26 11:38:13.304  9804 14866 D audio_hw_hfp: hfp_set_parameters: enter
+05-26 11:38:13.304  9804 14866 V audio_hw_sec: sec_set_parameters: enter
+05-26 11:38:13.304  9807 14947 D HidlCamera3-Device: CameraPerf: setParameters E
+05-26 11:38:13.304  9804 14866 D audio_hw_extn: audio_extn_fm_set_parameters: Enter
+05-26 11:38:13.304  9804 14866 D audio_hw_primary: adev_set_parameters: exit with code(0)
+05-26 11:38:13.304  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_set_parameters: 506: set_parameters : shootingmode=30
+05-26 11:38:13.304  9807 14947 D HidlCamera3-Device: CameraPerf: setParameters X (0ms)
+05-26 11:38:13.304  9804 14866 I Audio_a2dpsink_hw: adev_set_parameters: kevpairs=[cameraFacing=front]
+05-26 11:38:13.304  9807 14947 D Camera3-Device: waitUntilDrained: mInterfaceLock.unlock()
+05-26 11:38:13.305  9807 14947 D CameraDeviceClient: createStream E
+05-26 11:38:13.305  9807 14947 D SessionConfigUtils: createSurfaceFromGbp E: logicalCameraId=3, isStreamInfoValid=0, useCase=0, option=0x0, mirrorMode=0
+05-26 11:38:13.305  9807 14947 W SessionConfigUtils: createSurfaceFromGbp: Camera 3 with consumer usage flag: 256: Forcing asynchronous mode forstream
+05-26 11:38:13.305  9807 14947 D SessionConfigUtils: createSurfaceFromGbp: consumer usage flag: 256, useAsync: 1
+05-26 11:38:13.305  9807 14947 D SessionConfigUtils: createSurfaceFromGbp: width=1, height=1, format=1, dataSpace=0
+05-26 11:38:13.305  9807 14947 W SessionConfigUtils: createSurfaceFromGbp: Camera 3: Overriding format 0x1 to IMPLEMENTATION_DEFINED
+05-26 11:38:13.305  9807 14947 D SessionConfigUtils: roundBufferDimensionNearest  inWidth=1 inHeight=1, outWidth=176 outHeight=144 X
+05-26 11:38:13.305  9807 14947 D SessionConfigUtils: createSurfaceFromGbp X
+05-26 11:38:13.305  9807 14947 D Camera3-Device: createStream: mInterfaceLock.lock()
+05-26 11:38:13.305  9807 14947 D Camera3-Device: createStream: Camera 3: Creating new stream 0: 176 x 144, format 0x22(IMPL_DEF), dataspace 0 rotation 0 consumer usage 0, isShared 0, physicalCameraId , isMultiResolution 0 dynamicRangeProfile 0x1, streamUseCase 0, option 0x0, timestampBase 0, mirrorMode 0
+05-26 11:38:13.306  9807 14947 D Camera3-Device: createStream: mInterfaceLock.unlock()
+05-26 11:38:13.306  9807 14947 D CameraDeviceClient: createStream: Camera 3: Successfully created a new stream ID 0 for output surface (176 x 144) with format 0x22.
+05-26 11:38:13.306  9807 14947 D Camera3-Device: setStreamTransform: mInterfaceLock.lock()
+05-26 11:38:13.306  9807 14947 D CameraDeviceClient: createStream X
+05-26 11:38:13.306  9807 14947 D Camera3-Device: filterParamsAndConfigureLocked : operatingMode=0
+05-26 11:38:13.306  9807 14947 D Camera3-Device: CameraPerf: configureStreamsLocked: Camera 3: Stream configuration E
+05-26 11:38:13.306  9807 14947 I HidlCamera3-Device: configureStreams Before configuration Stream[0] : [176 x 144], usage: 0x100
+05-26 11:38:13.306  9816 10249 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->configure_streams : E
+05-26 11:38:13.306  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_configure_streams: 273: operation_mode: 0, num_streams: 1, session_param: 0x74c1f111e0
+05-26 11:38:13.306  9816 10249 I Unihal  : UniHal3InterfaceEntry.cpp: uni_configure_streams: 278: stream[0]: stream(0xb4000073d765fee8) : streamdId(0x0), scenarioType(PREVIEW), format(0x22), grallocUsage(0x100), size(176x144), streamType(0), option(0x0), maxBuffers(0), priv(0x0), dataspace(0), rotation(0), stream_timestamp(0), fps(0, 0), physCamId(), reserved Ptr(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+05-26 11:38:13.306  9816 10249 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 3
+05-26 11:38:13.306  9816 10249 I Unihal  : CameraHalUnit.cpp: ConfigureStreams: 232: cameraId=3, GetIsAlreadyCreated=0
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartyApp: 1415: SAMSUNG_ANDROID_CONTROL_UNIHAL_ENABLE_MODE doesn't exist.
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartyVideoHdr: 1177: SAMSUNG_ANDROID_UNIHAL_VIDEO_MODE doesn't exist.
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: IsSupported3rdPartySdkVdis: 1240: SAMSUNG_ANDROID_UNIHAL_VIDEO_MODE doesn't exist.
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: IsAllowed3rdParty: 2054: 3rd-party bypass is applied to this application.
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: FindScenarioInfo: 2132: Current shootingMode=0x0001000d(UNI_SHOOTING_MODE_3RD_PARTY_BYPASS), cameraId=3(UNI_FWK_CAMERA_ID_FRONT_FULL)
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: FindScenarioInfo: 2140: No Scenario is found for shootingMode(UNI_SHOOTING_MODE_3RD_PARTY_BYPASS)
+05-26 11:38:13.306  9816 10249 I Unihal  : ScenarioManager.cpp: CheckEnableCondition: 2256: Unihal is disabled. : isSamsungCamera=false, isFactoryTest=false, isGalaxyRaw = false, isAllowed3rdParty=true, foundScenario=false, isValidStreamConfiguration=false, isSamsungVdisEnabled=false, shootingMode=UNI_SHOOTING_MODE_3RD_PARTY_BYPASS
+05-26 11:38:13.306  9816 10249 I Unihal  : FwkCaptureManager.cpp: Release: 166: Already released.
+05-26 11:38:13.306  9816 10249 I Unihal  : CameraHalUnit.cpp: ConfigureStreams: 260: Unihal is bypass mode in current scenario.
+05-26 11:38:13.306  9816 10249 I CHI     : [SS_INFO]: [SS_LOG_LEVEL]: 1, [DEVELOPER_LOG_LEVEL]: 0
+05-26 11:38:13.306  9816 10249 I CHIUSECASE: [CONFIG ] chxusecaseutils.cpp:961 GetMatchingUsecase() [UC_DBG] Default usecase selected
+05-26 11:38:13.307  9816 10249 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:3121 InitializeOverrideSession() Session_parameters FPS range 0:0, previewFPS 0, videoFPS 0 BatchSize: 1 HALOutputBufferCombined 0 FPS: 30 SkipPattern: 1, cameraId = 1 selected use case = 1
+05-26 11:38:13.308  9816 10249 I CHIUSECASE: [CONFIG ] chxpipeline.cpp:299 CreateDescriptor() Pipeline[Preview] pipeline pointer 0xb4000074089f8800 numInputs=0, numOutputs=1 stream w x h: 176 x 144
+05-26 11:38:13.310  9816 10249 I CHIUSECASE: [CONFIG ] chxsensorselectmode.cpp:810 FindBestSensorMode() Selected Usecase: 0, SelectedMode W=1632, H=1224, FPS:120, NumBatchedFrames:1, modeIndex:3
+05-26 11:38:13.310  9816 10249 I CHIUSECASE: [CONFIG ] chxpipeline.cpp:438 CreateDescriptor() Pipeline[Preview] Pipeline pointer 0xb4000074089f8800 Selected sensor Mode W=1632, H=1224
+05-26 11:38:13.311  9816 10249 W CHIUSECASE: [WARN   ] chxpipeline.cpp:185 GetNumberOfIFEsUsed() Pipeline[Preview] numIFEsUsed tag not found! numOfIFEsUsed will not be updated
+05-26 11:38:13.313  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 76(76),m:1,a:793,b:12508,c:11183,d:50000,ag:11,dg:1024,it:384,br:122
+05-26 11:38:13.321  9816 10249 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:3262 InitializeOverrideSession() Logical cam Id = 1 usecase addr = 0xb4000073d5533d40
+05-26 11:38:13.321  9816 10249 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:13.321  9816  6735 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:4145 RequestThreadProcessing() Entering Recovery thread of logical cameraId: 1
+05-26 11:38:13.321  9816 10249 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->configure_streams : X
+05-26 11:38:13.321  9807 14947 D HidlCamera3-Device: configureStreams : stream[0] : format = 0x22(IMPL_DEF), data_space = 0, usage flag = 0x20100 max_buffers = 8, physical_camera_id = 
+05-26 11:38:13.322  9807 14947 D Camera3-Device: CameraPerf: Connect Streams E
+05-26 11:38:13.322  9807 14947 I Camera3-Status: addComponent: Adding new component 2 - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:13.322  9807 14947 D Camera3-OutputStream: configureConsumerQueueLocked: Consumer wants 2 buffers, HAL wants 8
+05-26 11:38:13.323  9807 14947 D Camera3-Device: CameraPerf: Connect Streams X (1ms)
+05-26 11:38:13.323  9807 14947 D Camera3-Device: Set real time priority for request queue thread (tid 6728)
+05-26 11:38:13.324  9807 14947 D Camera3-Device: CameraPerf: configureStreamsLocked: Camera 3: Stream configuration X (17ms)
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {a08b612}
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: capture session start
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {a08b612}
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: capture session finish
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: capture session finish - spot metering
+05-26 11:38:13.324 11623  6723 I CameraLightSensor_Service: open preview start
+05-26 11:38:13.324  9807 14947 D Camera3-Device: setStreamingRequestList: Enter: calling submitRequestsHelper: repeating = true
+05-26 11:38:13.324  9807 14947 D Camera3-Device: submitRequestsHelper: mInterfaceLock.lock()
+05-26 11:38:13.325  9807 14947 I Camera3-Device: Submit request type: 0x1, repeating(true), burst(false)
+05-26 11:38:13.325  9807 14947 D Camera3-Device: setRepeatingRequests: lastFrameNumber 0.
+05-26 11:38:13.325  9807 14947 I Camera3-Status: markComponent: Component 1 is now active - RequestThread
+05-26 11:38:13.325  9807 14947 D Camera3-Device: submitRequestsHelper: mInterfaceLock.unlock()
+05-26 11:38:13.325  9807  6727 I CameraService: startCameraStreamingOps: Start camera streaming ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:13.325  9807  6727 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.325  9807  6738 D CameraDeviceClient: vr service found
+05-26 11:38:13.325  9807  6728 D Camera3-Device: CameraPerf: PrepareHALRequests E
+05-26 11:38:13.325 11623  6723 I CameraLightSensor_Service: mBackgroundHandler: Handler (android.os.Handler) {a08b612}
+05-26 11:38:13.325 10035 12236 E AppOps  : evalMode() Foreground mode : uid - 5021, op - 26, capability - 0
+05-26 11:38:13.325  9807  6738 I CameraDeviceClient: isCameraBlockedByHMT: usbpd_ids: 0000:0000, is camera blocking device: false
+05-26 11:38:13.325  9807  6727 I CameraService: Drop checking dpm for package com.samsung.adaptivebrightnessgo(pid 11623) from startCameraStreamingOps()
+05-26 11:38:13.325  9807  6727 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 1, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:13.326 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326  9807  6728 I Camera3-Status: markComponent: Component 2 is now active - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:13.326 10035 10909 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.326  9807  6728 I Camera3-Status: markComponent: Component 0 is now active - InflightRequests
+05-26 11:38:13.326  9807  6728 D Camera3-Device: CameraPerf: PrepareHALRequests X (1ms)
+05-26 11:38:13.326  9807  6728 D Camera3-Device: CameraPerf: sendRequestsBatch E
+05-26 11:38:13.326 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.326 10035 10909 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.326 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:13.326 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 10035 11608 D AutoRotationHandler: inject auto rotation priority = 1.0
+05-26 11:38:13.326 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 11623 27670 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.326 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_ACTIVE, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:13.326  9815  9815 I sensors-hal: inject_sensor_data:316, auto_rotation ar_mode:1
+05-26 11:38:13.326  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_request : E
+05-26 11:38:13.327  9815  9815 I sensors-hal: write_auto_rotation_mode:303, write_auto_rotation_mode ar_mode:1
+05-26 11:38:13.327  1095  1095 I SSC_DAEMON: physical_sensor_test_req_msg Sensor type :14, Msg type:15
+05-26 11:38:13.327  1095  1095 I SSC_DAEMON: 0.algo_id:3, num:1
+05-26 11:38:13.328  1095  1994 I SSC_DAEMON: AR od: 8, 1, 0
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 735: AEC vendorTagBase 0x806a0000
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 745: AWB vendorTagBase 0x80690000
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: AECAlgoSetNodeInterface: 755: AF vendorTagBase 0x806d0000
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 457: StaticAEC algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 468: AEC_VendorTag:: Lens Facing = 0 chiSessionHandle = 0xb400007408fe0018
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 541: StaticAEC algo create: camera open mask 2 
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 451: aec_camera_info 0 1
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:13.329  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 559: CreateAECAlgorithm (refcnt:0 cameraId 1 OverrideCameraOpen 1 lensFacing 0 pAECSingletonWrapper->pAECSingleton 0x0
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AEC: TsAecFront_load_lib: 194: TsAec_ptr 0x14020a14bd86beed
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AEC: LoadAlgorithmAndSymbols: 386: [AEC] Custom Algo handle 0xb4000073db7c8f00 
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AEC: CreateAEC: 610: CreateAECAlgorithm 0xb4000073fe6079b0 libName K32QS_libTsAeFront.so sensorName IMX616
+05-26 11:38:13.330  9816 10248 E SS_3A   : ERROR: AEC: TsAecGetCalibData: 734: offset value is NULL (0x0, 0x0)
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 676: AWBAlgoSetNodeInterface
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 704: AWB vendorTagBase 0x80690000
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 713: AEC vendorTagBase 0x806a0000
+05-26 11:38:13.330  9816 10248 I SS_3A   :  INFO: AWB: AWBAlgoSetNodeInterface: 722:  AF vendorTagBase 0x806d0000
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 506: statsStreamInitConfig operationMode 0
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 430: StaticAWB algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 439: Lens Facing = 0
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 487: StaticAWB algo create: overrideCameraOpen is 2
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 497: cameraInfo algoRole 0, cameraId 1
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 524: CreateAWBAlgorithm (refcnt:0 cameraId 1 OverrideCameraOpen 1 lensFacing 0 pAWBSingletonWrapper->pAWB 0x0
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: CreateAWBAlgorithm: 554: Create AWBAlgorithm, pAWB 0xb4000073fe607e10
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: LoadAlgorithmAndSymbols: 373: Loaded AWB algorithm and Symbols : K32QS_libTsAwbFront.so!
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: LoadAlgorithmAndSymbols: 396: pInstance->hAWBAlgorithm 0xb4000073de0d9240
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 114: ADDR_AWB 0x238, LensType 0
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 136: module[0] 375 685 686 309
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_get_cal_data_front: 138: module[0] RG 0.547046 , BG 0.450766
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 172: [eLensType 0] Preset_gain = 1.725892, 1.804415
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 176: [eLensType 0] Adjust_gain = 0.999750, 1.006771
+05-26 11:38:13.331  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 376: E
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 405: StaticAF algo sizeOfParam for CHISTATSHANDLE is 24
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 414: Lens Facing(currentCam) = 0
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 434: driverSensorId = 1
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 456: TsAf->FactoryCamera : 0
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 477: StaticAF algo create: overrideCameraOpen is 2
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 399: af_camera_info 1
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: TsCommonFillSensorIdMap: 26: Already filled, cameraId(1) driverSensorId(1)
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 493: newly mapped af_camera_info(sensorId) 1
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 497: CreateAFAlgorithm (pre_CameraId 1 refcnt:0 cameraId 1 overrideCameraOpen 1 lensFacing 0 pAFSingletonWrapper->pAFSingleton 0x0
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 520: pAF before 0x0
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 531: SS_AF_LIB loading cam[0]
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 287: E
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 296: libPathName : K32QS_libTsAfFront.so!
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: TsAf_init_front: 2337: libptr: 0x608c7c56081254fd E
+05-26 11:38:13.332  9816 10248 E SS_3A   : ERROR:  AF: TsAf_get_cal_data_front: 1845: Front camera PDAF CAL Version -1 i_MultiUse 0
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 102) : Front Version = 0xf827 Chip Type = 1 (0:LSI, 1:QC) 
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 278) : af cal data far: 140118234, middle: 87295496, near: 61342792, add_80: 151324888, add_50: 114231202, plus_offset: 1485, minus_offset: 1724
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_BootingInit (line 310) : paf_cal_data_info = -1 paf_cal_errcheck 0xffffffff
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [CMG_EFL] FrontAfLib_BootingInit (line 316)  QCHWPD enabled: paf_cal_data_info = -1 
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: LoadAlgorithmAndSymbols: 365: X
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 548: pAF first time 0xb4000073fe6078c0
+05-26 11:38:13.332  9816 10248 I SS_3A   :  INFO:  AF: CreateAFAlgorithm: 574: X
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] FrontAfLib_AlgorithmInit (line 467) focus mode = 0 paf_stats_valid : 0 
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [CMG_AF_FUNC] Front_FactoryAfInit (line 2064)
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [cam_id_0][CMG_EFL] Front_UpdateAfStatus (line 304) : AF status 0x2 0x0
+05-26 11:38:13.332  9816 10248 E FRONT_AF_DEBUG: [CMG_AF][CMG_AF_LIB] FACTORY AF CAL Start !!!!!
+05-26 11:38:13.335  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/platform/android/cvpSession.cpp Line: 173 Function: cvpGetDebugEnable() Msg:  CVP Debug Logs Disabled 
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 620 Function: cvpEstimatePowerDme() Msg: DME Voting
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 1540 Function: cvpAggreatePower() Msg: After aggregation
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 62767350, SysCache 0
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 62767350, SysCache 0
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPvtUtils.cpp Line: 163 Function: cvpSetPower() Msg: Update power to KMD
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 18397950, Ica 0, Od 0, Mpu 0, Fw 50400000
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 62767350, SysCache 0
+05-26 11:38:13.336  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 62767350, SysCache 0
+05-26 11:38:13.337  9816 10163 I vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:741: Successfully opened file /vendor/lib/rfsa/adsp/libcamera_nn_skel.so
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:815: Error 0x80000406: remote_handle_open_domain: dynamic loading failed for file:///libcamera_nn_skel.so?camera_nn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3 (dlerror signature verify start failed for libcamera_nn_skel.so)
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:849: Error 0x80000406: remote_handle64_open failed for file:///libcamera_nn_skel.so?camera_nn_skel_handle_invoke&_modver=1.0&_dom=cdsp
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:379: Error 0x1d: verify_local_handle failed. handle 0x0
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:394: Error 0x1d: get_domain_from_handle failed. handle 0x0
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:766: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 18 on domain 3 (sc 0x12000000)
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:379: Error 0x1d: verify_local_handle failed. handle 0x0
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:394: Error 0x1d: get_domain_from_handle failed. handle 0x0
+05-26 11:38:13.340  9816 10232 E vendor.samsung.hardware.camera.provider@4.0-service_64: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:766: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 21 on domain 3 (sc 0x15010000)
+05-26 11:38:13.340  9816 10232 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:3552 FDELibWrapperCameraNNSetup() Set DSP power TURBO failed! nnResult = 29
+05-26 11:38:13.340  9816 10232 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:1100 FDELibWrapperCreateDLHandle() Failure in FDELibWrapperCameraNNSetup()
+05-26 11:38:13.340  9816 10232 W CamX    : [ WARN][FD     ] camxfdengine.cpp:325 FDEngineCreate() Create DL handle failure, use standard solution, engineType 4, result = 1
+05-26 11:38:13.409  9816 10248 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_request : X
+05-26 11:38:13.409  9807  6728 D Camera3-Device: CameraPerf: sendRequestsBatch X (83ms)
+05-26 11:38:13.410  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 172: [eLensType 0] Preset_gain = 1.725892, 1.804415
+05-26 11:38:13.410  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_init_with_mode: 176: [eLensType 0] Adjust_gain = 0.999750, 1.006771
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TSAecFront_set_param: 821: OpMode 1 StartMode 0
+05-26 11:38:13.410  9816 10231 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:13.410  9816 10229 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:2570 PopulatePropPoolFrameControl() Invalid exposure parameters: gain: 0.000000, exposureTime: 0
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TSAecFront_set_param: 1058: AEL 0
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TsAecGetVendorTagInfo: 3021: pCaptureIntent=1 recordinghint 0
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TsAecFront_Set_Exp_Table: 424: [Exp_Table::Front] Shooting=30, ExpDiagram=55|9, m_video=0, m_fdae=1, rec=0, hfr=0, lightcon=1
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TsAecGetVendorTagInfo: 3230: aeMode 1
+05-26 11:38:13.410  9816 10229 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][1] algo_out Av=2.273 g=8.653 e_t=0.01999 LLS=0x0 Ev=6.500 Bv=1.500 PEv=6.500 Cvgd=0 lux=281, lls=0x0, drc=1.000 wide=0
+05-26 11:38:13.412  9816 10230 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:13.414  9816 10230 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:13.452  9816 10233 I SS_3A   :  INFO: AWB: TsAwb_process_preview: 2242: [start_dbg] HighFPS case, Increase pipeline delay
+05-26 11:38:13.452  9816 10233 I SS_3A   :  INFO: AWB: TsAwb_parse_stats: 1616: [stats_dbg] statsBayerGrid startupMode = StatisticsStartUpInvalid, exit now, excute_flag = 1
+05-26 11:38:13.452  9816 10234 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][4] algo_out Av=2.273 g=8.560 e_t=0.01667 LLS=0x0 Ev=6.777 Bv=2.152 PEv=7.152 Cvgd=0 lux=266, lls=0x0, drc=1.000 wide=0
+05-26 11:38:13.452  9816 10230 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 0.000000
+05-26 11:38:13.455  9816 10229 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_result : E
+05-26 11:38:13.455  9816 10229 I SehCamDevSession@5.0-impl: [CAMKPI] camera3->process_capture_result : X
+05-26 11:38:13.456 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.458  9807 11090 D Camera3-OutputStream: returnBufferCheckedLocked: First frame for stream 0, width 176, height 144, format 34
+05-26 11:38:13.480 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 11:38:13.485  9816 10230 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.486  9816 10229 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][5] algo_out Av=2.273 g=7.396 e_t=0.01667 LLS=0x0 Ev=6.988 Bv=2.207 PEv=7.207 Cvgd=0 lux=265, lls=0x0, drc=1.209 wide=0
+05-26 11:38:13.489 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.519  9816 10229 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][6] algo_out Av=2.273 g=6.837 e_t=0.01667 LLS=0x0 Ev=7.102 Bv=2.219 PEv=7.219 Cvgd=0 lux=264, lls=0x0, drc=1.283 wide=0
+05-26 11:38:13.519  9816 10232 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.522 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.522 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.547 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 11:38:13.547 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 11:38:13.547 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 11:38:13.547 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.205781 msecs
+05-26 11:38:13.547 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.216823 msecs
+05-26 11:38:13.548 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.213698 msecs
+05-26 11:38:13.552  9816 10230 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.552  9816 10229 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][7] algo_out Av=2.273 g=12.608 e_t=0.00834 LLS=0x0 Ev=7.219 Bv=2.246 PEv=7.246 Cvgd=0 lux=264, lls=0x0, drc=1.238 wide=0
+05-26 11:38:13.557 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.557 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.585  9816 10230 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.586  9816 10233 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][8] algo_out Av=2.273 g=12.371 e_t=0.00834 LLS=0x0 Ev=7.246 Bv=2.270 PEv=7.270 Cvgd=0 lux=263, lls=0x0, drc=1.180 wide=0
+05-26 11:38:13.591 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.591 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.618  9816 10229 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.619  9816 10230 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][9] algo_out Av=2.273 g=12.238 e_t=0.00834 LLS=0x0 Ev=7.262 Bv=2.277 PEv=7.277 Cvgd=0 lux=263, lls=0x0, drc=1.167 wide=0
+05-26 11:38:13.624 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.624 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.652  9816 10231 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.652  9816 10234 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][10] algo_out Av=2.273 g=12.106 e_t=0.00834 LLS=0x0 Ev=7.277 Bv=2.293 PEv=7.293 Cvgd=0 lux=263, lls=0x0, drc=1.148 wide=0
+05-26 11:38:13.657 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.657 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.685  9816 10231 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.685  9816 10233 I SS_3A   :  INFO: AEC: TsAec_process_get_aec_info: 1550: [0][11] algo_out Av=2.273 g=12.041 e_t=0.00834 LLS=0x0 Ev=7.285 Bv=2.293 PEv=7.293 Cvgd=1 lux=263, lls=0x0, drc=1.136 wide=0
+05-26 11:38:13.690 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.690 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.718  9816 10231 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.724 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.724 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.753  9816 10234 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.756 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.757 11623  6723 I CameraLightSensor_Service: wrong aEState value =1
+05-26 11:38:13.785  9816 10233 E CamX    : [ERROR][SW_PROC] camxswprocess_tonemap.cpp:310 SWProcessApplyFixedGTM() Invalid values 0.000000 3635892605978006984698692185237128999683849698318428318164041717687059038687937757893562393575661237037894308711690829098942698752245706703490289257312184064432710170484095803789240863882689585298354898548024342026165621744467968.000000
+05-26 11:38:13.791 11623  6723 I CameraLightSensor_Service: open preview end
+05-26 11:38:13.791 11623  6723 I CameraLightSensor_Service: converged or locked aEState value =2
+05-26 11:38:13.791 11623  6723 I CameraLightSensor_Service: exposure time=8333700.0 EV= 119 BV= 587.0 aEState=2 testPatternMode : 0
+05-26 11:38:13.791 11623 11648 I CameraLightSensor_Service: stopTask called, isCameraStopPending : false
+05-26 11:38:13.792  9807 14947 D Camera3-Device: flush: mInterfaceLock.lock()
+05-26 11:38:13.792  9807 14947 I Camera3-Device: Creating CameraServiceWatchDog with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:13.792 10035 11616 D CameraLightSensor_Manager:  Exposure= 119.0 Brightness= 587.0 Total listeners= 1
+05-26 11:38:13.792 10035 11616 D MotionRecognitionService: Ev-lux map, exposure= 119.0 brightness= 587.0
+05-26 11:38:13.792  9807 14947 I Camera3-Device: CameraServiceWatchDog::watchThread for mRequestThread->flush() with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:13.792  9807 14947 D HidlCamera3-Device: CameraPerf: flush E
+05-26 11:38:13.792 10035 11616 D Debug_Camera_Listener: com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79 lux= 100.0 exposure= 119.0 bv= 587.0
+05-26 11:38:13.792 10035 11616 D MotionRecognitionService: values = 100.0
+05-26 11:38:13.792  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 479: E
+05-26 11:38:13.792  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:13.792 10035 11616 D MotionRecognitionService: onReceive lux: 100.0  action: 
+05-26 11:38:13.792  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 5
+05-26 11:38:13.792  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 545: HAL flush - Start
+05-26 11:38:13.792 10035 11616 D MotionRecognitionService: Inject brightness form Cam 100.0
+05-26 11:38:13.792 10035 11616 D MotionRecognitionService: Inject calibrated lux
+05-26 11:38:13.793  9815 16690 I sensors-hal: handle_sns_std_sensor_event:206, Phy Lux 91 Cam Lux 100, br 122
+05-26 11:38:13.793  9815 16690 I sensors-hal: handle_sns_std_sensor_event:213, [SSC_LIGHT] P: 91(91),m:1,a:2543,b:162471,c:40307,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:13.793  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=13
+05-26 11:38:13.793  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.793  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=11
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=12
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=14
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=4, errorStreamId=0, frameNumber=15
+05-26 11:38:13.794  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.807  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=10
+05-26 11:38:13.807  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.807  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 10 , due to buffer error.
+05-26 11:38:13.807  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=11
+05-26 11:38:13.807  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.807  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 11 , due to buffer error.
+05-26 11:38:13.807  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=12
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.808  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 12 , due to buffer error.
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=13
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.808  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 13 , due to buffer error.
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=14
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.808  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 14 , due to buffer error.
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, errorCode=5, errorStreamId=0, frameNumber=15
+05-26 11:38:13.808  9807 11090 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.808  9807 11090 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 15 , due to buffer error.
+05-26 11:38:13.809  9807  6728 E CameraDeviceClient: notifyError: pid=11623, errorCode=3, errorStreamId=0, frameNumber=16
+05-26 11:38:13.809  9807  6728 E CameraDeviceClient: notifyError: pid=11623, skipClientNotification=false
+05-26 11:38:13.809  9807  6728 E Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 frame 16 , due to buffer error.
+05-26 11:38:13.809  9807  6728 I Camera3-Status: markComponent: Component 2 is now idle - streamId = 0, format = 0x22(IMPL_DEF), width = 176, height = 144, option = 0x0, type = OUTPUT
+05-26 11:38:13.809  9807  6728 I Camera3-IOStreamBase: FpsStats: stream 0, requested=17, received=17, valid=10, invalid=7
+05-26 11:38:13.809  9807  6728 I Camera3-Status: markComponent: Component 0 is now idle - InflightRequests
+05-26 11:38:13.809  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 549: HAL flush - End
+05-26 11:38:13.809  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:13.809  9807  6728 I Camera3-Status: markComponent: Component 1 is now idle - RequestThread
+05-26 11:38:13.809  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 489: X (0)
+05-26 11:38:13.810  9807 14947 D HidlCamera3-Device: CameraPerf: flush X (17ms)
+05-26 11:38:13.810  9807  6727 I CameraService: finishCameraStreamingOps: finish camera streaming ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:13.810 10035 10909 E AppOps  : Operation not started: uid=5021 pkg=com.samsung.adaptivebrightnessgo(null) op=CAMERA
+05-26 11:38:13.810  9807 10558 E CameraDeviceClient: Disconnect from CameraDeviceClient
+05-26 11:38:13.810  9807 10558 D CameraDeviceClient: disconnect:stop IT Policy checking thread
+05-26 11:38:13.810  9807 10558 D Camera2ClientBase: Camera 3: start to disconnect
+05-26 11:38:13.810  9807 10558 D Camera2ClientBase: Camera 3: serializationLock acquired
+05-26 11:38:13.810  9807 10558 D Camera2ClientBase: Camera 3: Shutting down
+05-26 11:38:13.810  9807 10558 D Camera2ClientBase: Camera 3: start to cacheDump
+05-26 11:38:13.810  9807  6727 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 2, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:13.811 10035 10984 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 11623 27670 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 10035 10984 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.811  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:13.811 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_IDLE, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:13.811 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.811 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.811 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.811 10035 11608 D AutoRotationHandler: inject auto rotation priority = 0.0
+05-26 11:38:13.812  9815  9815 I sensors-hal: inject_sensor_data:316, auto_rotation ar_mode:0
+05-26 11:38:13.812  9815  9815 I sensors-hal: write_auto_rotation_mode:303, write_auto_rotation_mode ar_mode:0
+05-26 11:38:13.812  1095  1095 I SSC_DAEMON: physical_sensor_test_req_msg Sensor type :14, Msg type:15
+05-26 11:38:13.812  1095  1095 I SSC_DAEMON: 0.algo_id:3, num:1
+05-26 11:38:13.814  1095  1994 I SSC_DAEMON: AR od: 8, 0, 0
+05-26 11:38:13.855  9807 10558 E Camera2-FrameProcessorBase: removeListener: 
+05-26 11:38:13.862  9807 10558 D Camera3-Device: flush: mInterfaceLock.lock()
+05-26 11:38:13.862  9807 10558 I Camera3-Device: Creating CameraServiceWatchDog with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:13.862  9807 10558 I Camera3-Device: CameraServiceWatchDog::watchThread for mRequestThread->flush() with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 11:38:13.862  9807 10558 D HidlCamera3-Device: CameraPerf: flush E
+05-26 11:38:13.862  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 479: E
+05-26 11:38:13.862  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:13.862  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 5
+05-26 11:38:13.862  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 545: HAL flush - Start
+05-26 11:38:13.862  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 549: HAL flush - End
+05-26 11:38:13.862  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 11:38:13.862  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 489: X (0)
+05-26 11:38:13.862  9807 10558 D HidlCamera3-Device: CameraPerf: flush X (0ms)
+05-26 11:38:13.862  9807 10558 D Camera3-Device: waitUntilDrainedLocked: Camera 3: Waiting until idle (5000000000ns)
+05-26 11:38:13.862  9807 10558 D Camera3-Device: waitUntilDrained: mInterfaceLock.unlock()
+05-26 11:38:13.862  9807 10558 I Camera3-Device: disconnectImpl: E
+05-26 11:38:13.862  9807 10558 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (17) samples:
+05-26 11:38:13.862  9807 10558 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+05-26 11:38:13.862  9807 10558 I CameraLatencyHistogram:      82.35   11.76   5.88   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:13.862  9807 10558 I Camera3-Device: CameraServiceWatchDog::watchThread for interface->close() with cycles = 100, cycleLength = 100 ms and Timer = 10000 ms 
+05-26 11:38:13.862  9807 10558 D HidlCamera3-Device: CameraPerf: close E
+05-26 11:38:13.862  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 557: E
+05-26 11:38:13.862  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 7
+05-26 11:38:13.862  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 275: HAL close - Start
+05-26 11:38:13.864   629   629 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.9::IDisplayConfig/default in either framework or device VINTF manifest.
+05-26 11:38:13.864  9816 10248 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.9
+05-26 11:38:13.872  9815 16690 I sensors-hal: handle_sns_std_sensor_event:203, Disable Cam Lux 155
+05-26 11:38:13.872  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 155(155),m:1,a:2603,b:123212,c:35101,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:13.873 10035 10261 D SensorService: [PHYSICALLIGHT] Data is incorrect -2.000000
+05-26 11:38:13.873 10035 10261 D SensorService: [CALIBRATEDLUX] Event happens -2.000000
+05-26 11:38:13.873 10035 10317 D MotionRecognitionService: CalibratedLux event happens = -2.0
+05-26 11:38:13.873 10035 10317 D MotionRecognitionService: Brightness Mode(Value): 1
+05-26 11:38:13.873 10035 10317 D MotionRecognitionService: is faceUnlock : :false phone is locked : false
+05-26 11:38:13.873 10035 10317 D MotionRecognitionService: stopService adaptivebrightnessgo
+05-26 11:38:13.873 10035 10317 D Debug_Camera_Manager: Entering2 unRegisterCameraLightSensorcom.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.873 10035 10317 D Debug_Camera_Manager: Exit2 unRegisterCameraLightSensorcom.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.873 10035 10317 I SensorManager: [CameraLight] unregisteListener : com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.873 10035 11616 D CameraLightSensor_Manager: IPC_SERVICE_UNREGISTER_CONNECTION -> MSG_SERVICE_STOP_CAMERA
+05-26 11:38:13.874 10035 10317 D SensorService: Calling activate off 1935762019
+05-26 11:38:13.874 10035 10317 I SensorService: [CameraLightSensor] activate 0
+05-26 11:38:13.874 10035 10317 D SensorManager: unregisterListener :: 1935762019, Camera Light Sensor, com.samsung.android.gesture.AdaptiveBrightnessController$4@a36be79
+05-26 11:38:13.875  9816 10248 E CamX    : [ERROR][FD     ] camxfdhwnode.cpp:108 ReleaseResources() Recycling the buffers modeBitMask: 1
+05-26 11:38:13.877  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0x190200 refCount=1 SubdeviceType=1 subDevHandle=0xad0105
+05-26 11:38:13.883  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0x190200 refCount=0 SubdeviceType=0 subDevHandle=0x480101
+05-26 11:38:13.883  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 269: overrideCameraClose in AECDestroy Camera close mask 2 
+05-26 11:38:13.883  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 275: pCameraInfo->cameraid in AECDestroy 1
+05-26 11:38:13.883  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 297: TsAECDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing: 0 pAECAlgorithm 0xb4000073fe6079b0 pAECSingletonWrapper->pAECSingleton 0xb4000073fe6079b0
+05-26 11:38:13.883  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 306: [0]pAECSingleton destroy is 0xb4000073fe6079b0 0xb4000073fe6079b0
+05-26 11:38:13.883  9816 10248 W RefBase : CallStack::getCurrentInternal not linked, returning null
+05-26 11:38:13.883  9816 10248 W RefBase : CallStack::logStackInternal not linked
+05-26 11:38:13.883  9816 10248 I SS_3A   :  INFO: AEC: TsAecFront_unload_lib: 160: TsAec_libptr=0x14020a14bd86beed
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 278: overrideCameraClose in AWBDestroy 2
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 284: cameraId in AWBDestroy 1
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 306: TsAwbDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAWBSingletonWrapper->pAWB 0xb4000073fe607e10
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 314: Destroy AWBAlgorithm, pAWB 0xb4000073fe607e10
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO:  AF: TsAFDestroy: 250: Destroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAFAlgorithm 0xb4000073fe6078c0 pAFSingletonWrapper->pAFSingleton 0xb4000073fe6078c0 TeleCameraInit 0
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2396: TsAf_wrap: 0xb4000073de119000, E
+05-26 11:38:13.884  9816 10248 I SS_3A   : 
+05-26 11:38:13.884  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2414:  X
+05-26 11:38:13.884  9816 10248 I SS_3A   : 
+05-26 11:38:13.893  9816 10248 I CamX    : [ INFO][CORE   ] camxchitintlessinterface.cpp:71 TintlessAlgoDestory() Tintless Algo Destroy
+05-26 11:38:13.902  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPvtUtils.cpp Line: 163 Function: cvpSetPower() Msg: Update power to KMD
+05-26 11:38:13.902  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:13.902  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:13.902  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 11:38:13.902  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 11:38:13.903  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 1602 Function: cvpDeaggreatePower() Msg: After deaggregation
+05-26 11:38:13.903  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:13.903  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 11:38:13.903  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 11:38:13.903  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 11:38:13.910  9816  6735 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:4194 RequestThreadProcessing() Terminating recovery thread for logical cameraId: 1
+05-26 11:38:13.911  9807 10558 I CameraProviderManager: Camera device device@3.5/legacy/3 torch status is now AVAILABLE_OFF
+05-26 11:38:13.911  9807 10558 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=3, newStatus=1
+05-26 11:38:13.911  9807 10558 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 3: No such file or directory (-2)
+05-26 11:38:13.911  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 279: HAL close - End
+05-26 11:38:13.911  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 11:38:13.911  9816 10248 I Unihal  : FwkCaptureManager.cpp: Release: 166: Already released.
+05-26 11:38:13.911  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 571: X (0)
+05-26 11:38:13.911  9807 10558 D HidlCamera3-Device: CameraPerf: close X (48ms)
+05-26 11:38:13.911  9807 10558 D Camera3-OutputStream: disconnectLocked: disconnecting stream 0 from native window
+05-26 11:38:13.912  9815 16690 I sensors-hal: handle_sns_std_sensor_event:227, Phy Lux 145 lux 190 last_camlux 100
+05-26 11:38:13.912  9815 16690 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 190(190),m:1,a:2526,b:173874,c:41698,d:50000,ag:9,dg:256,it:384,br:122
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (17) samples:
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram: Stream 0 enqueueBuffer latency histogram (10) samples:
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 11:38:13.913  9807 10558 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 11:38:13.913  9807 10558 I Camera3-Device: disconnectImpl: X
+05-26 11:38:13.913  9807 10558 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 3, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 11:38:13.913  9807 10558 I Camera3-Device: setDeviceInjector
+05-26 11:38:13.913  9807 10558 D CameraService: BasicClient::disconnect E
+05-26 11:38:13.913  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.914  9807 10558 I CameraService: finishCameraOps: Finish camera ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 11:38:13.914  9807 10558 I CameraService: this package is a adaptive brightness app.
+05-26 11:38:13.914  9807 10558 I CameraService: Drop updateStatus callbak for package com.samsung.adaptivebrightnessgo(pid 11623)
+05-26 11:38:13.914 10035 10909 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 10534 10585 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 10035 10909 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.914 12710 13992 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914  3519 14115 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914  7297  7306 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 11872 14922 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 10800 10813 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 16811  4881 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 12146 12166 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.914 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_CLOSED, client=com.samsung.adaptivebrightnessgo
+05-26 11:38:13.914 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.914 12146 12166 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 11:38:13.914  9807 10558 I CameraFlashlight: deviceClosed: device 3 is closed
+05-26 11:38:13.914  9807 10558 I CameraService: disconnect: Disconnected client for camera 3 for PID 11623
+05-26 11:38:13.914  9807 10558 D CameraService: BasicClient::disconnect X
+05-26 11:38:13.914 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 11:38:13.915 11623 11648 I CameraLightSensor_Service: Camera released, time taken= 612 cameraLock= true
+05-26 11:38:13.915 11623 11648 I CameraLightSensor_Service: stopBackgroundThread : mBackgroundHandler is set to null
+05-26 11:38:13.915 11623 11648 I CameraLightSensor_Service: stopTask called, isCameraStopPending : false
+05-26 11:38:13.915 11623 27670 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 11:38:13.915 11623 11648 I CameraLightSensor_Service: stopBackgroundThread : mBackgroundHandler is already set to null
+05-26 11:38:13.915 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_STOP_CAMERA, totalConnections= 0
+05-26 11:38:13.992 11645  6411 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-26 11:38:13.992 11645  6411 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbyConnections.TxAdvertisement}
+05-26 11:38:13.993 10035 11616 D CameraLightSensor_Manager: MSG_MANAGER_LISTENER_LOOP array is 0
+05-26 11:38:14.048 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 11:38:14.049 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 11:38:14.049 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 11:38:14.049 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.177708 msecs
+05-26 11:38:14.049 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.209583 msecs
+05-26 11:38:14.049 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.199427 msecs
+05-26 11:38:14.201   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:14.201   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:38:14.201   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 11:38:14.201   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:14.205 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x1b, addressType=1, address=4471B6_5, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-78, periodicAdvInt=0x0
+05-26 11:38:14.206 11645 13707 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+05-26 11:38:14.285   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:14.285   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:38:14.294   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 11:38:14.294   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 11:38:14.294   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 11:38:14.296 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x1b, addressType=1, address=4471B6_5, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-78, periodicAdvInt=0x0
+05-26 11:38:14.296 11645 13707 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+05-26 11:38:14.311 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 2551, isSameBssidAndFreq true
+05-26 11:38:14.311 10035 10437 I SemWifiLinkQualityMonitor: Link Qos Query: 0,154 ms / 52,024 Mbps (137 / 0,008 / 2,333)
+05-26 11:38:14.312 10534 10534 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+05-26 11:38:14.312 10534 10601 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+05-26 11:38:14.343 10035 12236 I EDMNativeHelperService: isScreenCaptureEnabled
+05-26 11:38:14.344 10035 12236 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+05-26 11:38:14.348 12277 14831 W MediaProvider: isAppCloneUserPair for user 0: false
+05-26 11:38:14.352 10035 12236 D SyncManager: userId - 0 auto - true
+05-26 11:38:14.352  6762  6762 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+05-26 11:38:14.369   628  1324 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+05-26 11:38:14.375   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 11:38:14.375   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 11:38:14.386 11645  6405 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+05-26 11:38:14.387 14068 14456 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+05-26 11:38:14.387 14068 14456 W ExifInterface: java.io.IOException: Encountered corrupt PNG file.
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.media.ExifInterface.getPngAttributes(ExifInterface.java:3461)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2026)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1641)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1592)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.getDateTimeOriginal(MediaParser.java:390)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.computeDateMetadata(MediaParser.java:367)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.createOperation(MediaSync.java:429)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.loadInternal(MediaSync.java:389)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.load(MediaSync.java:325)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.-$$Nest$mload(Unknown Source:0)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync$SyncTask.run(MediaSync.java:475)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.os.Handler.handleCallback(Handler.java:942)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.os.Looper.loopOnce(Looper.java:226)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.os.Looper.loop(Looper.java:313)
+05-26 11:38:14.387 14068 14456 W ExifInterface: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+05-26 11:38:14.392 11645  6553 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+05-26 11:38:14.419 14068 14456 D MediaSync: loaded: 64ms, 1
+05-26 11:38:14.484 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 11:38:14.525   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 11:38:14.550 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 11:38:14.550 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 11:38:14.550 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 11:38:14.550 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.338854 msecs
+05-26 11:38:14.551 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.385781 msecs
+05-26 11:38:14.551 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.350105 msecs
+05-26 11:38:14.576 12277 12277 I MediaServiceV2: Creating work for intent Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 11:38:14.576 12277 12277 I MediaServiceV2: Work enqueued for intent: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 11:38:14.585 12277 12576 D WM-SystemJobScheduler: Scheduling work ID 324816c0-d8f4-4c09-876c-45f0e18ddf68Job ID 14459
+05-26 11:38:14.591 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:38:14.591 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:38:14.591 12277 12277 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=324816c0-d8f4-4c09-876c-45f0e18ddf68, generation=0)
+05-26 11:38:14.591 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:38:14.591 12277 12576 D WM-GreedyScheduler: Starting work for 324816c0-d8f4-4c09-876c-45f0e18ddf68
+05-26 11:38:14.592  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][820553] accel_sample [-0.101, -0.232,  9.926] 229686749831153
+05-26 11:38:14.593 12277 12478 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=324816c0-d8f4-4c09-876c-45f0e18ddf68, generation=0)
+05-26 11:38:14.594 12277 12478 D WM-Processor: Work WorkGenerationalId(workSpecId=324816c0-d8f4-4c09-876c-45f0e18ddf68, generation=0) is already enqueued for processing
+05-26 11:38:14.596 12277 12277 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+05-26 11:38:14.597 12277  6774 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 11:38:14.606 10035 10330 D SyncManager: userId - 0 auto - true
+05-26 11:38:14.608 12277  6774 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 11:38:14.609 12277 12576 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=324816c0-d8f4-4c09-876c-45f0e18ddf68, tags={ com.android.providers.media.MediaServiceV2 } ]
+05-26 11:38:14.610 12277 12277 D WM-Processor: Processor 324816c0-d8f4-4c09-876c-45f0e18ddf68 executed; reschedule = false
+05-26 11:38:14.610 12277 12277 D WM-SystemJobService: 324816c0-d8f4-4c09-876c-45f0e18ddf68 executed on JobScheduler
+05-26 11:38:14.616 12277 12576 D WM-SystemJobScheduler: Scheduling work ID 991aeaac-5c57-4909-bde6-3d066e31ff1aJob ID 14460
+05-26 11:38:14.618 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:38:14.618 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:38:14.618 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:38:14.619 12277 12576 D WM-GreedyScheduler: Cancelling work ID 324816c0-d8f4-4c09-876c-45f0e18ddf68
+05-26 11:38:14.620 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 11:38:14.620 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 11:38:14.620 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 11:38:14.648 10035 10984 D SyncManager: userId - 0 auto - true
+05-26 11:38:14.650 15151 15429 I BaseThreadPoolExecutor: [#CMH#] Task o.e@ef93fa7 is submitted
+05-26 11:38:14.651 14068 14456 D MediaSync: loaded: 44ms, 1
+05-26 11:38:14.652 14068 27186 D MediaParser: scanItem: 1
+05-26 11:38:14.654 10035 10330 D SyncManager: userId - 0 auto - true
+05-26 11:38:14.663 10035 10984 D SyncManager: userId - 0 auto - true
+05-26 11:38:14.663 11645 19359 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+05-26 11:38:14.665 12277 12555 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+05-26 11:38:14.670 14068  6784 D LocationService: Begin: com.samsung.intent.action.UPDATE_LOCATION
+05-26 11:38:14.676 14068 14456 D MediaSync: loaded: 13ms, 0
+05-26 11:38:14.689 14068  6784 D LocationManager: delete null addr: 0

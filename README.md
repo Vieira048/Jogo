@@ -1,24 +1,22 @@
 # DeathtrapDungeon
 
-* [游戏原型](#1)
-* [项目演示](#2)
-* [绘图资源](#3)
-* [代码实现](#4)
-* [注意事项](#5)
-* [技术探讨](#6)
-* [参考来源](#7)
+- [Protótipo do jogo](#protótipo-do-jogo)
+- [Demonstração](#demonstração)
+- [Recursos gráficos](#recursos-gráficos)
+- [Implementação](#implementação)
+- [Discussão técnica](#discussão-técnica)
+- [Observações](#observações)
+- [Referências](#referências)
 
-----------
+## Protótipo do Jogo
 
-<h1 id="1">游戏原型</h1>
+**DeathtrapDungeon** é um jogo de aventura em masmorra no estilo **2D roguelike**. O jogador explora salas conectadas, enfrenta monstros com uma espada e tenta sobreviver dentro de uma masmorra perigosa. Os inimigos também são ameaçadores, então avançar exige atenção, boas escolhas e uso cuidadoso dos recursos.
 
-**死亡地牢**是一款 **2D-Roguelike** 的地牢冒险游戏。手握利刃，斩杀怪物，在凶险的地牢内生存下去。但注意，敌人也并非善茬，保持警惕，取舍果断，足智多谋才是制胜的关键。
+- Blog original: [post do projeto DeathtrapDungeon](https://www.cnblogs.com/SouthBegonia/p/11604918.html)
+- Repositório original: [DeathtrapDungeon - SouthBegonia](https://github.com/SouthBegonia/DeathtrapDungeon)
+- Download jogável original: [DeathtrapDounge, código `wekp`](https://pan.baidu.com/s/1YhGINK1zqLKmD6bp1C29tA)
 
-博客园：[Unity项目 - DeathtrapDungeon死亡地牢](https://www.cnblogs.com/SouthBegonia/p/11604918.html)
-项目地址：[DeathtrapDungeon - SouthBegonia](https://github.com/SouthBegonia/DeathtrapDungeon)
-试玩下载：[DeathtrapDounge 提取码:wekp](https://pan.baidu.com/s/1YhGINK1zqLKmD6bp1C29tA)
-
-<h1 id="2">项目演示</h1>
+## Demonstração
 
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191014092449918-1863025223.gif)
 
@@ -34,107 +32,119 @@
 
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191022220131532-786062296.gif)
 
+## Recursos Gráficos
 
-<h1 id="3">绘图资源</h1>
+- Os principais recursos de arte vêm de [Dungeon Tileset - itch.io](https://0x72.itch.io/16x16-dungeon-tileset).
 
-- 主要美术资源来自：[Dungeon Tileset - itch](https://0x72.itch.io/16x16-dungeon-tileset)
+## Implementação
 
---------------------
+**Sistema central**
 
-<h1 id="4">代码实现</h1>
+- `GameManager.cs`: usa padrão singleton e centraliza o gerenciamento das principais instâncias do jogo.
 
-**总控系统：**
-- GameManager.cs：单例模式，统一管理各类的实例
+**Classes de base**
 
-**基类：** 
-- 生命值类：Fighter.cs（生命值，伤害系统）
-- 移动类：Mover.cs（移动系统）
-- 交互类：Collectable.cs（检测碰撞体是否为Player）
+- `Fighter.cs`: vida, dano e lógica de combate.
+- `Mover.cs`: movimentação.
+- `Collectable.cs`: interação com colisores do jogador.
 
-**Player**：
-- Player.cs：Rage怒气系统；换皮肤，死亡重生等
-- Weapon：武器攻击系统，Rage技能系统
+**Jogador**
 
-**Enemy**：
-- EnemyHitBox.cs：传输伤害到玩家
-- Enemy.cs：大部分敌人的类，包含经验值，追逐攻击系统，死亡复活系统等
-- Enemy_Chest.cs：宝箱怪
-- Trap.cs：陷阱
-- Boss0.cs：最终boss
+- `Player.cs`: sistema de fúria, troca de visual, morte e renascimento.
+- `Weapon.cs`: ataque com arma e habilidade de fúria.
 
-**GUI**：
-- UIManager.cs：UI管理
-- CharacterMenu.cs：菜单栏系统
-- CharacterHUD.cs：玩家生命值，经验值，怒气值显示，死亡页面
-- SCUI.cs：异步切换场景加载画面
-- FloatingTextManager/FloatingText.cs：浮动文本显示系统
+**Inimigos**
 
-**场景**：
-- CameraFollow.cs：相机跟随系统
-- SceneTranslate.csa：异步加载场景系统
-- Portal.cs：不同场景传送门
-- Portal_Door.cs：当前场景传送门
+- `EnemyHitBox.cs`: repassa dano ao jogador.
+- `Enemy.cs`: classe base da maioria dos inimigos, com experiência, perseguição, ataque, morte e reaparecimento.
+- `Enemy_Chest.cs`: baú inimigo.
+- `Trap.cs`: armadilhas.
+- `Boss0.cs`: chefe final.
 
-**交互物件**：
-- NPCTextPerson.cs：NPC交互
-- Chest.cs：宝箱
-- Crate.cs：可破坏物件
-- HealingFountain：治愈泉水
-- Door.cs：开关门
+**Interface**
+
+- `UIManager.cs`: gerenciamento da interface.
+- `CharacterMenu.cs`: menu do personagem.
+- `CharacterHUD.cs`: vida, experiência, fúria e tela de morte.
+- `SCUI.cs`: tela de carregamento para troca assíncrona de cena.
+- `FloatingTextManager.cs` e `FloatingText.cs`: sistema de textos flutuantes.
+
+**Cenas**
+
+- `CameraFollow.cs`: câmera seguindo o jogador.
+- `SceneTranslate.cs`: troca assíncrona de cenas.
+- `Portal.cs`: portal entre cenas diferentes.
+- `Portal_Door.cs`: portal dentro da mesma cena ou sala.
+
+**Objetos Interativos**
+
+- `NPCTextPerson.cs`: interação com NPCs.
+- `Chest.cs`: baús.
+- `Crate.cs`: objetos destrutíveis.
+- `HealingFountain.cs`: fonte de cura.
+- `Door.cs`: portas.
 
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191022220208959-2106713466.png)
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191022220216548-386181557.png)
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191022220224478-570747477.png)
 ![](https://img2018.cnblogs.com/blog/1688704/201910/1688704-20191022220238304-1366744285.png)
 
---------------------
+## Discussão Técnica
 
-<h1 id="5">技术探讨</h1>
+### Animação de Ataque com Arma
 
-- **关于武器挥动进行攻击的animation**：
-	1. 武器的Swing动画时间建议大于0.3s，否则间隔过短即便每次都能攻击到敌人但不足以有效推开敌人而被攻击
-	2. 武器劈砍至水平的时间建议在前半时间内完成，因为涉及武器的碰撞伤害；水平下的武器碰撞器范围较长,利于和敌人保持距离,并造成伤害
-	3. 最好模拟真实情况下的劈砍动作,我将其分为以下几部分:
-		- p1:武器抬起并后仰，此过程速度适中，禁用collider
-		- p2:从90'到0'进行主劈砍动作.此过程前半速度快,后半速度极快，启用collider
-		- p3:0'到-20'最终劈砍动作.此过程不在于速度,而在于保持帧数(时间)
-		- p4:武器收回，速度快，禁用Collider
+1. A animação de balanço da arma deve durar mais de `0,3s`; se for curta demais, o golpe até acerta o inimigo, mas pode não afastá-lo o suficiente para evitar contra-ataques.
+2. O movimento de corte até a posição horizontal deve acontecer na primeira metade da animação, porque esse trecho concentra a colisão de dano da arma.
+3. A animação tenta simular um corte realista em quatro partes:
+   - `p1`: a arma sobe e recua; velocidade moderada, collider desativado.
+   - `p2`: corte principal de `90°` até `0°`; começo rápido, final ainda mais rápido, collider ativado.
+   - `p3`: corte final de `0°` até `-20°`; foco em manter alguns frames de contato.
+   - `p4`: recolhimento rápido da arma, collider desativado.
 
 ![](https://img2018.cnblogs.com/blog/1688704/201909/1688704-20190928211647918-820959590.gif)
 
-- **Tilemap的绘制**：
-	1. 最好在确定美术资源时即确定整体绘制的像素信息，场景风格等，假若后期要添加其他要素，风格不同很不应景
-	2. Tile的类型最好也确定，使用普通tile+animation物体，或是RuleTile实现各类功能
-	3. 瓦片的渲染顺序体现在Tilemap的顺序(例如上墙wall层，下墙壁ScreenWall层；上层可被player遮挡，下层可遮挡player)
-	4. 非瓦片物体的渲染顺序体现在SpriteRenderer里的SortingLayer和OrderLayer；合理设置遮挡与被遮挡关系
-- **2D碰撞问题**：
-	- 所有物体最好处于同一z=0平面，否则一些碰撞检测容易出问题
-- **Draw Call优化**：
-	- Tilemap地图：占用5+DrawCall，主要体现在墙壁层。由于本例采用了两种类型的美术资源，且含有普通Tile和RuleTile，故此处产生较多DrawCall，因此在往后Tilemap绘制时，应注意美术资源和Tile类型的统一性，此外，对于静态物体设置为static
-	- 装备栏Menu：占用9+DrawCall，由于装备栏信息众多(Weapon、Player的Sprite切换，游戏数值信息等)。不同Sprite的部件众多、Button功能各异、Text字体不一，因此造成较多DrawCall。此处除了统一字体，减少Panel缩放外暂无更好办法
-	- 数值面板HUD：占用4+DrawCall，此处功能为显示画面左上角的数值信息，同样也是存在不同Sprite部件，暂无更优解
-	- Animator物件：被当做Object的Animator物件，可将其CullingMode设置为Cull Completely，即不在视野内时停止运作，可有效降低DrawCall
-- **GC优化**：
-	- 通过Profiler分析脚本中的GC Alloc，找到对应脚本进行代码优化(减少循环内new对象、减少foreach等)，此外对场景中暂时不用的物体进行隐藏
-- **内存优化**：
-	- 由于是2D游戏，本例目前仅对bgm进行了优化，即将其LoadType变更为Streaming流媒体播放形式，大幅降低了运行时占用内存
-	- 其他优化方法：AssetBundle打包、降低贴图大小、采用MipMap等
+### Desenho do Tilemap
 
---------
+1. O ideal é definir a escala em pixels e o estilo visual antes de montar os mapas, para evitar que recursos adicionados depois destoem do cenário.
+2. Também é importante escolher cedo os tipos de tile: tiles comuns com objetos animados, `RuleTile` ou uma combinação controlada.
+3. A ordem de renderização dos tiles depende das camadas do `Tilemap`, como parede superior, parede inferior e camada que pode ou não encobrir o jogador.
+4. Em objetos que não são tiles, a ordem visual é definida por `SpriteRenderer`, `Sorting Layer` e `Order in Layer`.
 
-<h1 id="6">*注意事项</h1>
+### Colisão 2D
 
-游戏的核心机制，如战斗，场景切换，物体交互等**已成型**，且Tilemap完善(地面层，上下墙壁层，地表物件层，碰撞层)，除了基本的静态Tiles外，还有几个AnimatedTile(泉水，熔岩等)，及ChestBrush宝箱笔刷方便宝箱的摆放设置等等。如想要自行**定制关卡**，完全可以基于此脚本系统下，对Tilemap的重绘、游戏数值、场景物件摆放、NPC台词等即可。
+- Sempre que possível, mantenha os objetos no mesmo plano `z = 0`; diferenças no eixo `z` podem causar falhas difíceis de diagnosticar em colisões e consultas 2D.
 
-此外，[itch.io](https://itch.io/game-assets)网站内含有大量优秀的2D绘图资源，可按需合法使用。
+### Otimização de Draw Calls
+
+- Mapa em `Tilemap`: pode consumir várias draw calls, principalmente nas camadas de parede. Usar recursos visuais consistentes e marcar objetos estáticos como `Static` ajuda a reduzir custo.
+- Menu de equipamento: tende a consumir mais draw calls porque mistura sprites de jogador, arma, botões e textos.
+- HUD: também usa múltiplos sprites e textos; a margem de otimização é menor sem redesenhar os elementos.
+- Objetos com `Animator`: quando possível, configurar `Culling Mode` como `Cull Completely` evita animações fora da tela.
+
+### Otimização de GC
+
+- Use o Profiler para localizar `GC Alloc` em scripts e reduzir alocações em loops, criação repetida de objetos e uso desnecessário de `foreach`.
+- Objetos temporariamente fora de uso podem ser desativados para reduzir trabalho de atualização.
+
+### Otimização de Memória
+
+- Por ser um jogo 2D, a otimização mais direta aplicada ao projeto original foi trocar o `Load Type` da música de fundo para `Streaming`.
+- Outras opções possíveis incluem `AssetBundle`, redução de textura e uso adequado de `MipMap`.
+
+## Observações
+
+Os sistemas centrais de combate, troca de cena e interação já estão estruturados. O `Tilemap` inclui chão, paredes superiores e inferiores, objetos de cenário, camada de colisão, `AnimatedTile` para elementos como fontes e lava, além de pincéis para posicionamento de baús.
+
+Para criar fases próprias, é possível reaproveitar a base atual e ajustar tilemaps, valores de jogo, posicionamento de objetos, falas de NPCs e conexões de portais.
+
+O site [itch.io](https://itch.io/game-assets) possui muitos recursos gráficos 2D que podem ser usados conforme suas respectivas licenças.
 
 ![](https://img2018.cnblogs.com/blog/1688704/201909/1688704-20190928211702664-1369000020.gif)
 
--------------
+## Referências
 
-<h1 id="7">参考来源</h1>
-- [Unity与C＃制作RPG游戏工作流程教程](https://www.bilibili.com/video/av45071686/?p=1)
-- [16x16 Dungeon Tileset - itch](https://0x72.itch.io/16x16-dungeon-tileset)
-- [2d-extras - UnityTechnology](https://github.com/Unity-Technologies/2d-extras)
-- [Unity优化美术资源的设置 - ww38362087](https://blog.csdn.net/ww386362087/article/details/81365595)
-- [Unity优化减少DrawCall:批处理 - linuxheik](https://blog.csdn.net/linuxheik/article/details/80688109)
+- [Fluxo de trabalho para criar RPG com Unity e C#](https://www.bilibili.com/video/av45071686/?p=1)
+- [16x16 Dungeon Tileset - itch.io](https://0x72.itch.io/16x16-dungeon-tileset)
+- [2d-extras - Unity Technologies](https://github.com/Unity-Technologies/2d-extras)
+- [Configuração de recursos gráficos no Unity - ww38362087](https://blog.csdn.net/ww386362087/article/details/81365595)
+- [Redução de Draw Calls no Unity - linuxheik](https://blog.csdn.net/linuxheik/article/details/80688109)

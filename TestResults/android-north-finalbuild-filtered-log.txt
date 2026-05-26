@@ -1,0 +1,12 @@
+> 05-26 11:37:46.349  6290  6290 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 0
+  05-26 11:37:46.350 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -1052424380 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+  05-26 11:37:46.350 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -1052424380 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+> 05-26 11:37:48.559  6290  6290 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 1
+  05-26 11:37:48.602   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+  05-26 11:37:48.606 10035 11616 D MotionRecognitionService: values = 100.0
+> 05-26 11:37:49.214  6290  6290 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 0
+  05-26 11:37:49.214 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -758313339 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+  05-26 11:37:49.214 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -758313339 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+> 05-26 11:37:58.229  6290  6290 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 1
+  05-26 11:37:58.230 11623  6626 I CameraLightSensor_Service: open preview end
+  05-26 11:37:58.230 11623  6626 I CameraLightSensor_Service: wrong aEState value =1

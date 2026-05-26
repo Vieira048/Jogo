@@ -1,6 +1,8 @@
 status=PASS
-passed=9
+passed=11
 PASS Player detector does not depend on object name
+PASS Player reset restores movement after death
+PASS Mobile input repairs destroyed singleton after scene reload
 PASS Portal door uses exit up vector and clamps z
 PASS Portal door cooldown blocks immediate retrigger
 PASS Portal runtime colliders are wide triggers

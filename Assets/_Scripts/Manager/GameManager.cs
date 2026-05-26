@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private const int FirstDungeonBuildIndex = 1;
+
     //单例
     public static GameManager instance;
 
@@ -135,12 +137,16 @@ public class GameManager : MonoBehaviour
     //复活函数:
     public void Respawn()
     {
+        Time.timeScale = 1f;
+
+        if (UIManager != null)
+            UIManager.HideDeathAnimation();
+
+        if (player != null)
+            player.ResetForGameplay(true);
+
         //隐藏死亡UI,重载主场景
-        SceneManager.LoadScene(1);
-        UIManager.HideDeathAnimation();
-        
-        //配置重生信息
-        player.Respawn();
+        SceneManager.LoadScene(FirstDungeonBuildIndex);
     }
 
     //存储存档的函数:
@@ -165,6 +171,9 @@ public class GameManager : MonoBehaviour
     //加载存档的函数:
     public void LoadState(Scene s, LoadSceneMode sceneMode)
     {
+        if (!IsGameplayScene(s))
+            return;
+
         SaveManager.LoadGame();
 
         //备注:是Save不是Sava,千万别写错,否则找不到
@@ -187,9 +196,30 @@ public class GameManager : MonoBehaviour
         //加载武器
         //weapon.SetWeaponLevel(int.Parse(data[3]));
 
+        if (player != null)
+            player.ResetForGameplay(player.hitPoint <= 0 || !player.isAlive);
+
         //设置场景出生地
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        GameObject spawnPoint = GameObject.Find("SpawnPoint");
+        if (spawnPoint != null && player != null)
+            player.transform.position = spawnPoint.transform.position;
 
         OnUIChange();
+    }
+
+    public void PrepareForMainMenu()
+    {
+        Time.timeScale = 1f;
+
+        if (player != null)
+            player.CancelPendingRespawn();
+
+        if (UIManager != null)
+            UIManager.HideDeathAnimation();
+    }
+
+    private bool IsGameplayScene(Scene scene)
+    {
+        return scene.name != "Inicio" && scene.name != "Creditos";
     }
 }

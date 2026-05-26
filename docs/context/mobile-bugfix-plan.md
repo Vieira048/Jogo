@@ -28,6 +28,16 @@ Aplicado em 2026-05-26:
 - APK Android foi gerado e executado no aparelho conectado em `com.southbegonia.topdungeon`.
 - A passagem caminhando para o norte de `Dungeon_0` para `Dungeon_1` foi validada no aparelho `SM_G780G`.
 
+Atualizado em 2026-05-26:
+
+- Corrigido bug em que o player não voltava a andar após morrer, voltar ao menu e iniciar novo jogo.
+- `Player` agora possui reset explícito de gameplay, cancelando respawn pendente, reativando `isAlive`, collider, rotação e vida.
+- `GameManager` ignora cenas não jogáveis em `LoadState`, prepara corretamente a volta ao menu e usa reset seguro no respawn.
+- `SaveManager.NewGame()` também reseta o player persistente e a fúria para uma nova run.
+- Regressão batch de computador passou com 10 invariantes.
+- Suíte EditMode passou com 13/13 testes.
+- Build Android foi gerado e validado com novo jogo e movimento por joystick no aparelho `SM_G780G`.
+
 ## Diagnóstico Inicial
 
 ### Portais
@@ -90,6 +100,17 @@ Correção:
 - `SaveManager` passou a usar `Application.persistentDataPath`.
 - Foi mantida migração simples para ler um save legado em `Application.dataPath` quando existir no Editor.
 - O portal passou a continuar a troca de cena mesmo se o save falhar, registrando aviso em vez de bloquear a transição.
+
+### Morte e Novo Jogo
+
+Após a morte, `Player.Death()` marcava `isAlive = false` e iniciava uma corrotina de respawn. Como o `Player` é persistente entre cenas, voltar ao menu antes de concluir esse fluxo podia deixar o mesmo objeto de player morto. Ao clicar em “Novo Jogo”, a cena era carregada, mas a movimentação continuava bloqueada porque `FixedUpdate()` só processa input quando `isAlive` é verdadeiro.
+
+Correção:
+
+- `Player.ResetForGameplay(...)` centraliza o reset do estado jogável.
+- `Player.CancelPendingRespawn()` cancela corrotina de respawn ao voltar ao menu ou iniciar nova run.
+- `GameManager.LoadState(...)` só roda em cenas jogáveis e restaura o player quando ele entra morto na cena.
+- `SaveManager.NewGame()` chama reset completo de player e fúria.
 
 ## Plano Recomendado
 

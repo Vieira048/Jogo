@@ -101,6 +101,27 @@ public class MobileLayoutRegressionTests
     }
 
     [Test]
+    public void MobileInputManagerRecoversAfterDuplicateSceneInputIsDestroyed()
+    {
+        GameObject persistentControls = CreateObject("PersistentControls");
+        MobileInputManager persistentInput = persistentControls.AddComponent<MobileInputManager>();
+        MobileInputManager.RegisterActiveInstance(persistentInput);
+
+        Assert.AreSame(persistentInput, MobileInputManager.ActiveInstance);
+
+        GameObject duplicateControls = CreateObject("DuplicateControls");
+        MobileInputManager duplicateInput = duplicateControls.AddComponent<MobileInputManager>();
+        MobileInputManager.RegisterActiveInstance(duplicateInput);
+
+        Assert.AreSame(duplicateInput, MobileInputManager.ActiveInstance);
+
+        Object.DestroyImmediate(duplicateControls);
+        objects.Remove(duplicateControls);
+
+        Assert.AreSame(persistentInput, MobileInputManager.ActiveInstance);
+    }
+
+    [Test]
     public void Dungeon0SceneKeepsMobileCanvasResponsive()
     {
         Scene scene = EditorSceneManager.OpenScene("Assets/_Scenes/Dungeon_0.unity", OpenSceneMode.Single);

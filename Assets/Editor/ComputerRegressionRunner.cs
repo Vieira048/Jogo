@@ -24,6 +24,8 @@ public static class ComputerRegressionRunner
             Passed.Clear();
 
             Run("Player detector does not depend on object name", PlayerDetectorDoesNotDependOnObjectName);
+            Run("Player reset restores movement after death", PlayerResetRestoresMovementAfterDeath);
+            Run("Mobile input repairs destroyed singleton after scene reload", MobileInputRepairsDestroyedSingletonAfterSceneReload);
             Run("Portal door uses exit up vector and clamps z", PortalDoorUsesExitUpVectorAndClampsZ);
             Run("Portal door cooldown blocks immediate retrigger", PortalDoorCooldownBlocksImmediateRetrigger);
             Run("Portal runtime colliders are wide triggers", PortalRuntimeCollidersAreWideTriggers);
@@ -69,6 +71,50 @@ public static class ComputerRegressionRunner
 
         AssertTrue(PortalPlayerDetector.TryGetPlayer(collider, out Player detectedPlayer), "Player was not detected.");
         AssertTrue(ReferenceEquals(player, detectedPlayer), "Detected player component is not the expected component.");
+    }
+
+    private static void PlayerResetRestoresMovementAfterDeath()
+    {
+        GameObject playerObject = CreateObject("Player");
+        BoxCollider2D collider = playerObject.AddComponent<BoxCollider2D>();
+        Player player = playerObject.AddComponent<Player>();
+
+        player.maxHitPoint = 25;
+        player.hitPoint = 0;
+        player.isAlive = false;
+        player.transform.localEulerAngles = new Vector3(0f, 0f, 90f);
+        collider.enabled = false;
+        playerObject.SetActive(false);
+
+        player.ResetForGameplay(true, true);
+
+        AssertTrue(playerObject.activeSelf, "Player object must be active after gameplay reset.");
+        AssertTrue(player.enabled, "Player component must be enabled after gameplay reset.");
+        AssertTrue(player.isAlive, "Player must be alive after gameplay reset.");
+        AssertTrue(player.hitPoint == player.maxHitPoint, "Player health must be restored when requested.");
+        AssertTrue(collider.enabled, "Player collider must be enabled after gameplay reset.");
+        AssertVector(player.transform.localEulerAngles, Vector3.zero, "Player rotation must be reset after death.");
+        AssertFloat(player.rage, 0f, "New game reset must clear rage.");
+    }
+
+    private static void MobileInputRepairsDestroyedSingletonAfterSceneReload()
+    {
+        GameObject persistentControls = CreateObject("PersistentControls");
+        MobileInputManager persistentInput = persistentControls.AddComponent<MobileInputManager>();
+        MobileInputManager.RegisterActiveInstance(persistentInput);
+
+        AssertTrue(MobileInputManager.ActiveInstance == persistentInput, "Persistent mobile input must become active.");
+
+        GameObject duplicateControls = CreateObject("DuplicateControls");
+        MobileInputManager duplicateInput = duplicateControls.AddComponent<MobileInputManager>();
+        MobileInputManager.RegisterActiveInstance(duplicateInput);
+
+        AssertTrue(MobileInputManager.ActiveInstance == duplicateInput, "Scene duplicate must be able to replace the singleton before destruction.");
+
+        UnityEngine.Object.DestroyImmediate(duplicateControls);
+        Objects.Remove(duplicateControls);
+
+        AssertTrue(MobileInputManager.ActiveInstance == persistentInput, "Destroyed scene duplicate must not keep the mobile input singleton.");
     }
 
     private static void PortalDoorUsesExitUpVectorAndClampsZ()

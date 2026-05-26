@@ -1,0 +1,648 @@
+--------- beginning of main
+05-26 12:04:59.572 12146 15532 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 12:04:59.572 11623 27316 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572  3519  6361 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572  7297 13105 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572 12146 15532 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 12:04:59.572 11872 11886 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572 10035 11608 D AutoRotationHandler: inject auto rotation priority = 0.0
+05-26 12:04:59.572 10534 11465 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572 12710  8168 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572  8940  8950 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572 10800  6365 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.572  9807 14599 D Camera2ClientBase: Camera 3: start to disconnect
+05-26 12:04:59.572  9807 14599 D Camera2ClientBase: Camera 3: serializationLock acquired
+05-26 12:04:59.572 16811 16030 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+--------- beginning of system
+05-26 12:04:59.572 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 12:04:59.572  9807 14599 D Camera2ClientBase: Camera 3: Shutting down
+05-26 12:04:59.572  9807 14599 D Camera2ClientBase: Camera 3: start to cacheDump
+05-26 12:04:59.572 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_IDLE, client=com.samsung.adaptivebrightnessgo
+05-26 12:04:59.572  9815  9815 I sensors-hal: inject_sensor_data:316, auto_rotation ar_mode:0
+05-26 12:04:59.572  8940  9082 I [SC][CloudServiceTypeRepositoryImpl]: getCloudServiceTypeInfo. result=CloudServiceTypeInfo(serviceType=OneDrive, sequenceNumber=0)
+05-26 12:04:59.573  9815  9815 I sensors-hal: write_auto_rotation_mode:303, write_auto_rotation_mode ar_mode:0
+05-26 12:04:59.573  1095  1095 I SSC_DAEMON: physical_sensor_test_req_msg Sensor type :14, Msg type:15
+05-26 12:04:59.573  1095  1095 I SSC_DAEMON: 0.algo_id:3, num:1
+05-26 12:04:59.575  1095  1994 I SSC_DAEMON: AR od: 8, 0, 0
+05-26 12:04:59.604  9815 10072 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 188(188),m:1,a:2477,b:100298,c:31669,d:50000,ag:9,dg:256,it:384,br:127
+05-26 12:04:59.617  9807 14599 E Camera2-FrameProcessorBase: removeListener: 
+05-26 12:04:59.625  9807 14599 D Camera3-Device: flush: mInterfaceLock.lock()
+05-26 12:04:59.625  9807 14599 I Camera3-Device: Creating CameraServiceWatchDog with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 12:04:59.625  9807 14599 I Camera3-Device: CameraServiceWatchDog::watchThread for mRequestThread->flush() with cycles = 80, cycleLength = 100 ms and Timer = 8000 ms 
+05-26 12:04:59.625  9807 14599 D HidlCamera3-Device: CameraPerf: flush E
+05-26 12:04:59.625  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 479: E
+05-26 12:04:59.625  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 12:04:59.625  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 5
+05-26 12:04:59.625  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 545: HAL flush - Start
+05-26 12:04:59.625  9816 10248 I Unihal  : CameraHalUnit.cpp: Flush: 549: HAL flush - End
+05-26 12:04:59.625  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 4
+05-26 12:04:59.625  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_flush: 489: X (0)
+05-26 12:04:59.626  9807 14599 D HidlCamera3-Device: CameraPerf: flush X (0ms)
+05-26 12:04:59.626  9807 14599 D Camera3-Device: waitUntilDrainedLocked: Camera 3: Waiting until idle (5000000000ns)
+05-26 12:04:59.626  9807 14599 D Camera3-Device: waitUntilDrained: mInterfaceLock.unlock()
+05-26 12:04:59.626  9807 14599 I Camera3-Device: disconnectImpl: E
+05-26 12:04:59.626  9807 14599 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (15) samples:
+05-26 12:04:59.626  9807 14599 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+05-26 12:04:59.626  9807 14599 I CameraLatencyHistogram:      86.67   6.67   6.67   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 12:04:59.626  9807 14599 I Camera3-Device: CameraServiceWatchDog::watchThread for interface->close() with cycles = 100, cycleLength = 100 ms and Timer = 10000 ms 
+05-26 12:04:59.626  9807 14599 D HidlCamera3-Device: CameraPerf: close E
+05-26 12:04:59.626  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 557: E
+05-26 12:04:59.626  9816 10248 I Unihal  : UniState.cpp: transitState: 101: Transiting to state 7
+05-26 12:04:59.626  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 275: HAL close - Start
+05-26 12:04:59.627   629   629 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.9::IDisplayConfig/default in either framework or device VINTF manifest.
+05-26 12:04:59.627  9816 10248 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.9
+05-26 12:04:59.638  9816 10248 E CamX    : [ERROR][FD     ] camxfdhwnode.cpp:108 ReleaseResources() Recycling the buffers modeBitMask: 1
+05-26 12:04:59.640  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0xe90200 refCount=1 SubdeviceType=1 subDevHandle=0xac0105
+05-26 12:04:59.646  9816 10248 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:243 ReleaseOneSubDevice() Released CameraId=1 CSLSession=0xe90200 refCount=0 SubdeviceType=0 subDevHandle=0xd20101
+05-26 12:04:59.646  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 269: overrideCameraClose in AECDestroy Camera close mask 2 
+05-26 12:04:59.646  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 275: pCameraInfo->cameraid in AECDestroy 1
+05-26 12:04:59.646  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 297: TsAECDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing: 0 pAECAlgorithm 0xb4000073fe607820 pAECSingletonWrapper->pAECSingleton 0xb4000073fe607820
+05-26 12:04:59.646  9816 10248 I SS_3A   :  INFO: AEC: TsAECDestroy: 306: [0]pAECSingleton destroy is 0xb4000073fe607820 0xb4000073fe607820
+05-26 12:04:59.646  9816 10248 W RefBase : CallStack::getCurrentInternal not linked, returning null
+05-26 12:04:59.646  9816 10248 W RefBase : CallStack::logStackInternal not linked
+05-26 12:04:59.646  9816 10248 I SS_3A   :  INFO: AEC: TsAecFront_unload_lib: 160: TsAec_libptr=0x14c17dc46bb0e635
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 278: overrideCameraClose in AWBDestroy 2
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 284: cameraId in AWBDestroy 1
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 306: TsAwbDestroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAWBSingletonWrapper->pAWB 0xb4000073fe607690
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO: AWB: TsAwbDestroy: 314: Destroy AWBAlgorithm, pAWB 0xb4000073fe607690
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO:  AF: TsAFDestroy: 250: Destroy (refcnt:1 cameraId 1 overrideCameraClose 1 lensFacing 0 pAFAlgorithm 0xb4000073fe6078c0 pAFSingletonWrapper->pAFSingleton 0xb4000073fe6078c0 TeleCameraInit 0
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2396: TsAf_wrap: 0xb4000073f0bb5d00, E
+05-26 12:04:59.647  9816 10248 I SS_3A   : 
+05-26 12:04:59.647  9816 10248 I SS_3A   :  INFO:  AF: TsAf_deinit_front: 2414:  X
+05-26 12:04:59.647  9816 10248 I SS_3A   : 
+05-26 12:04:59.655  9816 10248 I CamX    : [ INFO][CORE   ] camxchitintlessinterface.cpp:71 TintlessAlgoDestory() Tintless Algo Destroy
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPvtUtils.cpp Line: 163 Function: cvpSetPower() Msg: Update power to KMD
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 1602 Function: cvpDeaggreatePower() Msg: After deaggregation
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 84 Function: cvpPrintPower() Msg: Actual      Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 88 Function: cvpPrintPower() Msg: Operational Clock: Fdu 0, Ica 0, Od 0, Mpu 0, Fw 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 90 Function: cvpPrintPower() Msg: Actual     Bw: Ddr 0, SysCache 0
+05-26 12:04:59.665  9816 10248 I CVP     : File: vendor/qcom/proprietary/cv-noship/cvp2/src/cpu/cvpPower.cpp Line: 92 Function: cvpPrintPower() Msg: Opeational Bw: Ddr 0, SysCache 0
+05-26 12:04:59.672  9816 11919 I CHIUSECASE: [CONFIG ] chxextensionmodule.cpp:4194 RequestThreadProcessing() Terminating recovery thread for logical cameraId: 1
+05-26 12:04:59.672  9807 14599 I CameraProviderManager: Camera device device@3.5/legacy/3 torch status is now AVAILABLE_OFF
+05-26 12:04:59.672  9807 14599 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=3, newStatus=1
+05-26 12:04:59.672  9807 14599 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 3: No such file or directory (-2)
+05-26 12:04:59.672  9816 10248 I Unihal  : CameraHalManager.cpp: CloseCamera: 279: HAL close - End
+05-26 12:04:59.672  9816 10248 I Unihal  : UniState.cpp: SetIsAlreadyCreated: 182: isAlreadyCreated=0, val=0
+05-26 12:04:59.672  9816 10248 I Unihal  : FwkCaptureManager.cpp: Release: 166: Already released.
+05-26 12:04:59.672  9816 10248 I Unihal  : UniHal3InterfaceEntry.cpp: uni_close_camera_hardware: 571: X (0)
+05-26 12:04:59.672  9807 14599 D HidlCamera3-Device: CameraPerf: close X (46ms)
+05-26 12:04:59.672  9807 14599 D Camera3-OutputStream: disconnectLocked: disconnecting stream 0 from native window
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (15) samples:
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram: Stream 0 enqueueBuffer latency histogram (8) samples:
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-26 12:04:59.674  9807 14599 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-26 12:04:59.674  9807 14599 I Camera3-Device: disconnectImpl: X
+05-26 12:04:59.674  9807 14599 I CameraServiceProxyWrapper: updateProxyDeviceState: notifyCameraState for Camera ID 3, newState 3, facing 1, clientName com.samsung.adaptivebrightnessgo, apiLevel 2
+05-26 12:04:59.674  9807 14599 I Camera3-Device: setDeviceInjector
+05-26 12:04:59.674  9807 14599 D CameraService: BasicClient::disconnect E
+05-26 12:04:59.675  9807 14599 I CameraService: this package is a adaptive brightness app.
+05-26 12:04:59.675  9807 14599 I CameraService: finishCameraOps: Finish camera ops, package name = com.samsung.adaptivebrightnessgo, client UID = 5021
+05-26 12:04:59.675  9807 14599 I CameraService: this package is a adaptive brightness app.
+05-26 12:04:59.675  9807 14599 I CameraService: Drop updateStatus callbak for package com.samsung.adaptivebrightnessgo(pid 11623)
+05-26 12:04:59.675 10035 13480 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: ENABLED
+05-26 12:04:59.675  3519  6361 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676 11872 11886 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.675  7297 13105 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676 10534 11465 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676  9807 14599 I CameraFlashlight: deviceClosed: device 3 is closed
+05-26 12:04:59.676  9807 14599 I CameraService: disconnect: Disconnected client for camera 3 for PID 11623
+05-26 12:04:59.676  8940  8950 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676  9807 14599 D CameraService: BasicClient::disconnect X
+05-26 12:04:59.676 11623 11648 I CameraLightSensor_Service: Camera released, time taken= 524 cameraLock= true
+05-26 12:04:59.676 11623 11648 I CameraLightSensor_Service: stopBackgroundThread : mBackgroundHandler is set to null
+05-26 12:04:59.676 11623 27316 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676 10534 11358 D CameraAvailabilityListener: onCameraDeviceStateChanged: id=3, facing=1, state=CAMERA_STATE_CLOSED, client=com.samsung.adaptivebrightnessgo
+05-26 12:04:59.676 12146 15532 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.676 12146 15532 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 12:04:59.676 12146 15532 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 12:04:59.677 11623 11648 I CameraLightSensor_Service: MSG_SERVICE_STOP_CAMERA, totalConnections= 0
+05-26 12:04:59.677  8940  9082 I [SC][CloudServiceTypeRepositoryImpl]: getCloudServiceTypeInfo. result=CloudServiceTypeInfo(serviceType=OneDrive, sequenceNumber=0)
+05-26 12:04:59.677 10035 13260 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.677 12710  8168 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.677 10035 13260 I CameraManagerGlobal: onCameraDeviceStateChangedLocked: post device state update
+05-26 12:04:59.677 10035 10295 I RequestInjectorService: Samsung Camera is opened. ignore VT Camera Setting.
+05-26 12:04:59.677 16811 16030 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.677 10800  6365 I CameraManagerGlobal: Camera 3 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client com.samsung.adaptivebrightnessgo API Level 2User Id 0
+05-26 12:04:59.678 10035 13480 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: DISABLED
+05-26 12:04:59.688 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:04:59.755   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 12:04:59.755   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 12:04:59.755   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 12:04:59.755   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 12:04:59.762 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 8- eventType=0x10, addressType=1, address=347D34_F, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-90, periodicAdvInt=0x0
+05-26 12:04:59.763 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 8- eventType=0x10, addressType=1, address=0E1FC3_0, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-72, periodicAdvInt=0x0
+05-26 12:04:59.842   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 12:04:59.842   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 12:04:59.901   694   694 D io_stats: !@   8,0 r 17794053 337307248 w 3970432 47629452 d 2005627 38889376 f 0 0 iot 3440532 0 th 0 0 0 pt 0 inp 0 0 50390.183
+05-26 12:04:59.992   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 12:05:00.000 10534 11053 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:null
+05-26 12:05:00.000 10534 10534 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+05-26 12:05:00.001 10035 10035 I EyeComfortSolutionService: action  :  android.intent.action.TIME_TICK
+05-26 12:05:00.002 10534 10534 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:12:05, TimeContentDescription:12:05, DateText:ter., 26 de maio, ShortDateText:ter., 26 de mai., Demo:false, QuickStar-Second(false|12:34:56))))
+05-26 12:05:00.002 10534 10534 D QSClockIndicatorView: Home Indicator status_bar_clock 12:05 notifyTimeChanged(QSClockBellSound - TimeText:12:05, TimeContentDescription:12:05, DateText:ter., 26 de maio, ShortDateText:ter., 26 de mai., Demo:false, QuickStar-Second(false|12:34:56)) ClockVisibleByPolicy:true, ClockVisibleByUser:true, visible?false, parent:android.widget.LinearLayout{b0c5c2d V.E...... ......I. 0,0-0,60 #7f0b04f0 app:id/left_clock_container}
+05-26 12:05:00.002 10534 10534 D QSClockBellTower: Everyone heard the bell. run(currentTime:1779807900001,   getTime():Tue May 26 12:05:00 GMT-03:00 2026,   getTimeZone():libcore.util.ZoneInfo[mDstSavings=0,mUseDst=false,mDelegate=[id="America/Sao_Paulo",mRawOffset=-10800000,mEarliestRawOffset=-11188000,transitions=92]])
+05-26 12:05:00.002 10534 10534 D KeyguardUpdateMonitor: handleTimeUpdate
+05-26 12:05:00.002 10534 10534 D FaceWidgetPagesController: onTimeChanged()
+05-26 12:05:00.019 10534 10534 I ClockInfoManager: isClockFaceType: type = 9 clockFaceType = 0
+05-26 12:05:00.019 10534 10534 D FaceWidgetPositionAlgorithm: getTopMargin scale = 1.4708328, clockContainerHeight = 379, scaleMarginY = -60
+05-26 12:05:00.019 10534 10534 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+05-26 12:05:00.019 10534 10534 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+05-26 12:05:00.019 10534 10534 V QsExpandAnimator: setQsExpansionPosition 0.0
+05-26 12:05:00.022 10534 10534 V QsExpandAnimator: updateAnimators
+05-26 12:05:00.022 10534 10534 V QsExpandAnimator: clearAnimationState 
+05-26 12:05:00.022 10534 10534 V QsExpandAnimator: updateViews
+05-26 12:05:00.023 10534 10534 V QsExpandAnimator: updateTileAnimator
+05-26 12:05:00.023 10534 10534 V QsExpandAnimator: updateHeaderAnimator
+05-26 12:05:00.023 10534 10534 V QsExpandAnimator: updateBarAnimator
+05-26 12:05:00.023 10534 10534 V QsExpandAnimator: setQsExpansionPosition 0.0
+05-26 12:05:00.023 10534 10534 V QsExpandAnimator: onAnimationAtStart
+05-26 12:05:00.225 10035 10455 D WifiConnectivityMonitor.NetworkStatsAnalyzer: Backhaul result - RSSI:-68, CE:8, PE:8, TI:15, PTI:15, TW:0, PTW:1, Tx:10, Rx:0, TxS:0, RxS:0, RESULT:true, IC:0, ICT:5, WC:0, WCT:5, R:0, RC:0, IE:0, EC:0
+05-26 12:05:00.353 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 12:05:00.353 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 12:05:00.353 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 12:05:00.353 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.483854 msecs
+05-26 12:05:00.354 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.514844 msecs
+05-26 12:05:00.354 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.400833 msecs
+05-26 12:05:00.704 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:00.745 12146 13072 I SDHMS:D : SIOP:: AP:289 BAT:280 USB:262 CHG:287 CP:278 WIFI:295 CF:297 BLK:0 SUBBAT:0 SKIN:305 SKINF:-777 SKINB:-777 LRP:305 LRF:-777 LRB:-777 BLRF:299 BLRB:305 APT:-777 APR:-777 
+05-26 12:05:00.854 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 12:05:00.855 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 12:05:00.855 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 12:05:00.855 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.883333 msecs
+05-26 12:05:00.857 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.554948 msecs
+05-26 12:05:00.859 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.636666 msecs
+05-26 12:05:01.287   997   997 I android.hardware.health@2.1-service-samsung: updateLrpSysfs: write: 305
+05-26 12:05:01.290 10035 10083 D BatteryService: Sending ACTION_BATTERY_CHANGED: level:62, status:2, health:2, ac:false, usb:true, wireless:false, pogo:false, misc:0x10000, charge_type:1, charger_type:0, voltage:3953, temperature:280, online:4, current_avg:271, ps:false, hvc:false, capacity:280000, current_event:0x0, current_now:398, mcc:0, mcv:0, cc:2565691, present:true, scale:100, technology:Li-ion
+05-26 12:05:01.291 10035 10085 D BaseRestrictionMgr: Package: com.alibaba.aliexpresshd, userid: 0, hostingType: broadcast is Restricted by policy: 4 caller is: null
+05-26 12:05:01.291 10035 10085 W BroadcastQueue: intent:Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) } is skipped in RestrictedPackage to ProcessRecord{9b22e8f 8364:com.alibaba.aliexpresshd:channel/u0a23}
+05-26 12:05:01.292 10035 10035 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=62, status=2
+05-26 12:05:01.293 10035 10468 I DeviceBatteryInfoService: action: android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.293 10035 10468 I DeviceBatteryInfoService: phone battery level: 62
+05-26 12:05:01.293 10035 10468 I DeviceBatteryInfoService: phone battery status: 2
+05-26 12:05:01.294 10035 10035 D AdaptiveBrightnessLongtermModelBuilder: Received android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.294 10035 10035 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.294 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 12:05:01.295 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 12:05:01.295 10035 10319 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+05-26 12:05:01.295 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 12:05:01.296 10534 10534 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+05-26 12:05:01.296 10534 10534 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+05-26 12:05:01.296 10534 10534 I PowerUI : BATTERY_HEALTH_CHECK extraHealth=2 mBatteryMiscEvent=65536
+05-26 12:05:01.296 10534 10534 W PowerUI : Plug reason
+05-26 12:05:01.296 10534 10534 W PowerUI : Skip charging animation - by plug status
+05-26 12:05:01.296 10534 10534 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+05-26 12:05:01.296 10534 10534 W PowerUI : Plug reason
+05-26 12:05:01.296 10534 10534 W PowerUI : Skip charging sound - by plug status
+05-26 12:05:01.296 10534 10534 I PowerUI : oldMisalign : false, curMisalign : false
+05-26 12:05:01.298 10534 15014 D SecPowerUI.Notification: dismissing low battery warning: level=62
+05-26 12:05:01.298 10534 15014 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+05-26 12:05:01.298 10534 15014 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=62, currentBatteryMode=1, chargingTime=10996000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+05-26 12:05:01.299 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.299 10510 10510 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.299 10534 15014 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+05-26 12:05:01.299 10534 15014 E SecPowerUI.Notification: no saved value, so we do nothing !!
+05-26 12:05:01.305 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 10996000 / mChargingTime : 10996000
+05-26 12:05:01.305 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 12:05:01.305 10534 10534 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+05-26 12:05:01.305 10534 10534 I PowerUI : mBatteryMiscEvent = 65536
+05-26 12:05:01.305 10534 10534 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+05-26 12:05:01.307 10534 10534 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+05-26 12:05:01.307 10534 10534 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=62, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=10996000, mBatteryChargingType=1, mBatteryChargerType=NORMAL, mBatteryOnline=USB, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+05-26 12:05:01.307 10534 10534 D KeyguardUpdateMonitor: handleBatteryUpdate
+05-26 12:05:01.360 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 12:05:01.360 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 12:05:01.360 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 12:05:01.360 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.789271 msecs
+05-26 12:05:01.362 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.607448 msecs
+05-26 12:05:01.364 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.365 msecs
+05-26 12:05:01.388 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3067, isSameBssidAndFreq true
+05-26 12:05:01.390 10035 10437 I SemWifiLinkQualityMonitor: Link Qos Query: 0,471 ms / 17,001 Mbps (68 / 0,011 / 3,667)
+05-26 12:05:01.404  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][982007] accel_sample [-0.144, -0.196,  9.912] 231293577738109
+05-26 12:05:01.522 11340 11419 D Unity   : UnloadTime: 9.035313 ms
+05-26 12:05:01.538 11340 11419 I Unity   : Game Loaded
+05-26 12:05:01.538 11340 11419 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+05-26 12:05:01.538 11340 11419 I Unity   : UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+05-26 12:05:01.538 11340 11419 I Unity   : UnityEngine.Logger:Log(LogType, Object)
+05-26 12:05:01.538 11340 11419 I Unity   : UnityEngine.Debug:Log(Object)
+05-26 12:05:01.538 11340 11419 I Unity   : SaveManager:LoadGame() (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Manager\SaveManager.cs:96)
+05-26 12:05:01.538 11340 11419 I Unity   : GameManager:LoadState(Scene, LoadSceneMode) (at C:\Users\Leo_s\Documents\Jogo\Assets\_Scripts\Manager\GameManager.cs:177)
+05-26 12:05:01.538 11340 11419 I Unity   : UnityEngine.SceneManagement.SceneManager:Internal_SceneLoaded(Scene, LoadSceneMode) (at \home\bokken\build\output\unity\unity\Runtime\Export\SceneManager\SceneManager.cs:244)
+05-26 12:05:01.538 11340 11419 I Unity   : 
+05-26 12:05:01.615 10035 10409 D UsbStatsMonitor: 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26804890894362
+05-26 12:05:01.625 11340 11419 D Unity   : Unloading 16 unused Assets / (35.4 MB). Loaded Objects now: 1550.
+05-26 12:05:01.625 11340 11419 D Unity   : Memory consumption went from 108.4 MB to 73.0 MB.
+05-26 12:05:01.625 11340 11419 D Unity   : Total: 9.797813 ms (FindLiveObjects: 0.128958 ms CreateObjectMapping: 0.055781 ms MarkObjects: 4.814010 ms  DeleteObjects: 4.795782 ms)
+05-26 12:05:01.625 11340 11419 D Unity   : 
+05-26 12:05:01.723 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:01.844  9815 10072 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 188(188),m:1,a:2487,b:99475,c:31539,d:50000,ag:9,dg:256,it:384,br:127
+05-26 12:05:01.864 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 12:05:01.865 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 12:05:01.865 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 12:05:01.865 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.190469 msecs
+05-26 12:05:01.867 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.752083 msecs
+05-26 12:05:01.870 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 2.374948 msecs
+05-26 12:05:01.901   694   694 D io_stats: !@   8,0 r 17794260 337317536 w 3970432 47629452 d 2005627 38889376 f 0 0 iot 3440556 0 th 0 0 0 pt 0 inp 0 0 50392.183
+05-26 12:05:01.974 10035 10124 D PowerManagerService: UserActivityStateListenerState: 0
+05-26 12:05:02.371 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 12:05:02.372 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 12:05:02.372 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 12:05:02.372 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.08625 msecs
+05-26 12:05:02.374 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 2.390938 msecs
+05-26 12:05:02.376 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.785521 msecs
+05-26 12:05:02.477  9815 10039 I sensors-hal: handle_sns_client_event:252, auto_rotation_debug_2 mode,255, type,1,0 acc,-0.127,-0.201,9.933, ar,0, ver,10
+05-26 12:05:02.600   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 12:05:02.600   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 12:05:02.601   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 12:05:02.601   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 12:05:02.610 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 4- eventType=0x13, addressType=1, address=7AE8EC_0, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-91, periodicAdvInt=0x0
+05-26 12:05:02.612 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 8- eventType=0x10, addressType=1, address=347D34_F, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-92, periodicAdvInt=0x0
+05-26 12:05:02.689   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 12:05:02.689   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 12:05:02.741 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:02.840   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 12:05:03.359 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 12:05:03.359 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 12:05:03.359 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 12:05:03.359 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.926979 msecs
+05-26 12:05:03.361 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.553229 msecs
+05-26 12:05:03.363 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.829011 msecs
+05-26 12:05:03.415  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][982214] accel_sample [-0.127, -0.244,  9.909] 231295580522901
+05-26 12:05:03.575   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-26 12:05:03.575   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-26 12:05:03.576   991 11411 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-26 12:05:03.576   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-26 12:05:03.584 10770 10857 D BtGatt.GattService: onScanResult to scannerId: 8- eventType=0x10, addressType=1, address=284AE5_3, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-96, periodicAdvInt=0x0
+05-26 12:05:03.661   991 11411 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-26 12:05:03.661   991 11411 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-26 12:05:03.757 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:03.812   991 11197 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-26 12:05:03.864 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7644591]
+05-26 12:05:03.865 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.1813333]
+05-26 12:05:03.865 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.2302273]
+05-26 12:05:03.865 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.808125 msecs
+05-26 12:05:03.866 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.529948 msecs
+05-26 12:05:03.868 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.209219 msecs
+05-26 12:05:03.902   694   694 D io_stats: !@   8,0 r 17794267 337317692 w 3970432 47629452 d 2005627 38889376 f 0 0 iot 3440560 0 th 0 0 0 pt 0 inp 0 0 50394.184
+05-26 12:05:04.369 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7053]
+05-26 12:05:04.369 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.39286083]
+05-26 12:05:04.369 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.44029164]
+05-26 12:05:04.370 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.853959 msecs
+05-26 12:05:04.371 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.578021 msecs
+05-26 12:05:04.373 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.322448 msecs
+05-26 12:05:04.413 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3068, isSameBssidAndFreq true
+05-26 12:05:04.414 10035 10437 I SemWifiLinkQualityMonitor: Link Qos Query: 0,780 ms / 10,260 Mbps (68 / 0,005 / 6,333)
+05-26 12:05:04.780 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:04.844  9815 10072 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 186(186),m:1,a:2480,b:106068,c:32568,d:50000,ag:9,dg:256,it:384,br:127
+05-26 12:05:04.874 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7644591]
+05-26 12:05:04.875 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.1813333]
+05-26 12:05:04.875 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.2302273]
+05-26 12:05:04.875 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.026354 msecs
+05-26 12:05:04.878 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 2.869427 msecs
+05-26 12:05:04.880 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.440469 msecs
+05-26 12:05:05.174 10035 11661 I EDMNativeHelperService: isScreenCaptureEnabled
+05-26 12:05:05.175 10035 11661 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+05-26 12:05:05.186 12277  2868 W MediaProvider: isAppCloneUserPair for user 0: false
+05-26 12:05:05.200 12277  2868 W SQLiteLog: (28) walCheckpoint: eMode(0), mxFrame(260), /data/user/0/com.google.android.providers.media.module/databases/external.db-wal
+05-26 12:05:05.202 10035 11661 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.203 11956 11956 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+05-26 12:05:05.244   628  1324 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+05-26 12:05:05.247 14068 14456 E _qlseek : errno : 22
+05-26 12:05:05.247 14068 14456 E Qdio::ParseQdio: File Search Error
+05-26 12:05:05.250 14068 14456 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+05-26 12:05:05.250 14068 14456 W ExifInterface: java.io.IOException: Encountered corrupt PNG file.
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.media.ExifInterface.getPngAttributes(ExifInterface.java:3461)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2026)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1641)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1592)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.getDateTimeOriginal(MediaParser.java:390)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.computeDateMetadata(MediaParser.java:367)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.createOperation(MediaSync.java:429)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.loadInternal(MediaSync.java:389)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.load(MediaSync.java:325)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.-$$Nest$mload(Unknown Source:0)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync$SyncTask.run(MediaSync.java:475)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.os.Handler.handleCallback(Handler.java:942)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.os.Looper.loopOnce(Looper.java:226)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.os.Looper.loop(Looper.java:313)
+05-26 12:05:05.250 14068 14456 W ExifInterface: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+05-26 12:05:05.282 14068 14456 D MediaSync: loaded: 75ms, 1
+05-26 12:05:05.381 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7053]
+05-26 12:05:05.383 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.39286083]
+05-26 12:05:05.383 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.44029164]
+05-26 12:05:05.384 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 2.568437 msecs
+05-26 12:05:05.385 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.248073 msecs
+05-26 12:05:05.386 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.093697 msecs
+05-26 12:05:05.415  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][982421] accel_sample [-0.136, -0.223,  9.897] 231297583308318
+05-26 12:05:05.504 12277 12277 I MediaServiceV2: Creating work for intent Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 12:05:05.505 12277 12277 I MediaServiceV2: Work enqueued for intent: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 12:05:05.533 12277 12563 D WM-SystemJobScheduler: Scheduling work ID f9a6bef8-129b-46a1-b789-51a84a5a93c6Job ID 14463
+05-26 12:05:05.542 12277 12277 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=f9a6bef8-129b-46a1-b789-51a84a5a93c6, generation=0)
+05-26 12:05:05.543 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:05.543 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:05.543 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:05.543 12277 12563 D WM-GreedyScheduler: Starting work for f9a6bef8-129b-46a1-b789-51a84a5a93c6
+05-26 12:05:05.547 12277 12563 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=f9a6bef8-129b-46a1-b789-51a84a5a93c6, generation=0)
+05-26 12:05:05.548 12277 12563 D WM-Processor: Work WorkGenerationalId(workSpecId=f9a6bef8-129b-46a1-b789-51a84a5a93c6, generation=0) is already enqueued for processing
+05-26 12:05:05.553 12277 12277 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+05-26 12:05:05.555 12277 11967 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 12:05:05.561 12089 14968 I hbox:interactor: oneway function results for code 2 on binder at 0xb4000072bf7128e0 will be dropped but finished with status UNKNOWN_TRANSACTION
+05-26 12:05:05.595 12277 11967 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 12:05:05.595 10035 13480 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.597 12277 12575 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f9a6bef8-129b-46a1-b789-51a84a5a93c6, tags={ com.android.providers.media.MediaServiceV2 } ]
+05-26 12:05:05.603 12277 12277 D WM-Processor: Processor f9a6bef8-129b-46a1-b789-51a84a5a93c6 executed; reschedule = false
+05-26 12:05:05.604 12277 12277 D WM-SystemJobService: f9a6bef8-129b-46a1-b789-51a84a5a93c6 executed on JobScheduler
+05-26 12:05:05.609 12277 12575 D WM-GreedyScheduler: Cancelling work ID f9a6bef8-129b-46a1-b789-51a84a5a93c6
+05-26 12:05:05.613 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:05.613 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:05.613 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:05.633 10035 13480 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.635 12277 12575 D WM-SystemJobScheduler: Scheduling work ID bd43998c-ea36-4092-91d4-232b150489a4Job ID 14464
+05-26 12:05:05.636 11645 19359 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+05-26 12:05:05.638 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:05.638 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:05.638 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:05.645 12277  2868 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+05-26 12:05:05.655 15151 15429 I BaseThreadPoolExecutor: [#CMH#] Task o.e@ef93fa7 is submitted
+05-26 12:05:05.657 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.658 14068 14456 D MediaSync: loaded: 61ms, 1
+05-26 12:05:05.664 14068 11976 D LocationService: Begin: com.samsung.intent.action.UPDATE_LOCATION
+05-26 12:05:05.678 14068 11976 D LocationManager: delete null addr: 0
+05-26 12:05:05.716 10035 13480 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.731 10035 13480 D InputDispatcher: Inject motion (11979/2000): action=0x0, time=50396013000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+05-26 12:05:05.731 10035 10335 I InputDispatcher: Delivering touch to (10534): action: 0x4, f=0x0, d=0, 'be116e7', t=1 
+05-26 12:05:05.731 10035 10335 I InputDispatcher: Delivering touch to (11340): action: 0x0, f=0x0, d=0, '979835 ', t=1 +(2400,0)
+05-26 12:05:05.732 11340 11340 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 0
+05-26 12:05:05.732 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 50396013
+05-26 12:05:05.732 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -336800247 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+05-26 12:05:05.732 10035 10064 I GestureDetector: obtain mCurrentDownEvent. id: -336800247 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+05-26 12:05:05.734 10035 10335 D PowerManagerService: UserActivityStateListenerState: 1
+05-26 12:05:05.739 10035 10064 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: -583030612
+05-26 12:05:05.739 10035 10064 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: -583030612
+05-26 12:05:05.745 14068 11976 W GeoCoder: list size is zero
+05-26 12:05:05.745 14068 11976 E LocationManager: Can't get address
+05-26 12:05:05.750 14068 11976 D ModernSamsungCoreService: applyPending()
+05-26 12:05:05.750 14068 11976 D LocationManager: LocationTask: 86ms
+05-26 12:05:05.750 14068 11976 D LocationService: End: com.samsung.intent.action.UPDATE_LOCATION
+05-26 12:05:05.754 10035 12236 D SyncManager: userId - 0 auto - true
+05-26 12:05:05.758 14068 14456 D MediaSync: loaded: 31ms, 0
+05-26 12:05:05.763 15151 11974 I MediaContentSyncTask: [#CMH#] No of Row (SEC MP :  3974, Max Id : 2147506735) (CMH : 3973, Max Id : 2147506715) - Time :42
+05-26 12:05:05.769 15151 11974 I MediaContentSyncTask: [#CMH#] Insert ITEM :  0
+05-26 12:05:05.769 15151 11974 E MediaContentSyncTask: [#CMH#] [Insert] Invalid content count : MP Count: 3974, CMH Count: 3973 
+05-26 12:05:05.792 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:05.844 15151 11974 I MediaContentSyncTask: [#CMH#] [Full Sync] CMH IDList Size :  3973, MP List Count : 3973
+05-26 12:05:05.846 15151 11974 I MediaContentSyncTask: [#CMH#] Insert:  0, Delete:  0, Duplicate: 3973
+05-26 12:05:05.846 15151 11974 I MediaContentSyncTask: [#CMH#] syncCMHDB ended  0
+05-26 12:05:05.846 15151 11974 W MediaContentSyncTask: [#CMH#] FullSync fail 
+05-26 12:05:05.887 15151 11974 I MediaContentSyncLocation: [#CMH#] Location Count MP :  788, CMH : 788
+05-26 12:05:05.887 15151 11974 I BaseThreadPoolExecutor: [#CMH#] afterExecute FutureTask
+05-26 12:05:05.888 15151 11974 I ControllerEventHandler: [#CMH#] New Task for wait content sync job 
+05-26 12:05:05.888 15151 11974 I BaseThreadPoolExecutor: [#CMH#] Task o.e@ef93fa7 is submitted
+05-26 12:05:05.903   694   694 D io_stats: !@   8,0 r 17794496 337318968 w 3970526 47630920 d 2005627 38889376 f 0 0 iot 3440636 0 th 0 0 0 pt 0 inp 0 0 50396.185
+05-26 12:05:05.938 15151 11974 I MediaContentSyncTask: [#CMH#] No of Row (SEC MP :  3973, Max Id : 2147506715) (CMH : 3973, Max Id : 2147506715) - Time :23
+05-26 12:05:05.971 15151 11974 I MediaContentSyncTask: [#CMH#] MP time stamp :  1779792587262, CMH time stamp : 1779792587262
+05-26 12:05:05.971 15151 11974 I MediaContentSyncTask: [#CMH#] Update ITEM :  0
+05-26 12:05:05.994 15151 11974 I BaseThreadPoolExecutor: [#CMH#] afterExecute FutureTask
+05-26 12:05:05.995 15151 11974 I ControllerEventHandler: [#CMH#] Alive Privacy Ignored Policy Called:  false
+05-26 12:05:06.031 15151 15324 I BaseThreadPoolExecutor: [#CMH#] Task f.k@3c1c63e is submitted
+05-26 12:05:06.032 15151 11985 I POITask : [#CMH#] POITask started 
+05-26 12:05:06.032 15151 11985 I POITask : [#CMH#] Online statue:  true, Setting location extraction flag: false
+05-26 12:05:06.032 15151 11985 I BaseThreadPoolExecutor: [#CMH#] afterExecute FutureTask
+05-26 12:05:06.040 10035 10393 W DeviceStorageMonitorService: check(/data) oldLevel:1, newLevel:1 (usableBytes=2522587136)
+05-26 12:05:06.040 10035 10393 W DeviceStorageMonitorService: updateBroadcasts(/data) oldLevel:1, newLevel:1, seq:1
+05-26 12:05:06.040 10035 10393 D DeviceStorageMonitorService: Available File Node Number is [13010075]
+05-26 12:05:06.040 10035 10393 W DeviceStorageMonitorService: updateBroadcasts_filenode(/data) fn_oldLevel:0, fn_newLevel:0, seq:1
+05-26 12:05:06.161  2011  2011 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork triggered by [content://media/external/file/1000155563]():  
+05-26 12:05:06.161  2011  2011 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():  
+05-26 12:05:06.162  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():  
+05-26 12:05:06.168 10035 11661 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10116/com.samsung.android.scs
+05-26 12:05:06.168 10035 11661 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.170 10035 11661 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.272  2011  2011 I SCS@AiSearch user 0: (ObserverWorker::GALLERY) [main] entering in startWork triggered by [content://secmedia/cmh/location, content://secmedia/video/media, content://secmedia/images/media]():  
+05-26 12:05:06.273  2011  2011 I SCS@AiSearch user 0: (BaseCollector::GALLERY) [main] entering in onChange():  
+05-26 12:05:06.273  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) [GALLERY-0] entering in collectChanges():  
+05-26 12:05:06.280 10035 13260 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10116/com.samsung.android.scs
+05-26 12:05:06.281 10035 13260 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.281 10035 13260 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.309 10534 10534 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 10996000 / mChargingTime : 10996000
+05-26 12:05:06.309 10534 10534 D SecPowerUI.Notification: There is no change about charging status, so return!
+05-26 12:05:06.317  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000155523 indexCount: 1654 sourceCount: 1654
+05-26 12:05:06.322 12146 12146 I SDHMS:LOAD: type: LoadsFreqs, value: 0:28:4:992256:2073600:844800:1398144:2150400:710400:305:305:305
+05-26 12:05:06.344  2011  2879 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():  
+05-26 12:05:06.346  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  106 ms
+05-26 12:05:06.346  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+05-26 12:05:06.346  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+05-26 12:05:06.348  2011  2033 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=205460b5-3545-4491-b5a0-334419ce24ec, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+05-26 12:05:06.350  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) fetchInternal values : maxSyncId: 2147506715 indexCount: 3973 sourceCount: 3973
+05-26 12:05:06.351  2011  2879 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+05-26 12:05:06.363 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 12:05:06.363 12277 12326 W FuseDaemon: Reducing the number of considered missed Gc histogram windows from 171 to 100
+05-26 12:05:06.365 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 12:05:06.365 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 12:05:06.365 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 2.626563 msecs
+05-26 12:05:06.366 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.04927 msecs
+05-26 12:05:06.367 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.837708 msecs
+05-26 12:05:06.368 10035 10048 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10116/com.samsung.android.scs
+05-26 12:05:06.369 10035 10048 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.369 10035 10048 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.433  2011  2881 I SCS@AiSearch user 0: (IndexManager) [GALLERY-0] entering in addIndex():  
+05-26 12:05:06.436  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) fetch: fetching took  124 ms
+05-26 12:05:06.436  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) fetchChanges: applied 0 items
+05-26 12:05:06.436  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) Collect finished. Result: true
+05-26 12:05:06.438  2011  2055 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0e27fa94-0b5d-4f27-afd6-bde1cfbff02b, tags={ com.google.android.providers.media, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+05-26 12:05:06.438  2011  2881 I SCS@AiSearch user 0: (BaseCollector::GALLERY) enqueue ObserverWorker name: com.google.android.providers.media, policy: APPEND_OR_REPLACE
+05-26 12:05:06.458 10035 10280 I UMR     : B|Compact com.samsung.cmh:CMH(15151)
+05-26 12:05:06.461 10035 11661 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10116/com.samsung.android.scs
+05-26 12:05:06.461 10035 11661 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.462 10035 11661 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-26 12:05:06.556 10035 10280 I UMR     : E|Compact d_rss=-14880KB
+05-26 12:05:06.556 10035 10280 I UMR     : B|Compact android.process.media(14068)
+05-26 12:05:06.626  2447  2447 I wpa_supplicant: Heartbeat 11089
+05-26 12:05:06.673 10035 10280 I UMR     : E|Compact d_rss=-14904KB
+05-26 12:05:06.810 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:06.812 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 50397093
+05-26 12:05:06.868 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 12:05:06.869 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 12:05:06.869 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 12:05:06.869 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.037917 msecs
+05-26 12:05:06.871 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.584063 msecs
+05-26 12:05:06.872 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.355 msecs
+05-26 12:05:07.115 12277 12277 D WM-DelayedWorkTracker: Scheduling work bd43998c-ea36-4092-91d4-232b150489a4
+05-26 12:05:07.116 12277 12277 D WM-GreedyScheduler: Starting tracking for bd43998c-ea36-4092-91d4-232b150489a4
+05-26 12:05:07.120 12277 12563 D WM-ConstraintTracker: BatteryNotLowTracker: initial state = true
+05-26 12:05:07.120 12277 12563 D WM-BrdcstRcvrCnstrntTrc: BatteryNotLowTracker: registering receiver
+05-26 12:05:07.123 12277 12563 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=bd43998c-ea36-4092-91d4-232b150489a4, generation=0)
+05-26 12:05:07.128 12277 12563 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=bd43998c-ea36-4092-91d4-232b150489a4, generation=0)
+05-26 12:05:07.142 12277 12277 D WM-WorkerWrapper: Starting work for com.android.providers.media.photopicker.sync.ProactiveSyncWorker
+05-26 12:05:07.144 12277 12277 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=bd43998c-ea36-4092-91d4-232b150489a4, generation=0)
+05-26 12:05:07.144 12277 11988 I PSyncWorker: Starting proactive picker sync from sync source: 1
+05-26 12:05:07.144 12277 11988 I PickerSyncTracker: Created new sync future java.util.concurrent.CompletableFuture@64b350c[Not completed, 1 dependents]. Future map: {bd43998c-ea36-4092-91d4-232b150489a4=java.util.concurrent.CompletableFuture@64b350c[Not completed, 1 dependents]}
+05-26 12:05:07.144 12277 11988 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
+05-26 12:05:07.145 12277 11988 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
+05-26 12:05:07.146 12277 12478 D WM-Processor: Work WorkGenerationalId(workSpecId=bd43998c-ea36-4092-91d4-232b150489a4, generation=0) is already enqueued for processing
+05-26 12:05:07.171 12277 11988 D PickerSyncController:    Latest ID/Gen=bda7c0872068cad6:external_primary/1104398
+05-26 12:05:07.171 12277 11988 D PickerSyncController:    Cached ID/Gen=bda7c0872068cad6:external_primary/1104386
+05-26 12:05:07.171 12277 11988 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_INCREMENTAL, gen=1104386, latest=Bundle[{last_media_sync_generation=1104398, media_collection_id=bda7c0872068cad6:external_primary}], pageSize=1000}
+05-26 12:05:07.171 12277 11988 I PickerSyncController: Executing SyncAdd. isLocal: true. authority: com.android.providers.media.photopicker
+05-26 12:05:07.171 12277 11988 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+05-26 12:05:07.171 12277 11988 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Locked by thread pool-3-thread-43]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.171 12277 11988 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.171 12277 11988 D ExternalDbFacade: Token received for queryMedia = null
+05-26 12:05:07.180 12277 11988 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+05-26 12:05:07.180 12277 11988 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Locked by thread pool-3-thread-43]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.180 12277 11988 D PickerSyncController: Clearing next page token for key: local_provider:media_add:resume
+05-26 12:05:07.180 12277 11988 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.180 12277 11988 D PickerNotificationSender: Sending a notification for media update
+05-26 12:05:07.181 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.181 12277 11988 D PickerNotificationSender: Sending a notification for merged album media update Videos
+05-26 12:05:07.181 12277 11988 D PickerNotificationSender: Sending a notification for album media update Videos
+05-26 12:05:07.181 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.182 12277 11988 D PickerNotificationSender: Sending a notification for merged album media update Favorites
+05-26 12:05:07.182 12277 11988 D PickerNotificationSender: Sending a notification for album media update Favorites
+05-26 12:05:07.182 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.182 12277 11988 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=1104386, android.provider.extra.PAGE_SIZE=1000}] Total Rows: 0
+05-26 12:05:07.182 12277 11988 I PickerSyncController: Executing SyncRemove. isLocal: true. authority: com.android.providers.media.photopicker
+05-26 12:05:07.182 12277 11988 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+05-26 12:05:07.182 12277 11988 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Locked by thread pool-3-thread-43]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.183 12277 11988 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.188 12277 11988 E PickerDbFacade: Could not get first date taken millis for media id: 1000155563
+05-26 12:05:07.189 12277 11988 W PickerDbFacade: Unable to promote cloud media with localId: 1000155563
+05-26 12:05:07.189 12277 11988 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+05-26 12:05:07.189 12277 11988 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Locked by thread pool-3-thread-43]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.189 12277 11988 D PickerSyncController: Clearing next page token for key: local_provider:media_remove:resume
+05-26 12:05:07.189 12277 11988 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@16d3446[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+05-26 12:05:07.189 12277 11988 D PickerNotificationSender: Sending a notification for media update
+05-26 12:05:07.190 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.190 12277 11988 D PickerNotificationSender: Sending a notification for merged album media update Videos
+05-26 12:05:07.190 12277 11988 D PickerNotificationSender: Sending a notification for album media update Videos
+05-26 12:05:07.191 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.191 12277 11988 D PickerNotificationSender: Sending a notification for merged album media update Favorites
+05-26 12:05:07.191 12277 11988 D PickerNotificationSender: Sending a notification for album media update Favorites
+05-26 12:05:07.191 10035 13260 D SyncManager: userId - 0 auto - true
+05-26 12:05:07.191 12277 11988 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=1104386, android.provider.extra.PAGE_SIZE=1000}] Total Rows: 0
+05-26 12:05:07.192 12277 11988 I PickerSyncTracker: Marked sync future complete for work id: bd43998c-ea36-4092-91d4-232b150489a4. Future map: {}
+05-26 12:05:07.192 12277 11988 I PSyncWorker: Completed picker proactive sync complete from local provider.
+05-26 12:05:07.194 12277 12575 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=bd43998c-ea36-4092-91d4-232b150489a4, tags={ com.android.providers.media.photopicker.sync.ProactiveSyncWorker } ]
+05-26 12:05:07.198 12277 12277 D WM-Processor: Processor bd43998c-ea36-4092-91d4-232b150489a4 executed; reschedule = false
+05-26 12:05:07.198 12277 12277 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=bd43998c-ea36-4092-91d4-232b150489a4, generation=0)
+05-26 12:05:07.199 12277 12277 D WM-SystemJobService: bd43998c-ea36-4092-91d4-232b150489a4 executed on JobScheduler
+05-26 12:05:07.202 12277 12575 D WM-GreedyScheduler: Cancelling work ID bd43998c-ea36-4092-91d4-232b150489a4
+05-26 12:05:07.206 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:07.206 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:07.206 12277 12575 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:07.206 12277 12575 D WM-BrdcstRcvrCnstrntTrc: BatteryNotLowTracker: unregistering receiver
+05-26 12:05:07.347 11872 11990 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+05-26 12:05:07.355 10035 11661 D CompatibilityChangeReporter: Compat change id reported: 182734110; UID 10240; state: ENABLED
+05-26 12:05:07.373 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.61001885]
+05-26 12:05:07.373 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.2593051]
+05-26 12:05:07.373 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.19851103]
+05-26 12:05:07.373 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.631094 msecs
+05-26 12:05:07.374 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.167292 msecs
+05-26 12:05:07.376 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.144687 msecs
+05-26 12:05:07.415  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][982628] accel_sample [-0.141, -0.196,  9.947] 231299586094411
+05-26 12:05:07.432 10035 12813 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3069, isSameBssidAndFreq true
+05-26 12:05:07.434 10035 10437 I SemWifiLinkQualityMonitor: Link Qos Query: 0,946 ms / 8,457 Mbps (51 / 0,010 / 5,667)
+05-26 12:05:07.827 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:07.844  9815 10072 I sensors-hal: handle_sns_std_sensor_event:276, [SSC_LIGHT] P: 187(187),m:1,a:2347,b:147112,c:38355,d:50000,ag:9,dg:256,it:384,br:127
+05-26 12:05:07.877 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.66126317]
+05-26 12:05:07.877 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.19561602]
+05-26 12:05:07.877 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.29649255]
+05-26 12:05:07.878 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.945156 msecs
+05-26 12:05:07.880 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.978281 msecs
+05-26 12:05:07.881 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.042761 msecs
+05-26 12:05:07.889 10035 10335 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 50398170
+05-26 12:05:07.904   694   694 D io_stats: !@   8,0 r 17794521 337319172 w 3970582 47631436 d 2005627 38889376 f 0 0 iot 3440660 0 th 0 0 0 pt 0 inp 0 0 50398.186
+05-26 12:05:08.236 10035 13480 D InputDispatcher: Inject motion (11979/2000): action=0x1, time=50398518000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+05-26 12:05:08.237 10035 10335 I InputDispatcher: Delivering touch to (11340): action: 0x1, f=0x0, d=0, '979835 ', t=1 +(2400,0)
+05-26 12:05:08.238 11340 11340 I ViewRootImpl@fd362e[UnityPlayerActivity]: ViewPostIme pointer 1
+05-26 12:05:08.382 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.7576565]
+05-26 12:05:08.382 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.27051002]
+05-26 12:05:08.382 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.40674475]
+05-26 12:05:08.382 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.926406 msecs
+05-26 12:05:08.384 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.696979 msecs
+05-26 12:05:08.386 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.496094 msecs
+05-26 12:05:08.844 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:09.040 10035 13480 D SGM:GameManager: identifyForegroundApp. com.southbegonia.topdungeon, mCurrentUserId: 0, callerUserId: 0
+05-26 12:05:09.040 10035 13480 D SGM:PkgDataHelper: getGamePkgData(). com.southbegonia.topdungeon
+05-26 12:05:09.041 15151 15325 I PolicyManager: [#CMH#] Is foreground game app: false
+05-26 12:05:09.346 10035 13480 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 12:05:09.348 10035 13480 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 12:05:09.349 10035 13480 E AppOps  : evalMode() Foreground Location OP returned IGNORE, uid - 10426, capability - 8
+05-26 12:05:09.366 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.6871462]
+05-26 12:05:09.366 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.29352474]
+05-26 12:05:09.366 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.12644757]
+05-26 12:05:09.366 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 1.009635 msecs
+05-26 12:05:09.368 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.54698 msecs
+05-26 12:05:09.369 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.90901 msecs
+05-26 12:05:09.386 10035 13480 I EDMNativeHelperService: isScreenCaptureEnabled
+05-26 12:05:09.387 10035 13480 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+05-26 12:05:09.403 12277 12557 W MediaProvider: isAppCloneUserPair for user 0: false
+05-26 12:05:09.415  9815 14448 I sensors-hal: handle_sns_client_event:541, [0][982835] accel_sample [-0.129, -0.232,  9.907] 231301588881182
+05-26 12:05:09.421 11992 11992 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+05-26 12:05:09.423 10035 13480 D SyncManager: userId - 0 auto - true
+05-26 12:05:09.454   628  1324 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+05-26 12:05:09.469 14068 14456 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+05-26 12:05:09.469 14068 14456 W ExifInterface: java.io.IOException: Encountered corrupt PNG file.
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.media.ExifInterface.getPngAttributes(ExifInterface.java:3461)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2026)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1641)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1592)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.getDateTimeOriginal(MediaParser.java:390)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.scan.MediaParser.computeDateMetadata(MediaParser.java:367)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.createOperation(MediaSync.java:429)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.loadInternal(MediaSync.java:389)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.load(MediaSync.java:325)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync.-$$Nest$mload(Unknown Source:0)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at com.samsung.android.providers.media.sync.MediaSync$SyncTask.run(MediaSync.java:475)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.os.Handler.handleCallback(Handler.java:942)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.os.Looper.loopOnce(Looper.java:226)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.os.Looper.loop(Looper.java:313)
+05-26 12:05:09.469 14068 14456 W ExifInterface: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+05-26 12:05:09.507 14068 14456 D MediaSync: loaded: 79ms, 1
+05-26 12:05:09.713 12277 12277 I MediaServiceV2: Creating work for intent Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 12:05:09.715 12277 12277 I MediaServiceV2: Work enqueued for intent: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+05-26 12:05:09.743 12277 12563 D WM-SystemJobScheduler: Scheduling work ID 4bd1939e-5359-43ff-b65d-181f3dd5999cJob ID 14465
+05-26 12:05:09.752 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:09.752 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:09.752 12277 12563 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:09.752 12277 12563 D WM-GreedyScheduler: Starting work for 4bd1939e-5359-43ff-b65d-181f3dd5999c
+05-26 12:05:09.753 12277 12277 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=4bd1939e-5359-43ff-b65d-181f3dd5999c, generation=0)
+05-26 12:05:09.755 12277 12576 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=4bd1939e-5359-43ff-b65d-181f3dd5999c, generation=0)
+05-26 12:05:09.756 12277 12576 D WM-Processor: Work WorkGenerationalId(workSpecId=4bd1939e-5359-43ff-b65d-181f3dd5999c, generation=0) is already enqueued for processing
+05-26 12:05:09.763 12277 12277 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+05-26 12:05:09.765 12277 12001 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 12:05:09.799 12277 12001 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+05-26 12:05:09.800 10035 10048 D SyncManager: userId - 0 auto - true
+05-26 12:05:09.802 12277 12576 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=4bd1939e-5359-43ff-b65d-181f3dd5999c, tags={ com.android.providers.media.MediaServiceV2 } ]
+05-26 12:05:09.809 12277 12277 D WM-Processor: Processor 4bd1939e-5359-43ff-b65d-181f3dd5999c executed; reschedule = false
+05-26 12:05:09.809 12277 12277 D WM-SystemJobService: 4bd1939e-5359-43ff-b65d-181f3dd5999c executed on JobScheduler
+05-26 12:05:09.816 12277 12576 D WM-GreedyScheduler: Cancelling work ID 4bd1939e-5359-43ff-b65d-181f3dd5999c
+05-26 12:05:09.820 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:09.820 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:09.821 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:09.835 12277 12576 D WM-SystemJobScheduler: Scheduling work ID 8935fc71-19b8-44ae-a5df-cd4acc0dd11aJob ID 14466
+05-26 12:05:09.837 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: 93bd8e78-276d-4130-97c6-07e125890fa7}. Requires device idle.
+05-26 12:05:09.837 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: f8d5ddcd-986d-4268-b7f9-6ebbfe39dba4}. Requires device idle.
+05-26 12:05:09.837 12277 12576 D WM-GreedyScheduler: Ignoring {WorkSpec: aca3a3d7-4c55-4cb2-b881-f342a7da9c0a}. Requires device idle.
+05-26 12:05:09.847 11645 19359 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+05-26 12:05:09.847 10035 11661 D SyncManager: userId - 0 auto - true
+05-26 12:05:09.853 12277 14831 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+05-26 12:05:09.855 10035 10451 D SemWifiSwitchForIndividualAppsService: isSkipNetworkCondition - result:2
+05-26 12:05:09.863 15151 15429 I BaseThreadPoolExecutor: [#CMH#] Task o.e@ef93fa7 is submitted
+05-26 12:05:09.861 10035 10048 D SyncManager: userId - 0 auto - true
+05-26 12:05:09.868 14068 14456 D MediaSync: loaded: 67ms, 1
+05-26 12:05:09.870 10035 10435 D SemNscXgbMsL1: Probability - Cloud gaming: [0.80650055]
+05-26 12:05:09.871 10035 10435 D SemNscXgbMsL1: Probability - Real time: [0.25199124]
+05-26 12:05:09.871 10035 10435 D SemNscXgbMsL1: Probability - Non real time: [0.4696564]
+05-26 12:05:09.871 10035 10435 D SemNscXgbMsL1: 1 sample inference time: 0.532187 msecs
+05-26 12:05:09.872 10035 10435 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.049271 msecs
+05-26 12:05:09.873 10035 10435 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.888646 msecs
+05-26 12:05:09.885 14068 12006 D LocationService: Begin: com.samsung.intent.action.UPDATE_LOCATION
+05-26 12:05:09.904   694   694 D io_stats: !@   8,0 r 17794693 337319960 w 3970741 47633388 d 2005627 38889376 f 0 0 iot 3440744 0 th 0 0 0 pt 0 inp 0 0 50400.186

@@ -114,7 +114,12 @@ public class SaveManager : MonoBehaviour
         SaveGame(save);
 
         if (GameManager.instance != null)
+        {
             SetGameData(save);
+
+            if (GameManager.instance.player != null)
+                GameManager.instance.player.ResetForGameplay(true, true);
+        }
     }
 
     private static string GetReadableSavePath()

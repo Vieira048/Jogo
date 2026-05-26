@@ -45,12 +45,14 @@ public class Weapon : Colliderable
     {
         base.Update();
 
-        if (GameManager.instance.player.isAlive)
+        if (GameManager.instance != null && GameManager.instance.player != null && GameManager.instance.player.isAlive)
         {
+            MobileInputManager mobileInput = MobileInputManager.ActiveInstance;
+
             // --- VERIFICAÇÃO DE ATAQUE (Apenas Mobile) ---
             bool attackInput = false; // Começa falso, só o botão da UI pode mudar para true
 
-            if (MobileInputManager.instance != null && MobileInputManager.instance.attackPressed)
+            if (mobileInput != null && mobileInput.attackPressed)
             {
                 attackInput = true;
             }
@@ -79,7 +81,7 @@ public class Weapon : Colliderable
             // --- VERIFICAÇÃO DO BOTÃO RAGE (Apenas Mobile) ---
             bool rageInput = false; // Começa falso, só o botão da UI pode mudar para true
 
-            if (MobileInputManager.instance != null && MobileInputManager.instance.ragePressed)
+            if (mobileInput != null && mobileInput.ragePressed)
             {
                 rageInput = true;
             }
@@ -142,8 +144,23 @@ public class Weapon : Colliderable
     // Função para definir um nível específico para a arma (usado no carregamento de save)
     public void SetWeaponLevel(int level)
     {
+        if (SpriteRenderer == null)
+            SpriteRenderer = GetComponent<SpriteRenderer>();
+
         weaponLevel = level;
-        SpriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
+
+        if (GameManager.instance != null && GameManager.instance.weaponSprites != null && GameManager.instance.weaponSprites.Count > weaponLevel)
+            SpriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
+    }
+
+    public void ResetRageState()
+    {
+        StopCoroutine(nameof(WaitingForRestRageSkill));
+        raging = false;
+        CanRageSkill = false;
+
+        if (rageState != null)
+            rageState.SetActive(false);
     }
 
     // Corotina que controla a duração da Habilidade de Fúria

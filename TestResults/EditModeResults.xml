@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0,2152698">
-  <test-suite type="TestSuite" id="1000" name="TopDungeon" fullname="TopDungeon" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.215270" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="14" result="Passed" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0,3095341">
+  <test-suite type="TestSuite" id="1000" name="TopDungeon" fullname="TopDungeon" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.309534" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="EditMode" />
     </properties>
-    <test-suite type="Assembly" id="1015" name="Assembly-CSharp-Editor.dll" fullname="C:/Users/Leo_s/Documents/Jogo/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.211585" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1019" name="Assembly-CSharp-Editor.dll" fullname="C:/Users/Leo_s/Documents/Jogo/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.301837" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="15580" />
+        <property name="_PID" value="15216" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="EditMode" />
       </properties>
-      <test-suite type="TestFixture" id="1001" name="MobileLayoutRegressionTests" fullname="MobileLayoutRegressionTests" classname="MobileLayoutRegressionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.114179" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1001" name="MobileLayoutRegressionTests" fullname="MobileLayoutRegressionTests" classname="MobileLayoutRegressionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.164474" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties>
           <property name="platform" value="EditMode" />
         </properties>
-        <test-case id="1004" name="Dungeon0SceneKeepsMobileCanvasResponsive" fullname="MobileLayoutRegressionTests.Dungeon0SceneKeepsMobileCanvasResponsive" methodname="Dungeon0SceneKeepsMobileCanvasResponsive" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="389441828" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.102358" asserts="0">
+        <test-case id="1005" name="Dungeon0SceneKeepsMobileCanvasResponsive" fullname="MobileLayoutRegressionTests.Dungeon0SceneKeepsMobileCanvasResponsive" methodname="Dungeon0SceneKeepsMobileCanvasResponsive" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="35454639" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.146546" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1002" name="SafeAreaFitterConvertsSafeAreaToAnchors" fullname="MobileLayoutRegressionTests.SafeAreaFitterConvertsSafeAreaToAnchors" methodname="SafeAreaFitterConvertsSafeAreaToAnchors" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="1181047453" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.000749" asserts="0">
+        <test-case id="1004" name="MobileInputManagerRecoversAfterDuplicateSceneInputIsDestroyed" fullname="MobileLayoutRegressionTests.MobileInputManagerRecoversAfterDuplicateSceneInputIsDestroyed" methodname="MobileInputManagerRecoversAfterDuplicateSceneInputIsDestroyed" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="436446855" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000932" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1003" name="UIManagerConfiguresRuntimeMobileLayout" fullname="MobileLayoutRegressionTests.UIManagerConfiguresRuntimeMobileLayout" methodname="UIManagerConfiguresRuntimeMobileLayout" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="91290400" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.002120" asserts="0">
+        <test-case id="1002" name="SafeAreaFitterConvertsSafeAreaToAnchors" fullname="MobileLayoutRegressionTests.SafeAreaFitterConvertsSafeAreaToAnchors" methodname="SafeAreaFitterConvertsSafeAreaToAnchors" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="2123009897" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000633" asserts="0">
+          <properties>
+            <property name="platform" value="EditMode" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1003" name="UIManagerConfiguresRuntimeMobileLayout" fullname="MobileLayoutRegressionTests.UIManagerConfiguresRuntimeMobileLayout" methodname="UIManagerConfiguresRuntimeMobileLayout" classname="MobileLayoutRegressionTests" runstate="Runnable" seed="1179016066" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.002857" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
@@ -36,18 +43,37 @@
           </properties>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="1005" name="PortalRegressionTests" fullname="PortalRegressionTests" classname="PortalRegressionTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.075098" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1006" name="PlayerLifecycleRegressionTests" fullname="PlayerLifecycleRegressionTests" classname="PlayerLifecycleRegressionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.092911" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties>
           <property name="platform" value="EditMode" />
         </properties>
-        <test-case id="1006" name="PlayerDetectorFindsPlayerByComponentNotObjectName" fullname="PortalRegressionTests.PlayerDetectorFindsPlayerByComponentNotObjectName" methodname="PlayerDetectorFindsPlayerByComponentNotObjectName" classname="PortalRegressionTests" runstate="Runnable" seed="2101146294" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.001956" asserts="0">
+        <test-case id="1008" name="ResetForGameplayCanPreserveCurrentHealthOnSceneTransition" fullname="PlayerLifecycleRegressionTests.ResetForGameplayCanPreserveCurrentHealthOnSceneTransition" methodname="ResetForGameplayCanPreserveCurrentHealthOnSceneTransition" classname="PlayerLifecycleRegressionTests" runstate="Runnable" seed="358907884" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.003034" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1009" name="PortalDoorCooldownBlocksImmediateRetrigger" fullname="PortalRegressionTests.PortalDoorCooldownBlocksImmediateRetrigger" methodname="PortalDoorCooldownBlocksImmediateRetrigger" classname="PortalRegressionTests" runstate="Runnable" seed="439270820" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.003159" asserts="0">
+        <test-case id="1007" name="ResetForGameplayRestoresMovementStateAfterDeath" fullname="PlayerLifecycleRegressionTests.ResetForGameplayRestoresMovementStateAfterDeath" methodname="ResetForGameplayRestoresMovementStateAfterDeath" classname="PlayerLifecycleRegressionTests" runstate="Runnable" seed="1283591195" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000651" asserts="0">
+          <properties>
+            <property name="platform" value="EditMode" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1009" name="PortalRegressionTests" fullname="PortalRegressionTests" classname="PortalRegressionTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.010684" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="platform" value="EditMode" />
+        </properties>
+        <test-case id="1010" name="PlayerDetectorFindsPlayerByComponentNotObjectName" fullname="PortalRegressionTests.PlayerDetectorFindsPlayerByComponentNotObjectName" methodname="PlayerDetectorFindsPlayerByComponentNotObjectName" classname="PortalRegressionTests" runstate="Runnable" seed="639801543" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.001878" asserts="0">
+          <properties>
+            <property name="platform" value="EditMode" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1013" name="PortalDoorCooldownBlocksImmediateRetrigger" fullname="PortalRegressionTests.PortalDoorCooldownBlocksImmediateRetrigger" methodname="PortalDoorCooldownBlocksImmediateRetrigger" classname="PortalRegressionTests" runstate="Runnable" seed="1584873162" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.003546" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
@@ -56,21 +82,21 @@
           <output><![CDATA[[Portal_Door] PortalDoor: teleporting player from (0.00, 0.00, 0.00) to (1.00, 1.50, 0.00) via 'Exit'.
 ]]></output>
         </test-case>
-        <test-case id="1008" name="PortalDoorIgnoresObjectsWithoutPlayerComponent" fullname="PortalRegressionTests.PortalDoorIgnoresObjectsWithoutPlayerComponent" methodname="PortalDoorIgnoresObjectsWithoutPlayerComponent" classname="PortalRegressionTests" runstate="Runnable" seed="873317937" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.000280" asserts="0">
+        <test-case id="1012" name="PortalDoorIgnoresObjectsWithoutPlayerComponent" fullname="PortalRegressionTests.PortalDoorIgnoresObjectsWithoutPlayerComponent" methodname="PortalDoorIgnoresObjectsWithoutPlayerComponent" classname="PortalRegressionTests" runstate="Runnable" seed="222598314" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000305" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1010" name="PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" fullname="PortalRegressionTests.PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" methodname="PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" classname="PortalRegressionTests" runstate="Runnable" seed="470792911" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.001031" asserts="0">
+        <test-case id="1014" name="PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" fullname="PortalRegressionTests.PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" methodname="PortalDoorRuntimeColliderIsTriggerAndHasMinimumTouchArea" classname="PortalRegressionTests" runstate="Runnable" seed="1653958673" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.001475" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1007" name="PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" fullname="PortalRegressionTests.PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" methodname="PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" classname="PortalRegressionTests" runstate="Runnable" seed="1097530740" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.001101" asserts="0">
+        <test-case id="1011" name="PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" fullname="PortalRegressionTests.PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" methodname="PortalDoorTeleportsAlongExitUpVectorAndClampsZToZero" classname="PortalRegressionTests" runstate="Runnable" seed="75193961" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.001368" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
@@ -79,7 +105,7 @@
           <output><![CDATA[[Portal_Door] PortalDoor: teleporting player from (0.00, 0.00, 0.00) to (2.50, 3.00, 0.00) via 'Exit'.
 ]]></output>
         </test-case>
-        <test-case id="1011" name="ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" fullname="PortalRegressionTests.ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" methodname="ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" classname="PortalRegressionTests" runstate="Runnable" seed="238411255" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.000620" asserts="0">
+        <test-case id="1015" name="ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" fullname="PortalRegressionTests.ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" methodname="ScenePortalRuntimeColliderIsTriggerAndHasMinimumTouchArea" classname="PortalRegressionTests" runstate="Runnable" seed="101093488" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000574" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
@@ -87,24 +113,24 @@
           </properties>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="1012" name="SaveManagerRegressionTests" fullname="SaveManagerRegressionTests" classname="SaveManagerRegressionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.021361" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1016" name="SaveManagerRegressionTests" fullname="SaveManagerRegressionTests" classname="SaveManagerRegressionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.031685" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties>
           <property name="platform" value="EditMode" />
         </properties>
-        <test-case id="1013" name="SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" fullname="SaveManagerRegressionTests.SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" methodname="SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" classname="SaveManagerRegressionTests" runstate="Runnable" seed="243326956" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.000898" asserts="0">
+        <test-case id="1017" name="SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" fullname="SaveManagerRegressionTests.SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" methodname="SaveFilePathUsesPersistentDataPathInsteadOfApplicationDataPath" classname="SaveManagerRegressionTests" runstate="Runnable" seed="758996825" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.000869" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1014" name="SaveGameWritesJsonToWritableSaveDirectory" fullname="SaveManagerRegressionTests.SaveGameWritesJsonToWritableSaveDirectory" methodname="SaveGameWritesJsonToWritableSaveDirectory" classname="SaveManagerRegressionTests" runstate="Runnable" seed="738452564" result="Passed" start-time="2026-05-26 14:40:35Z" end-time="2026-05-26 14:40:35Z" duration="0.019605" asserts="0">
+        <test-case id="1018" name="SaveGameWritesJsonToWritableSaveDirectory" fullname="SaveManagerRegressionTests.SaveGameWritesJsonToWritableSaveDirectory" methodname="SaveGameWritesJsonToWritableSaveDirectory" classname="SaveManagerRegressionTests" runstate="Runnable" seed="1340956335" result="Passed" start-time="2026-05-26 15:20:48Z" end-time="2026-05-26 15:20:48Z" duration="0.029989" asserts="0">
           <properties>
             <property name="platform" value="EditMode" />
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
-          <output><![CDATA[Saves: C:\Users\Leo_s\Documents\Jogo\Temp\SaveManagerRegression\a82e1e5c996e4f37a81a3b05b353361c\SaveData.json
+          <output><![CDATA[Saves: C:\Users\Leo_s\Documents\Jogo\Temp\SaveManagerRegression\bd8cb34d2d234d62b60d1edfbff829e2\SaveData.json
 Saving results to: C:\Users\Leo_s\Documents\Jogo\TestResults\EditModeResults.xml
 ]]></output>
         </test-case>

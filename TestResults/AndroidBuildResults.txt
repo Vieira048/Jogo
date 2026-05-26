@@ -1,7 +1,7 @@
 result=Succeeded
 package=com.southbegonia.topdungeon
 apk=C:\Users\Leo_s\Documents\Jogo\Builds\Android\TopDungeon.apk
-totalSize=920893774
-totalTime=00:01:13.7946984
+totalSize=921362150
+totalTime=00:01:35.9535931
 errors=0
 warnings=3

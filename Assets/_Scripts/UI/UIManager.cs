@@ -132,6 +132,8 @@ public class UIManager : MonoBehaviour
 
         if (mobileInput != null)
         {
+            MobileInputManager.RegisterActiveInstance(mobileInput);
+
             if (mobileInput.joystick != null)
                 AnchorBottomLeft(mobileInput.joystick.GetComponent<RectTransform>(), joystickSize, joystickMargin);
 
@@ -205,6 +207,7 @@ public class UIManager : MonoBehaviour
         if (deathMenuAnim != null)
         {
             deathMenuAnim.SetTrigger("Hide");
+            SetCanvasGroupInput(deathMenuAnim.gameObject, false);
             deathMenuAnim.gameObject.SetActive(false);
         }
     }
@@ -214,8 +217,20 @@ public class UIManager : MonoBehaviour
         if (deathMenuAnim != null)
         {
             deathMenuAnim.gameObject.SetActive(true);
+            SetCanvasGroupInput(deathMenuAnim.gameObject, true);
             deathMenuAnim.SetTrigger("Show");
         }
+    }
+
+    private void SetCanvasGroupInput(GameObject target, bool enabled)
+    {
+        CanvasGroup canvasGroup = target != null ? target.GetComponent<CanvasGroup>() : null;
+
+        if (canvasGroup == null)
+            return;
+
+        canvasGroup.interactable = enabled;
+        canvasGroup.blocksRaycasts = enabled;
     }
 
     public void QuitGame()
@@ -226,6 +241,9 @@ public class UIManager : MonoBehaviour
     public void QuitToMainMenu()
     {
         Time.timeScale = 1f;
+
+        if (GameManager.instance != null)
+            GameManager.instance.PrepareForMainMenu();
 
         if (menuObjetoPrincipal != null)
             menuObjetoPrincipal.SetActive(false);

@@ -18,6 +18,9 @@ Executada em 2026-05-26 no aparelho `SM_G780G` conectado por ADB:
   - `TestResults/android-north-finalbuild-centered.png`
 - Save validado no path persistente do Android:
   - `/sdcard/Android/data/com.southbegonia.topdungeon/files/SaveData.json`
+- Correção de morte/novo jogo validada por regressão automatizada e smoke test Android:
+  - `Player` morto volta com `isAlive = true`, collider ativo, rotação zerada e vida restaurada;
+  - novo jogo no Android aceita movimento por joystick após carregar `Dungeon_0`.
 
 ## Antes do Build
 
@@ -60,6 +63,18 @@ Resultado esperado:
 - O player aparece na posição correta.
 - O collider do portal volta a aceitar entrada quando isso for esperado.
 - Não há `DirectoryNotFoundException` relacionada a `SaveData.json`.
+
+## Testes de Morte e Novo Jogo
+
+- Morrer em uma cena jogável.
+- Voltar ao menu antes ou depois do respawn automático.
+- Clicar em `Novo Jogo`.
+- Confirmar que:
+  - player aparece vivo;
+  - vida está restaurada;
+  - rotação do player está zerada;
+  - joystick/teclado movem o personagem;
+  - não há respawn antigo disparando depois de voltar ao menu.
 
 ## Testes de UI Mobile
 

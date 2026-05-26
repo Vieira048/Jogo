@@ -17,6 +17,7 @@ public class Player : Mover
 
     // Sistema de correção de direção de ataque
     private float temp = 0f;
+    private Coroutine respawnCoroutine;
 
     protected override void Start()
     {
@@ -40,14 +41,16 @@ public class Player : Mover
             float x = 0f;
             float y = 0f;
 
-            if (mobileMode && MobileInputManager.instance != null)
+            MobileInputManager mobileInput = mobileMode ? MobileInputManager.ActiveInstance : null;
+
+            if (mobileInput != null)
             {
                 // Input Mobile: lê do joystick virtual
-                Vector3 mobileDir = MobileInputManager.instance.GetMovementInput();
+                Vector3 mobileDir = mobileInput.GetMovementInput();
                 x = mobileDir.x;
                 y = mobileDir.y;
             }
-            else
+            else if (!mobileMode)
             {
                 // Input Teclado: WASD e setas (original)
                 x = Input.GetAxisRaw("Horizontal");
@@ -55,10 +58,13 @@ public class Player : Mover
             }
 
             // Verifica se a direção do jogador é a mesma do frame anterior para sincronizar a arma
-            if (transform.localScale.x == temp)
-                GameManager.instance.weapon.animator.SetBool("SameDirection", true);
-            else
-                GameManager.instance.weapon.animator.SetBool("SameDirection", false);
+            if (GameManager.instance != null && GameManager.instance.weapon != null && GameManager.instance.weapon.animator != null)
+            {
+                if (transform.localScale.x == temp)
+                    GameManager.instance.weapon.animator.SetBool("SameDirection", true);
+                else
+                    GameManager.instance.weapon.animator.SetBool("SameDirection", false);
+            }
 
             temp = transform.localScale.x;
 
@@ -147,24 +153,72 @@ public class Player : Mover
     // Função de Morte do Jogador:
     protected override void Death()
     {
+        if (!isAlive)
+            return;
+
         isAlive = false;
         transform.localEulerAngles = new Vector3(0, 0, 90);
-        GameManager.instance.UIManager.ShowDeathAnimation();
-        StartCoroutine("WaitingForRespawn");
+
+        if (GameManager.instance != null && GameManager.instance.UIManager != null)
+            GameManager.instance.UIManager.ShowDeathAnimation();
+
+        if (respawnCoroutine == null)
+            respawnCoroutine = StartCoroutine(WaitingForRespawn());
     }
 
     // Função de Renascimento (Respawn):
     public void Respawn()
     {
-        Heal(maxHitPoint);
+        ResetForGameplay(true);
+    }
+
+    public void ResetForGameplay(bool restoreHealth, bool resetRage = false)
+    {
+        CancelPendingRespawn();
+
+        gameObject.SetActive(true);
+        enabled = true;
         isAlive = true;
         transform.localEulerAngles = Vector3.zero;
+        pushDirection = Vector3.zero;
+        lastImmune = Time.time;
+
+        BoxCollider2D bodyCollider = GetComponent<BoxCollider2D>();
+        if (bodyCollider != null)
+            bodyCollider.enabled = true;
+
+        if (restoreHealth)
+            hitPoint = maxHitPoint;
+
+        if (resetRage)
+            rage = 0;
+
+        if (resetRage && GameManager.instance != null && GameManager.instance.weapon != null)
+            GameManager.instance.weapon.ResetRageState();
+
+        MobileInputManager.ActiveInstance?.ResetRuntimeInput();
+    }
+
+    public void CancelPendingRespawn()
+    {
+        if (respawnCoroutine != null)
+        {
+            StopCoroutine(respawnCoroutine);
+            respawnCoroutine = null;
+        }
+
+        StopCoroutine(nameof(WaitingForRespawn));
     }
 
     IEnumerator WaitingForRespawn()
     {
         yield return new WaitForSeconds(6);
-        GameManager.instance.Respawn();
-        GameManager.instance.OnUIChange();
+        respawnCoroutine = null;
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.Respawn();
+            GameManager.instance.OnUIChange();
+        }
     }
 }
